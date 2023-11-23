@@ -1,8 +1,12 @@
 const {Product} = require("../db")
 
 const deleteHandler = async (id) => {
-    const deleter = await Product.destroy({where: {id: id}})
-    return deleter
+    const deleted = await Product.findByPk(id)
+
+    deleted.active = false
+
+    await deleted.save()
+    return deleted
 }
 
 module.exports = {

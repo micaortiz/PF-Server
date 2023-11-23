@@ -10,7 +10,7 @@ const { conn } = require("./src/db");
 
 // Conexion con la bd
 conn
-  .sync({ alter: true })
+  .sync({ force: true })
   // un vez que funcione correctamente cambiar a false
   .then(() => {
     // establecer conexion con la bd
