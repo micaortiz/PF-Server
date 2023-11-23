@@ -6,7 +6,7 @@ const newProduct = async(req, res) => {
     if(discountPercentage === 0){
         priceOnSale = price
     } else {
-        priceOnSale = ((price * (1 - (1 / discountPercentage)))).toString();
+        priceOnSale = (price - (price * (discountPercentage/100))).toString();
     }    
     try {
         const product = await createProduct(nameProd, brand, description, price, discountPercentage, priceOnSale, image, tags, stock)

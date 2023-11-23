@@ -39,7 +39,6 @@ module.exports = (sequelize) => {
         type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
-
       active: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
@@ -47,7 +46,7 @@ module.exports = (sequelize) => {
       },
       // si se agregan mas tags es necesario crear una nueva tabla y comentar esta
       tags: {
-        type: DataTypes.ENUM("New", "Special Offer", "Limited Edition"),
+        type: DataTypes.ENUM("New", "Special Offer", "Limited Edition", ""),
         allowNull: false,
       },
       stock: {
