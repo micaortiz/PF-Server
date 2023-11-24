@@ -5,6 +5,7 @@ const { newProduct } = require("../controllers/newProductCtrl");
 const { getByName } = require("../controllers/productsName");
 const { updateProduct } = require("../controllers/updateProductCtrl");
 const { deleteProduct } = require("../controllers/deletePrdocutCtrl");
+const { getAllProducts } = require("../controllers/getAll_Products")
 const router = express.Router();
 // const {Router} = require('express')
 const {
@@ -23,6 +24,8 @@ router.delete("/products", deleteProduct);
 //SearchByName
 router.get("/products/name?", getByName);
 //All Product
+router.get("/products", getAllProducts)
+// Products By Id
 router.get("/products/:id", getProductsById);
 module.exports = {
   router,

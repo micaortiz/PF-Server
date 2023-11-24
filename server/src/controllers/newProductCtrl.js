@@ -1,7 +1,7 @@
 const { createProduct } = require("../handlers/newProductHandler");
 
 const newProduct = async(req, res) => {
-    const {nameProd, brand, description, price, discountPercentage, image, tags, stock} = req.body;
+    const {nameProd, brand, description, price, discountPercentage, image, tags, stock, CategoryId} = req.body;
     let priceOnSale = 0
     if(discountPercentage === 0){
         priceOnSale = price
@@ -9,7 +9,7 @@ const newProduct = async(req, res) => {
         priceOnSale = (price - (price * (discountPercentage/100))).toString();
     }    
     try {
-        const product = await createProduct(nameProd, brand, description, price, discountPercentage, priceOnSale, image, tags, stock)
+        const product = await createProduct(nameProd, brand, description, price, discountPercentage, priceOnSale, image, tags, stock, CategoryId)
         console.log({text: "Product succesfully created"});
         return res.status(200).json(product)
     } catch (error) {
