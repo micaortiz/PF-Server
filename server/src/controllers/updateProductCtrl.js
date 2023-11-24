@@ -12,17 +12,7 @@ const updateProduct = async (req, res) => {
     tags,
     stock,
   } = req.body;
-  console.log(
-    id,
-    nameProd,
-    brand,
-    description,
-    price,
-    discountPercentage,
-    image,
-    tags,
-    stock
-  );
+
   try {
     const update = await updateHandler(
       id,
