@@ -1,0 +1,30 @@
+[ 
+    {
+      "nameProd": "iPhone 12",
+      "brand": "Apple",
+      "description": "The iPhone 12 is equipped with an OLED panel with the same diagonal as its predecessor iPhone 11 - 6.1 inches. The resolution is higher: 2532x1170 pixels, so the pixel density is 460 per inch (Retina XDR). The image is really impressive.",
+      "price": 880,
+      "discountPercentage": 5,
+      "priceOnSale": 836,
+      "image": ["https://phonesdata.com/files/models/Apple-iPhone-12-187.jpg"],
+      "active": true,
+      "tags": "Special Offer",
+      "stock": 12,
+      "CategoryId": 2
+    },
+
+    {
+      "nameProd": "HP Chromebook 11MK G9 (US)",
+      "brand": "HP",
+      "description": "ARM-based MediaTek MT8183, processor ARM Mali-G72 MP3, video card 4GB DDR4, of Ram 32GB EMMC, storage 11.6 inch display, Chrome OS.",
+      "price": 127,
+      "discountPercentage": 10,
+      "priceOnSale": 114.3,
+      "image": ["https://noteb.com/res/img/models/3322_1.jpg"],
+      "active": true,
+      "tags": "Special Offer",
+      "stock": 16,
+      "CategoryId": 1
+    }
+  
+]

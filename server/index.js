@@ -5,8 +5,8 @@ const PORT = 3001;
 /* bd config */
 require("dotenv").config();
 const { conn } = require("./src/db");
-// cuando este lista la conexion con la db descomentar las lineas de abajo
-// const { dbConnect } = require("./src/controllers/dbConnect");
+
+const { dbConnect } = require("./src/utils/dbConnect.js");
 
 // Conexion con la bd
 conn
@@ -14,7 +14,7 @@ conn
   // un vez que funcione correctamente cambiar a false
   .then(() => {
     // establecer conexion con la bd
-    //   dbConnect();
+      dbConnect();
     server.listen(PORT, () => {
       console.log(`Server listening on port ${PORT}`);
     });
