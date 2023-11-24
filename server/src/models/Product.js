@@ -14,6 +14,7 @@ module.exports = (sequelize) => {
       nameProd: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
       },
       brand: {
         type: DataTypes.STRING,
@@ -52,7 +53,7 @@ module.exports = (sequelize) => {
       stock: {
         type: DataTypes.INTEGER,
         allowNull: false,
-      },
+      }
     },
     { timestamps: false }
   );
