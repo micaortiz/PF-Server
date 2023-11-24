@@ -39,7 +39,6 @@ module.exports = (sequelize) => {
         type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
-
       active: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
