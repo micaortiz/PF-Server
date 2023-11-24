@@ -16,6 +16,7 @@ const getByName = async (req, res) => {
       where: {
         nameProd: { [Op.iLike]: `%${searchTerm}%` },
       },
+      include: { model: Category },
     });
 
     let allResults = [];
@@ -34,7 +35,7 @@ const getByName = async (req, res) => {
           image: product.image,
           active: product.active,
           tags: product.tags,
-          stock: product.stock,
+          category: product.category,
         });
       });
       return res.status(200).json(allResults);
