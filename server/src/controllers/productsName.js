@@ -3,7 +3,6 @@ const { Op } = require("sequelize");
 
 const getByName = async (req, res) => {
   try {
-    console.log(req.query.name);
     const searchTerm = req.query.name;
     /*  console.log("Este sería el término enviado desde el frontend", searchTerm); */ //* Log para rectificar si llegan datos por parametro
 
