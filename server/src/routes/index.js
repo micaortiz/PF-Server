@@ -13,8 +13,11 @@ const {
 } = require("../handlers/getAllCategoriesHandlers");
 const { getAllProductHandler } = require("../handlers/getProductsByIdHandler");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
+const { postCategory } = require("../controllers/postCategoryCtrl");
 //Create
 router.post("/products", newProduct);
+//Create category
+router.post("/categories", postCategory)
 //AllCategory
 router.get("/categories", getAllCategoriesHandlers);
 //Update
