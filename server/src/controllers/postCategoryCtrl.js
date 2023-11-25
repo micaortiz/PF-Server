@@ -4,10 +4,11 @@ const postCategory = async (req, res) => {
   try {
     const { nameCat } = req.body;
     if (!nameCat) return res.status(400).send("Data is missing");
+    const category = nameCat.charAt(0).toUpperCase() + nameCat.slice(1).toLowerCase();
 
     const [newCat, created] = await Category.findOrCreate({
       where: {
-        nameCat: nameCat,
+        nameCat: category,
       },
     });
     if (created) {
