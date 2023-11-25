@@ -26,7 +26,7 @@ router.put("/products", updateProduct);
 router.delete("/products", deleteProduct);
 //SearchByName
 router.get("/products/name?", getByName);
-//All Product
+//All Product  //* Validar si vienen datos por Query para trabajar sobre la misma ruta del GET.
 router.get("/products", getAllProducts)
 // Products By Id
 router.get("/products/:id", getProductsById);

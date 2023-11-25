@@ -38,6 +38,8 @@ const getByName = async (req, res) => {
           category: product.category,
         });
       });
+
+      console.log(allResults);
       return res.status(200).json(allResults);
     } else {
       return res.status(400).send({ error: "No se encontraron elementos" });

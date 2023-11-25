@@ -3,11 +3,15 @@ const { Product, Category } = require("../db");
 const getAllProducts = async (req, res) => {
   try {
     const productsDB = await Product.findAll({
-      //* Trae todos los videojuegos de la base de datos
-      include: { model: Category }, //* incluyendo el modelo de la categoria
+      include: {
+        // Traemos todos los productos de la base de datos incluyendo el nombre de la tabla de categorias
+        model: Category,
+        attributes: ["nameCat"],
+      },
     });
+
     /* console.log("Serian los productos ",productsDB); */ //* console log para ver que productos trae de la base de datos
-    if (!productsDB) return res.status(400).send("No se encontraron productos")
+    if (!productsDB) return res.status(400).send("No se encontraron productos");
 
     let allResults = [];
 
@@ -15,7 +19,7 @@ const getAllProducts = async (req, res) => {
       productsDB.forEach((product) => {
         allResults.push({
           id: product.id,
-          name: product.nameProd,
+          nameProd: product.nameProd,
           brand: product.brand,
           description: product.description,
           price: product.price,
@@ -25,13 +29,11 @@ const getAllProducts = async (req, res) => {
           image: product.image,
           active: product.active,
           tags: product.tags,
-          category: product.category,
+          category: product.Category ? product.Category.nameCat : null,
         });
       });
 
-
-      return res.status(200).json(allResults)
-
+      return res.status(200).json(allResults);
     }
   } catch (error) {
     return res.status(400).send("No hay productos");
@@ -39,5 +41,5 @@ const getAllProducts = async (req, res) => {
 };
 
 module.exports = {
-  getAllProducts
-}
+  getAllProducts,
+};
