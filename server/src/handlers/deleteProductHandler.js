@@ -8,9 +8,9 @@ const deleteHandler = async (id) => {
   });
 
   if (deleted) {
-    return "Eliminado con éxito";
+    return { success: true, data: deleted };
   } else {
-    return "No se pudo eliminar";
+    return { success: false, error: "No se logro eliminar" };
   }
 };
 
