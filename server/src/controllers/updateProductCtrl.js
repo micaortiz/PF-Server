@@ -1,6 +1,6 @@
 const { updateHandler } = require("../handlers/updateProductHandler");
 
-const updateProduct = async (req, res) => {
+const updateProduct = async (req, res) => { //*
   const {
     id,
     nameProd,
