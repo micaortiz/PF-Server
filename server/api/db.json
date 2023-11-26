@@ -13,7 +13,7 @@
       "CategoryId": 1
     },
     {
-      "nameProd": "Notebook gamer HP VICTUS 15 15-fa1093dx",
+      "nameProd": "Notebook gamer HP",
       "brand": "HP",
       "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
       "price": 998.000,
@@ -25,9 +25,9 @@
       "CategoryId": 1
     }, 
     {
-        "nameProd": "Notebook Lenovo V15 15.6 Fhd G4 Amn R3-7320u 8gb Ram 256gb",
+        "nameProd": "Notebook Lenovo V15 15.6",
         "brand": "Lenovo",
-        "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video: AMD Radeon Graphics Screen size: 15.6 FHD (1920x1080)",
+        "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video.",
         "price": 479.895,
         "discountPercentage": 15,
         "priceOnSale": 407.910,
@@ -38,7 +38,7 @@
         "CategoryId": 1
       },
       {
-        "nameProd": "Notebook Gamer ROG Strix G15 G513RM-HQ084W 15.6 Ryzen 7",
+        "nameProd": "Notebook Gamer ROG",
         "brand": "Asus",
         "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
         "price": 999.000,
@@ -50,9 +50,9 @@
         "CategoryId": 1
       },
       {
-        "nameProd": "Notebook Dell Latitude 5400 Intel I7 16gb 256gb Ssd 14",
+        "nameProd": "Notebook Dell Latitude",
         "brand": "Dell",
-        "description": "This notebook is at a special price, as it has been carefully restored by an official agent of the corresponding brand to ensure optimal performance.",
+        "description": "This notebook is at a special price, as it has been carefully restored by an official agent of the corresponding",
         "price": 539.999,
         "discountPercentage": 25,
         "priceOnSale": 404.999,
@@ -63,9 +63,9 @@
         "CategoryId": 1
       },      
       {
-        "nameProd": " Xiaomi Redmi 10c Ocean Blue Color",
+        "nameProd": " Xiaomi Redmi",
         "brand": "Redmi",
-        "description": "Double camera and more details Its 2 rear cameras of 50 Mpx/2 Mpx will allow you to take images with more details and achieve unique effects",
+        "description": "Double camera and more details Its 2 rear cameras of 50 Mpx/2 Mpx will allow you to take images with more details",
         "price": 126.999,
         "discountPercentage": 30,
         "priceOnSale": 88.899,
@@ -76,7 +76,7 @@
         "CategoryId": 2
       },      
       {
-        "nameProd": "Samsung Galaxy S22 5g 128gb + 8gb 120 Hz Black",
+        "nameProd": "Samsung Galaxy S22",
         "brand": "Samsung",
         "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
         "price": 560.176,
@@ -88,7 +88,7 @@
         "CategoryId": 2
       },      
       {
-        "nameProd": "Samsung Galaxy A54 5G 5G 256 GB awesome graphite 8 GB RAM",
+        "nameProd": "Samsung Galaxy A54",
         "brand": "Samsung",
         "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
         "price": 398.359,
@@ -100,7 +100,7 @@
         "stock": 13,
         "CategoryId": 2
       },      {
-        "nameProd": "Blu Smartphones G71l 128gb 4gb Ram Dual Sim 6.5",
+        "nameProd": "Blu Smartphones",
         "brand": "BLU",
         "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
         "price": 112.038,
@@ -113,9 +113,9 @@
         "CategoryId": 2
       },      
       {
-        "nameProd": "Smartphone Samsung Galaxy S23 Ultra Dual Sim 512 Gb 12gb Ram",
+        "nameProd": "Smartphone Samsung Galaxy S23",
         "brand": "Samsung",
-        "description": "A visual experience that will surprise you Watch your favorite series and movies with unmatched definition thanks to its 6.78-inch AMOLED screen.",
+        "description": "A visual experience that will surprise you Watch your favorite series and movies with unmatched definition thanks to its 6.",
         "price": 680.000,
         "discountPercentage": 35,
         "priceOnSale": 442.000,
@@ -125,9 +125,9 @@
         "stock": 1,
         "CategoryId": 2
       },      {
-        "nameProd": "Apple iPad (9th generation) 10.2 Wi-Fi 64GB - Space Gray",
+        "nameProd": "Apple iPad",
         "brand": "Apple",
-        "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display, the powerful A13 Bionic chip",
+        "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display.",
         "price": 399.000,
         "discountPercentage": 10,
         "priceOnSale": 350.100,
@@ -137,7 +137,7 @@
         "stock": 6,
         "CategoryId": 3
       },      {
-        "nameProd": "Tablet Aiwa Tablet TA-10-464 10.1 64GB gray and 4GB of RAM",
+        "nameProd": "Tablet Aiwa Tablet",
         "brand": "Aiwa",
         "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities",
         "price": 127.775,
@@ -150,9 +150,9 @@
         "CategoryId": 3
       },      
       {
-        "nameProd": "T-Go Gaming Tablet TB1001-4R 10 64GB silver and 4GB of RAM",
+        "nameProd": "T-Go Gaming Tablet",
         "brand": "T-Go",
-        "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution, the T-GO Tabi allows you to watch your favorite",
+        "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution.",
         "price": 116.699,
         "discountPercentage": 0,
         "image": ["https://http2.mlstatic.com/D_NQ_NP_631524-MLU72511163019_102023-O.jpg"],
@@ -162,7 +162,7 @@
         "CategoryId": 3
       },      
       {
-        "nameProd": "Gadnic Android Tablet 2gb 32gb 3g Dual Sim Cellular Chip Gps Color White",
+        "nameProd": "Gadnic Android",
         "brand": "Gadnic",
         "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
         "price": 184.599,
@@ -175,7 +175,7 @@
         "CategoryId": 3
       },      
       {
-        "nameProd": "Tablet Lenovo Tab P11 Pro with Keyboard Pack and Precision Pen 2 TB-J706F 11.5 128GB slate gray and 6GB of RAM",
+        "nameProd": "Tablet Lenovo",
         "brand": "Lenovo",
         "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
         "price": 541.199,
@@ -188,9 +188,9 @@
         "CategoryId": 3
       },      
       {
-        "nameProd": "Samsung Galaxy Watch5 Pro (Bluetooth) 1.4 caja 45mm de titanio black titanium, malla black titanium y bisel black titanium SM-R920",
+        "nameProd": "Samsung Galaxy Watch5",
         "brand": "Samsung",
-        "description": "Samsung is synonymous with quality and technological evolution. Its intuitive navigation system and good integration with other devices make",
+        "description": "Samsung is synonymous with quality and technological evolution. Its intuitive navigation system and good.",
         "price": 299.999,
         "discountPercentage": 10,
         "priceOnSale": 269.999,
@@ -201,9 +201,9 @@
         "CategoryId": 4
       },      
       {
-        "nameProd": "Apple Watch Series 8 GPS - Midnight Aluminum Case 41mm - Sport Band",
+        "nameProd": "Apple Watch Series",
         "brand": "Apple",
-        "description": "The Apple Watch Series 8 comes with advanced health apps and sensors with which you can take an electrocardiogram, measure your heart rate and blood oxygen level",
+        "description": "The Apple Watch Series 8 comes with advanced health apps and sensors with which you can take an electrocardiogram.",
         "price": 495.999,
         "discountPercentage": 33,
         "priceOnSale": 329.999,
@@ -214,7 +214,7 @@
         "CategoryId": 4
       },      
       {
-        "nameProd": "Apple Watch Series 7 (GPS, 45mm) - Green aluminum case - Green cloverleaf sport strap",
+        "nameProd": "Apple Watch Series 7",
         "brand": "Apple",
         "description": "Apple Watch Series 7 has the largest and most advanced always-on Retina display yet.",
         "price": 399.99,
@@ -227,7 +227,7 @@
         "CategoryId": 4
       },      
       {
-        "nameProd": "Huami Amazfit T-Rex 2 1.39 - Polymer alloy - Silicone - Wild green - Wild green - Black",
+        "nameProd": "Huami Amazfit",
         "brand": "Amazfit",
         "description": "Meet the Amazfit T-Rex 2 Smartwatch, designed to accompany you in your daily and sports activities.",
         "price": 166.299,
@@ -240,9 +240,9 @@
         "CategoryId": 4
       },      
       {
-        "nameProd": "Nictom Nt16 Smartwatch 1.28 Notifications + Metallic Mesh Case Color Black Mesh Color Black",
+        "nameProd": "Nictom Nt16 Smartwatch",
         "brand": "Nictom",
-        "description": "Extra help on your wrist For lovers of technology and healthy living, a smart watch is the ideal complement to all daily activities.",
+        "description": "Extra help on your wrist For lovers of technology and healthy living",
         "price": 39.999,
         "discountPercentage": 28,
         "priceOnSale": 28.799,
@@ -253,7 +253,7 @@
         "CategoryId": 4
       },      
       {
-        "nameProd": "Speaker Tower Speaker Samsung Bluetooth Mx-st40b 160w (2022) Black Color",
+        "nameProd": "Speaker Tower Speaker",
         "brand": "Samsung",
         "description": "Samsung MX-ST40B offers natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 559.888,
@@ -266,9 +266,9 @@
         "CategoryId": 5
       },      
       {
-        "nameProd": "Philco Djp10p Portable Speaker With Bluetooth 220v",
+        "nameProd": "Philco Djp10p",
         "brand": "Philco",
-        "description": "Philco DJP10 offers a natural sound, with great clarity and precision, that is dispersed evenly. A speaker that ensures power and quality equally in the reproduction of multimedia content",
+        "description": "Philco DJP10 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 41.899,
         "discountPercentage": 22,
         "priceOnSale": 32.499,
@@ -279,7 +279,7 @@
         "CategoryId": 5
       },      
       {
-        "nameProd": "Spica Sp-4408 Portable Bluetooth Speaker 8 Inch LED RGB Color Black",
+        "nameProd": "Spica Sp-4408 Portable",
         "brand": "Spica",
         "description": "Spica SP-4408 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 160.000,
@@ -292,7 +292,7 @@
         "CategoryId": 5
       },      
       {
-        "nameProd": "Philips TAS1505B/00 portable speaker with waterproof bluetooth black",
+        "nameProd": "Philips portable speaker",
         "brand": "Philips",
         "description": "Philips TAS1505B/00 offers natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 23.399,
@@ -305,9 +305,9 @@
         "CategoryId": 5
       },
       {
-        "nameProd": "Smart TV Tcl 43s5400a Fhd Google TV",
+        "nameProd": "Smart TV Tcl",
         "brand": "Tcl",
-        "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0 HDMI x2 USB 2.0 LAN",
+        "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0",
         "price": 179.999,
         "discountPercentage": 5,
         "priceOnSale": 169.999,
@@ -318,7 +318,7 @@
         "CategoryId": 6
       },
       {
-        "nameProd": "Tcl Qled L50c645 Uhd Google Tv-rv",
+        "nameProd": "Tcl Qled",
         "brand": "TCL",
         "description": "Immerse yourself in an unmatched viewing experience with the TCL L50C645 4K QLED Smart TV.",
         "price": 349.999,
@@ -331,7 +331,7 @@
         "CategoryId": 6
       },
       {
-        "nameProd": "Smart Tv Philips 65PUD7906",
+        "nameProd": "Smart Tv Philips",
         "brand": "Philips",
         "description": "Enjoy an unparalleled viewing experience with the Philips 65PUD7906/77 LED Android TV 4K 65 Smart TV.",
         "price": 549.999,
@@ -344,7 +344,7 @@
         "CategoryId": 6
       },
       {
-        "nameProd": "Tcl Qled L55c645 Uhd Google Tv-rv",
+        "nameProd": "Tcl Qled",
         "brand": "TCL",
         "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
         "price": 399.999,
