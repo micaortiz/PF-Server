@@ -24,7 +24,7 @@ const getByName = async (req, res) => {
       productsDB.forEach((product) => {
         allResults.push({
           id: product.id,
-          name: product.nameProd,
+          nameProd: product.nameProd,
           brand: product.brand,
           description: product.description,
           price: product.price,
