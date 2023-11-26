@@ -6,7 +6,7 @@
       "price": 913.739,
       "discountPercentage": 5,
       "priceOnSale": 868.052,
-      "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg"],
+      "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_696185-MLA54896761378_042023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg"],
       "active": true,
       "tags": "Limited Edition",
       "stock": 6,
@@ -17,15 +17,14 @@
       "brand": "HP",
       "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
       "price": 998.000,
-      "discountPercentage": 10,
-      "priceOnSale": 898.200,
+      "discountPercentage": 0,
       "image": ["https://http2.mlstatic.com/D_NQ_NP_822561-MLU69824429131_062023-O.jpg"],
       "active": true,
       "tags": "Special Offer",
       "stock": 4,
-      "CategoryId": 2
+      "CategoryId": 1
     }, 
-      {
+    {
         "nameProd": "Notebook Lenovo V15 15.6 Fhd G4 Amn R3-7320u 8gb Ram 256gb",
         "brand": "Lenovo",
         "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video: AMD Radeon Graphics Screen size: 15.6 FHD (1920x1080)",
@@ -36,20 +35,19 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 9,
-        "categoryId": 3
+        "CategoryId": 1
       },
       {
         "nameProd": "Notebook Gamer ROG Strix G15 G513RM-HQ084W 15.6 Ryzen 7",
         "brand": "Asus",
         "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
         "price": 999.000,
-        "discountPercentage": 5,
-        "priceOnSale": 949.050,
+        "discountPercentage": 0,
         "image": ["https://http2.mlstatic.com/D_NQ_NP_998598-MLU72418312312_102023-O.jpg"],
         "active": true,
         "tags": "New",
         "stock": 12,
-        "categoryId": 4
+        "CategoryId": 1
       },
       {
         "nameProd": "Notebook Dell Latitude 5400 Intel I7 16gb 256gb Ssd 14",
@@ -62,7 +60,7 @@
         "active": true,
         "tags": "New",
         "stock": 4,
-        "categoryId": 5
+        "CategoryId": 1
       },      
       {
         "nameProd": " Xiaomi Redmi 10c Ocean Blue Color",
@@ -75,20 +73,19 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 2,
-        "categoryId": 6
+        "CategoryId": 2
       },      
       {
         "nameProd": "Samsung Galaxy S22 5g 128gb + 8gb 120 Hz Black",
         "brand": "Samsung",
         "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
         "price": 560.176,
-        "discountPercentage": 2,
-        "priceOnSale": 548.972,
+        "discountPercentage": 0,
         "image": ["https://http2.mlstatic.com/D_NQ_NP_912991-MLU72561005817_102023-O.jpg"],
         "active": true,
         "tags": "New",
         "stock": 1,
-        "categoryId": 7
+        "CategoryId": 2
       },      
       {
         "nameProd": "Samsung Galaxy A54 5G 5G 256 GB awesome graphite 8 GB RAM",
@@ -101,7 +98,7 @@
         "active": true,
         "tags": "New",
         "stock": 13,
-        "categoryId": 8
+        "CategoryId": 2
       },      {
         "nameProd": "Blu Smartphones G71l 128gb 4gb Ram Dual Sim 6.5",
         "brand": "BLU",
@@ -113,7 +110,7 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "categoryId": 9
+        "CategoryId": 2
       },      
       {
         "nameProd": "Smartphone Samsung Galaxy S23 Ultra Dual Sim 512 Gb 12gb Ram",
@@ -126,7 +123,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 1,
-        "categoryId": 10
+        "CategoryId": 2
       },      {
         "nameProd": "Apple iPad (9th generation) 10.2 Wi-Fi 64GB - Space Gray",
         "brand": "Apple",
@@ -138,7 +135,7 @@
         "active": true,
         "tags": "New",
         "stock": 6,
-        "categoryId": 11
+        "CategoryId": 3
       },      {
         "nameProd": "Tablet Aiwa Tablet TA-10-464 10.1 64GB gray and 4GB of RAM",
         "brand": "Aiwa",
@@ -150,20 +147,19 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 24,
-        "categoryId": 12
+        "CategoryId": 3
       },      
       {
         "nameProd": "T-Go Gaming Tablet TB1001-4R 10 64GB silver and 4GB of RAM",
         "brand": "T-Go",
         "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution, the T-GO Tabi allows you to watch your favorite",
         "price": 116.699,
-        "discountPercentage": 10,
-        "priceOnSale": 105.029,
+        "discountPercentage": 0,
         "image": ["https://http2.mlstatic.com/D_NQ_NP_631524-MLU72511163019_102023-O.jpg"],
         "active": true,
         "tags": "New",
         "stock": 9,
-        "categoryId": 13
+        "CategoryId": 3
       },      
       {
         "nameProd": "Gadnic Android Tablet 2gb 32gb 3g Dual Sim Cellular Chip Gps Color White",
@@ -176,7 +172,7 @@
         "active": true,
         "tags": "New",
         "stock": 4,
-        "categoryId": 14
+        "CategoryId": 3
       },      
       {
         "nameProd": "Tablet Lenovo Tab P11 Pro with Keyboard Pack and Precision Pen 2 TB-J706F 11.5 128GB slate gray and 6GB of RAM",
@@ -189,7 +185,7 @@
         "active": true,
         "tags": "Limited Edition",
         "stock": 7,
-        "categoryId": 15
+        "CategoryId": 3
       },      
       {
         "nameProd": "Samsung Galaxy Watch5 Pro (Bluetooth) 1.4 caja 45mm de titanio black titanium, malla black titanium y bisel black titanium SM-R920",
@@ -202,7 +198,7 @@
         "active": true,
         "tags": "Limited Edition",
         "stock": 6,
-        "categoryId": 16
+        "CategoryId": 4
       },      
       {
         "nameProd": "Apple Watch Series 8 GPS - Midnight Aluminum Case 41mm - Sport Band",
@@ -215,7 +211,7 @@
         "active": true,
         "tags": "Limited Edition",
         "stock": 2,
-        "categoryId": 17
+        "CategoryId": 4
       },      
       {
         "nameProd": "Apple Watch Series 7 (GPS, 45mm) - Green aluminum case - Green cloverleaf sport strap",
@@ -228,7 +224,7 @@
         "active": true,
         "tags": "New",
         "stock": 14,
-        "categoryId": 18
+        "CategoryId": 4
       },      
       {
         "nameProd": "Huami Amazfit T-Rex 2 1.39 - Polymer alloy - Silicone - Wild green - Wild green - Black",
@@ -241,7 +237,7 @@
         "active": true,
         "tags": "New",
         "stock": 9,
-        "categoryId": 19
+        "CategoryId": 4
       },      
       {
         "nameProd": "Nictom Nt16 Smartwatch 1.28 Notifications + Metallic Mesh Case Color Black Mesh Color Black",
@@ -254,7 +250,7 @@
         "active": true,
         "tags": "Limited Edition",
         "stock": 9,
-        "categoryId": 20
+        "CategoryId": 4
       },      
       {
         "nameProd": "Speaker Tower Speaker Samsung Bluetooth Mx-st40b 160w (2022) Black Color",
@@ -267,7 +263,7 @@
         "active": true,
         "tags": "New",
         "stock": 2,
-        "categoryId": 21
+        "CategoryId": 5
       },      
       {
         "nameProd": "Philco Djp10p Portable Speaker With Bluetooth 220v",
@@ -280,7 +276,7 @@
         "active": true,
         "tags": "New",
         "stock": 5,
-        "categoryId": 22
+        "CategoryId": 5
       },      
       {
         "nameProd": "Spica Sp-4408 Portable Bluetooth Speaker 8 Inch LED RGB Color Black",
@@ -293,7 +289,7 @@
         "active": true,
         "tags": "New",
         "stock": 15,
-        "categoryId": 23
+        "CategoryId": 5
       },      
       {
         "nameProd": "Philips TAS1505B/00 portable speaker with waterproof bluetooth black",
@@ -306,6 +302,58 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "categoryId": 24
+        "CategoryId": 5
+      },
+      {
+        "nameProd": "Smart TV Tcl 43s5400a Fhd Google TV",
+        "brand": "Tcl",
+        "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0 HDMI x2 USB 2.0 LAN",
+        "price": 179.999,
+        "discountPercentage": 5,
+        "priceOnSale": 169.999,
+        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_894550-MLU72074989729_102023-F.jpg"],
+        "active": true,
+        "tags": "New",
+        "stock": 9,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Tcl Qled L50c645 Uhd Google Tv-rv",
+        "brand": "TCL",
+        "description": "Immerse yourself in an unmatched viewing experience with the TCL L50C645 4K QLED Smart TV.",
+        "price": 349.999,
+        "discountPercentage": 11,
+        "priceOnSale": 310.999,
+        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_632850-MLU72972328191_112023-F.jpg"],
+        "active": true,
+        "tags": "New",
+        "stock": 4,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Smart Tv Philips 65PUD7906",
+        "brand": "Philips",
+        "description": "Enjoy an unparalleled viewing experience with the Philips 65PUD7906/77 LED Android TV 4K 65 Smart TV.",
+        "price": 549.999,
+        "discountPercentage": 10,
+        "priceOnSale": 489.999,
+        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_803275-MLA48707824564_122021-F.jpg"],
+        "active": true,
+        "tags": "New",
+        "stock": 2,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Tcl Qled L55c645 Uhd Google Tv-rv",
+        "brand": "TCL",
+        "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
+        "price": 399.999,
+        "discountPercentage": 10,
+        "priceOnSale": 359.999,
+        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_926488-MLU71651838912_092023-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_667349-MLU71651838914_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_873565-MLU71651858840_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_944860-MLU71651858834_092023-F.jpg"],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 4,
+        "CategoryId": 6
       }
-]
+    ]
