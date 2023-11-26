@@ -99,7 +99,8 @@
         "tags": "New",
         "stock": 13,
         "CategoryId": 2
-      },      {
+      },     
+       {
         "nameProd": "Blu Smartphones",
         "brand": "BLU",
         "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
@@ -124,7 +125,8 @@
         "tags": "Special Offer",
         "stock": 1,
         "CategoryId": 2
-      },      {
+      },     
+       {
         "nameProd": "Apple iPad",
         "brand": "Apple",
         "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display.",
@@ -136,7 +138,8 @@
         "tags": "New",
         "stock": 6,
         "CategoryId": 3
-      },      {
+      },      
+      {
         "nameProd": "Tablet Aiwa Tablet",
         "brand": "Aiwa",
         "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities",
@@ -344,7 +347,7 @@
         "CategoryId": 6
       },
       {
-        "nameProd": "Tcl Qled",
+        "nameProd": "Tcl Qle",
         "brand": "TCL",
         "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
         "price": 399.999,
