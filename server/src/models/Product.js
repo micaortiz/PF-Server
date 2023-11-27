@@ -46,8 +46,7 @@ module.exports = (sequelize) => {
       },
       // si se agregan mas tags es necesario crear una nueva tabla y comentar esta
       tags: {
-        type: DataTypes.STRING,
-        // type: DataTypes.ENUM("New", "Special Offer", "Limited Edition"),
+        type: DataTypes.ENUM("None", "New", "Special Offer", "Limited Edition"),
       },
       stock: {
         type: DataTypes.INTEGER,
