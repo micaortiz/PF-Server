@@ -9,13 +9,15 @@ const updateHandler = async (
   discountPercentage,
   image,
   tags,
-  stock
+  stock, 
+  active
 ) => {
   const product = await Product.findByPk(id);
   if (!product) {
     throw new Error("Product not found");
   }
 
+  console.log("seria el active ", active);
   let priceOnSale = 0;
   if (discountPercentage === 0) {
     priceOnSale = price;
@@ -36,6 +38,7 @@ const updateHandler = async (
   if (tags !== undefined) product.tags = tags;
   if (stock !== undefined) product.stock = stock;
   if (priceOnSale !== undefined) product.priceOnSale = priceOnSale;
+  if (typeof(active) === "boolean") product.active = active
 
   await product.save();
   return product;
