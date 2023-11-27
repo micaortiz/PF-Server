@@ -6,11 +6,18 @@ module.exports = (sequelize) => {
     "User",
     {
       id: {
-        type: DataTypes.UUID,
+        type: DataTypes.INTEGER,
+        // type: DataTypes.UUID,
+        // defaultValue: DataTypes.UUIDV4,
         allowNull: false,
         primaryKey: true,
+        autoIncrement: true,
       },
       name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      lastName: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -23,6 +30,10 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       address: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      phone: {
         type: DataTypes.STRING,
         allowNull: false,
       },

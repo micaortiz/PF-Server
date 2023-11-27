@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Dory",
+        "lastName":"Marlin",
+        "email" : "technook@gmail.com",
+        "password" : "123456789D",
+        "address" : "P. Sherman 42",
+        "phone":  5492612223311,
+        "identityCard" : "40222000",
+        "postalCode" : "8080",
+        "city" : "Mendoza",
+        "active": true ,
+        "typeUser" : "Admin",
+        "CountryId" : "ARG"
+
+    },
+    {
+        "name": "Bastian",
+        "lastName": "Torres",
+        "email" : "btorres@gmail.com",
+        "password" : "12345678B",
+        "address" : "George Street 61",
+        "phone": 4407954956624,
+        "identityCard" : "AB123456C",
+        "postalCode" : "SA41 0AJ",
+        "city" : "Brynberian",
+        "active": true ,
+        "typeUser" : "AuthUser",
+        "CountryId" : "GBR"
+    },
+    {
+        "name": "Selene",
+        "lastName": "Petrakis",
+        "email" : "selenepetra@gmail.com",
+        "password" : "987654321S",
+        "address" : "Carretera Cádiz 81",
+        "phone": 34774403227,
+        "identityCard" : "12345678-A",
+        "postalCode" : "41001",
+        "city" : "Sevilla",
+        "active": true ,
+        "typeUser" : "User",
+        "CountryId" : "ESP"
+    }
+]

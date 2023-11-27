@@ -1,6 +1,9 @@
 const data = require("../../api/db.json");
+const user = require('../../api/user.json')
+const countries = require('../../api/countries.json')
 
-const { Product, Category } = require("../db.js");
+
+const { Product, Category, User, Country } = require("../db.js");
 
 const dbConnect = async () => {
   try {
@@ -37,6 +40,42 @@ const dbConnect = async () => {
     await Promise.all(productDB).then(() =>
       console.log("### Product successfully charged ###")
     );
+
+    const countryDB = countries.map((t)=>
+      Country.create({
+        id: t.cca3,
+        name: t.name.common
+      })
+    );
+
+    await Promise.all(countryDB).then(()=>
+      console.log("### Country successfully charged ###")
+    );
+  
+    const userDB = user.map((u) =>
+      User.create({
+        // id: u.id,
+        name: u.name,
+        lastName: u.lastName,
+        email: u.email,
+        password: u.password,
+        address : u.address,
+        phone: u.phone,
+        identityCard: u.identityCard,
+        postalCode: u.postalCode,
+        city: u.city,
+        active: u.active,
+        typeUser: u.typeUser,
+        CountryId: u.CountryId, // verificar
+      })
+    )
+
+    await Promise.all(userDB).then(()=>
+      console.log('### User successfully charged ###')
+    );
+
+
+
 
     // console.log('### Database loaded successfully ###');
   } catch (error) {

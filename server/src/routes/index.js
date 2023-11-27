@@ -14,6 +14,7 @@ const {
 const { getAllProductHandler } = require("../handlers/getProductsByIdHandler");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
+const userRouter = require("./userRouter");
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -30,6 +31,13 @@ router.get("/products/name?", getByName);
 router.get("/products", getAllProducts)
 // Products By Id
 router.get("/products/:id", getProductsById);
+
+/* users */
+router.use('/users', userRouter)
+
+
+
+
 module.exports = {
   router,
 };
