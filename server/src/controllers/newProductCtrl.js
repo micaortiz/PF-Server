@@ -8,6 +8,7 @@ const newProduct = async (req, res) => {
     price,
     discountPercentage,
     image,
+    active,
     tags,
     stock,
     CategoryId,
@@ -20,6 +21,7 @@ const newProduct = async (req, res) => {
       price,
       discountPercentage,
       image,
+      active,
       tags,
       stock,
       CategoryId
