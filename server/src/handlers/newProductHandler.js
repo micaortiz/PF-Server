@@ -1,6 +1,6 @@
 const {Product , Category} = require("../db")
 
-const createProduct = async (nameProd, brand, description, price, discountPercentage, image, tags, stock, CategoryId) =>{
+const createProduct = async (nameProd, brand, description, price, discountPercentage, image, active,tags, stock, CategoryId) =>{
     try {
         let priceOnSale = 0;
         if (discountPercentage === 0) { //* Se agregó estas lineas de código para válidar que el decuento del producto no pase un maximo ni un minimo
@@ -13,7 +13,7 @@ const createProduct = async (nameProd, brand, description, price, discountPercen
 
 
         const [product, created] = await Product.findOrCreate({
-            where: { nameProd, brand, description, price, discountPercentage, priceOnSale, image, tags, stock }
+            where: { nameProd, brand, description, price, discountPercentage, priceOnSale, image, active,tags, stock }
         });
 
         console.log("Product:", product.get());
