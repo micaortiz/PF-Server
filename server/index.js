@@ -1,9 +1,10 @@
+require("dotenv").config(); // DEPLOY
+const {PORT} = process.env; // DEPLOY
+
 /* server config */
 const server = require("./src/server");
-const PORT = 3001;
 
 /* bd config */
-require("dotenv").config();
 const { conn } = require("./src/db");
 
 const { dbConnect } = require("./src/utils/dbConnect.js");
@@ -15,7 +16,7 @@ conn
   .then(() => {
     // establecer conexion con la bd
       dbConnect();
-    server.listen(PORT, () => {
+    server.listen(PORT,"0.0.0.0", () => {
       console.log(`Server listening on port ${PORT}`);
     });
   })
