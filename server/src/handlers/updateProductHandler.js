@@ -9,7 +9,8 @@ const updateHandler = async (
   discountPercentage,
   image,
   tags,
-  stock
+  stock,
+  active
 ) => {
   const product = await Product.findByPk(id);
   if (!product) {
@@ -22,8 +23,13 @@ const updateHandler = async (
   } else if (discountPercentage > 0 && discountPercentage <= 100) {
     priceOnSale = (price - price * (discountPercentage / 100)).toString();
   }
-  else {
+  /*  else {
     throw new Error("discount value must be between 0 and 100");
+  } */
+  if (discountPercentage !== undefined) {
+    if (discountPercentage < 0 || discountPercentage > 100) {
+      throw new Error("discount value must be between 0 and 100");
+    }
   }
 
   if (nameProd !== undefined) product.nameProd = nameProd;
@@ -36,6 +42,7 @@ const updateHandler = async (
   if (tags !== undefined) product.tags = tags;
   if (stock !== undefined) product.stock = stock;
   if (priceOnSale !== undefined) product.priceOnSale = priceOnSale;
+  if (active !== undefined) product.active = active;
 
   await product.save();
   return product;

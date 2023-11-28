@@ -11,7 +11,9 @@ const updateProduct = async (req, res) => { //*
     image,
     tags,
     stock,
+    active,
   } = req.body;
+
 
   try {
     const update = await updateHandler(
@@ -23,9 +25,10 @@ const updateProduct = async (req, res) => { //*
       discountPercentage,
       image,
       tags,
-      stock
+      stock,
+      active,
     );
-
+  
     console.log("Succesfully Updated");
     res.status(200).json(update);
   } catch (error) {

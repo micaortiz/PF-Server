@@ -5,10 +5,13 @@ const { deleteUser } = require("../controllers/userController/deleteUser");
 
 const userRouter = Router()
 
+
+const { updateUsers } = require ("../controllers/updateUserCtrl")
+
 //Create
 
 //Update
-
+userRouter.put("/", updateUsers);
 //All Users
 
 //User by Id
