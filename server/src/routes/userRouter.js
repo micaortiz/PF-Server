@@ -1,4 +1,8 @@
 const { Router } = require("express");
+
+
+const { deleteUser } = require("../controllers/userController/deleteUser");
+
 const userRouter = Router()
 
 //Create
@@ -12,6 +16,6 @@ const userRouter = Router()
 //All Country
 
 //Delete
-
+userRouter.delete('/:id' , deleteUser)
 
 module.exports = userRouter

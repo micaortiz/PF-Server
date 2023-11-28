@@ -6,6 +6,7 @@ const { getByName } = require("../controllers/productsName");
 const { updateProduct } = require("../controllers/updateProductCtrl");
 const { deleteProduct } = require("../controllers/deletePrdocutCtrl");
 const { getAllProducts } = require("../controllers/getAll_Products")
+
 const router = express.Router();
 // const {Router} = require('express')
 const {
@@ -15,6 +16,7 @@ const { getAllProductHandler } = require("../handlers/getProductsByIdHandler");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
 const userRouter = require("./userRouter");
+const cartRouter = require("./cartRouter");
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -38,6 +40,8 @@ router.use('/users', userRouter)
 
 
 
+/* cart */
+router.use('/cart', cartRouter)
 module.exports = {
   router,
 };
