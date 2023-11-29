@@ -13,17 +13,13 @@ module.exports = (sequelize) => {
         primaryKey: true,
         autoIncrement: true,
       },
-      userName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       name: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       lastName: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       email: {
         type: DataTypes.STRING,
@@ -31,23 +27,22 @@ module.exports = (sequelize) => {
       },
       address: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       phone: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       identityCard: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       postalCode: {
         type: DataTypes.STRING,
-        allowNull: true,
+        // allowNull: false,
       },
       city: {
         type: DataTypes.STRING,
-        allowNull: true,
       },
       active: {
         type: DataTypes.BOOLEAN,

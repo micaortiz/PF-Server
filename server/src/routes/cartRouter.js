@@ -1,12 +1,12 @@
 const { Router } = require("express");
-// import mica  *ELIMINAR ESTOS COMENTARIOS Y REEMPLAZARLOS POR SUS IMPORT*
-// import cristian
+// const { createCart } = require("../controllers/cartController/createCart");
+// import cristian *ELIMINAR ESTOS COMENTARIOS Y REEMPLAZARLOS POR SUS IMPORT*
 // import bruno
 // import cristian
 const cartRouter = Router()
 
 //Create
-
+// cartRouter.post('/', createCart)
 //Update
 
 //Delete

@@ -3,8 +3,16 @@ const { Sequelize } = require("sequelize");
 
 const fs = require("fs");
 const path = require("path");
+<<<<<<< HEAD
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env; // LOCAL
 //const { PG_DATABASE_URL } = process.env; // DEPLOY
+=======
+// LOCAL
+// const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env; 
+
+// DEPLOY
+const { PG_DATABASE_URL } = process.env; 
+>>>>>>> develop
 
 const sequelize = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, //LOCAL

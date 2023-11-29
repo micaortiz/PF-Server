@@ -66,7 +66,7 @@ const dbConnect = async () => {
         city: u.city,
         active: u.active,
         typeUser: u.typeUser,
-        CountryId: u.CountryId, // verificar
+        CountryId: u.CountryId, 
       })
     )
 
