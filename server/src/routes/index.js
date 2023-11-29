@@ -17,6 +17,7 @@ const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
 const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
+const { getAllCountryHandler } = require('../handlers/getAllCountryHandler')
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -37,7 +38,8 @@ router.get("/products/:id", getProductsById);
 /* users */
 router.use('/users', userRouter)
 
-
+/*All country */
+router.get('/country', getAllCountryHandler)
 
 
 /* cart */
