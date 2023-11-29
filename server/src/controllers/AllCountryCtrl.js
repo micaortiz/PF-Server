@@ -5,4 +5,4 @@ const AllCountryCtrl = async () => {
   return allCountry;
 };
 
-module.exports = AllCountryCtrl ;
+module.exports = AllCountryCtrl;

@@ -9,7 +9,7 @@ const userRouter = Router()
 const { updateUsers } = require ("../controllers/updateUserCtrl")
 
 //Create
-userRouter.post('/create',createUserHandler)
+userRouter.post('/create', createUserHandler)
 //Update
 userRouter.put("/", updateUsers);
 //All Users

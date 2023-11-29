@@ -14,7 +14,7 @@ const createUserHandler = async (req, res) => {
     active,
     typeUser,
     CountryId,
-  } = req.body;
+  }= req.body;
 
   try {
     // Llamar a la función que crea el usuario

@@ -1,6 +1,6 @@
 const { User, Country } = require("../db");
 
-const postUserCtrl = async (name, lastName, email, password, address, phone, identityCard, postalCode, city, active, typeUser, CountryId) => {
+const postUserCtrl = async(name, lastName, email, password, address, phone, identityCard, postalCode, city, active, typeUser, CountryId) => {
 
   const newUser = await User.create({ name, lastName, email, password, address, phone, identityCard, postalCode, city, active, typeUser });
 

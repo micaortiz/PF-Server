@@ -1,4 +1,4 @@
-const  AllCountryCtrl = require("../controllers/AllCountryCtrl");
+const AllCountryCtrl = require("../controllers/AllCountryCtrl");
 
 const getAllCountryHandler = async (req, res) => {
     try {
