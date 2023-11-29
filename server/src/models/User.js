@@ -15,39 +15,34 @@ module.exports = (sequelize) => {
       },
       name: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       lastName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       email: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       address: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       phone: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       identityCard: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       postalCode: {
         type: DataTypes.STRING,
-        allowNull: false,
+        // allowNull: false,
       },
       city: {
         type: DataTypes.STRING,
-        allowNull: false,
       },
       active: {
         type: DataTypes.BOOLEAN,
@@ -56,6 +51,7 @@ module.exports = (sequelize) => {
       },
       typeUser: {
         type: DataTypes.ENUM("Admin", "AuthUser", "User"),
+        defaultValue: "User",
         allowNull: false,
       },
     },
