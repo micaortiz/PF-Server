@@ -2,10 +2,10 @@ const { User } = require("../db");
 
 const updateHandlerUser = async (
   id,
+  userName,
   name,
   lastName,
   email,
-  password,
   address,
   phone,
   identityCard,
@@ -21,10 +21,10 @@ const updateHandlerUser = async (
     throw new Error("user not found");
   }
 
+  if (userName !== undefined) user.userName = userName;
   if (name !== undefined) user.name = name;
   if (lastName !== undefined) user.lastName = lastName;
   if (email !== undefined) user.email = email;
-  if (password !== undefined) user.password = password;
   if (address !== undefined) user.address = address;
   if (phone !== undefined) user.phone = phone;
   if (identityCard !== undefined) user.identityCard = identityCard;

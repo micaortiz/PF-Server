@@ -55,10 +55,10 @@ const dbConnect = async () => {
     const userDB = user.map((u) =>
       User.create({
         // id: u.id,
+        userName: u.userName,
         name: u.name,
         lastName: u.lastName,
         email: u.email,
-        password: u.password,
         address : u.address,
         phone: u.phone,
         identityCard: u.identityCard,

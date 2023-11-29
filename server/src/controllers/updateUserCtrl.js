@@ -3,10 +3,10 @@ const { updateHandlerUser } = require("../handlers/updateUserHandler");
 const updateUsers = async (req, res) => {
   const {
     id,
+    userName,
     name,
     lastName,
     email,
-    password,
     address,
     phone,
     identityCard,
@@ -21,10 +21,10 @@ const updateUsers = async (req, res) => {
   try {
     const update = await updateHandlerUser(
       id,
+      userName,
       name,
       lastName,
       email,
-      password,
       address,
       phone,
       identityCard,
