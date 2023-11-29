@@ -58,7 +58,6 @@ const dbConnect = async () => {
         name: u.name,
         lastName: u.lastName,
         email: u.email,
-        password: u.password,
         address : u.address,
         phone: u.phone,
         identityCard: u.identityCard,
@@ -66,7 +65,7 @@ const dbConnect = async () => {
         city: u.city,
         active: u.active,
         typeUser: u.typeUser,
-        CountryId: u.CountryId, // verificar
+        CountryId: u.CountryId, 
       })
     )
 

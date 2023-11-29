@@ -31,7 +31,7 @@ const getProductsName = async (searchTerm) => {
         image: product.image,
         active: product.active,
         tags: product.tags,
-        category: product.Category.n
+        category: product.Category.nameCat,
       });
     });
     return allResults;
