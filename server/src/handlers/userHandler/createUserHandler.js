@@ -5,7 +5,7 @@ const postUserCtrl = async(email, token) => {
     const user = await User.findOne({ where: { email: email } });
 
     if (!user) {
-      // Si el usuario no existe, créalo
+
       const newUser = await User.create({
         email: email,
         token: token,
