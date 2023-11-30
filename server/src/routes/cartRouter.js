@@ -6,7 +6,7 @@ const { getUpdateCarShopping } = require ("../controllers/getAndUpdateCarShoppin
 const cartRouter = Router()
 
 //Create
-
+// cartRouter.post('/', createCart)
 //Update
 cartRouter.put("/", getUpdateCarShopping)
 //Delete
