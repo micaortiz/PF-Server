@@ -4,6 +4,7 @@ const createCart = async (req, res) => {
   try {
     const { UserId, productId, quantityProd } = req.body;
 
+    console.log(UserId, productId, quantityProd);
     // Buscar el usuario y su carrito asociado
     let user = await User.findByPk(UserId, {
       include: {
