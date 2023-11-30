@@ -1,8 +1,8 @@
 const { Router } = require("express");
 // import mica  *ELIMINAR ESTOS COMENTARIOS Y REEMPLAZARLOS POR SUS IMPORT*
-const { getUpdateCarShopping } = require ("../controllers/getAndUpdateCarShopping")
 // import bruno
-// import cristian
+const { getUpdateCarShopping } = require ("../controllers/getAndUpdateCarShopping")
+
 const cartRouter = Router()
 
 //Create
