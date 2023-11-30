@@ -22,6 +22,14 @@ module.exports = (sequelize) => {
         allowNull: false,
         defaultValue: "In Process",
       },
+      mercadopagoTransactionId: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      mercadopagoTransactionStatus: {
+        type: DataTypes.ENUM("Approved", "Rejected", "Pending"),
+        allowNull: true,
+      },
     },
     { timestamps: false }
   );
