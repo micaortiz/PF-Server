@@ -1,17 +1,19 @@
 const { User, Country } = require("../db");
 
-const postUserCtrl = async(name, lastName, email, password, address, phone, identityCard, postalCode, city, active, typeUser, CountryId) => {
+const postUserCtrl = async(email, CountryId) => {
+  try {
+    const [user, created] = await User.findOrCreate({where: {email: email}})
 
-  const newUser = await User.create({ name, lastName, email, password, address, phone, identityCard, postalCode, city, active, typeUser });
+    const setCountry = await user.setCountry(CountryId)
+    if(setCountry){
+      return user
+    }
 
-  // Buscar el país por su ID
-  const country = await Country.findByPk(CountryId);
 
-  // Asociar el usuario con el país
-  await newUser.setCountry(country);
-
-  // Devolver el usuario creado con la información del país
-return newUser;
+  } catch (error) {
+    console.error("Error:", error);
+    return error;
+  }
 };
 
 module.exports = { postUserCtrl };
