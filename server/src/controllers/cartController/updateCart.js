@@ -10,10 +10,10 @@ const updateCart = async (req, res) => {
       productId,
       quantityProU,
       UserId,
-      totalPrice,
+      totalPrice
     );
     if (!cartShopping) return res.status(400).send("Not Found");
-    return res.status(200).json(cartShopping)
+    return res.status(200).json(cartShopping);
   } catch (error) {
     return res.status(400).send(error.message);
   }
