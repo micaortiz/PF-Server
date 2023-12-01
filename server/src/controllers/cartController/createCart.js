@@ -97,7 +97,7 @@ const createCart = async (req, res) => {
       id: cart.id,
       UserId: cart.UserId,
       items: cart.Products.map((product) => ({
-        // puede ser items o products
+   
         nameProd: product.nameProd,
         image: product.image[0],
         description: product.description,
@@ -114,7 +114,7 @@ const createCart = async (req, res) => {
 
     return res.status(200).json(itemsCart); //toy cansado jefe
   } catch (error) {
-    return res.status(404).json({ error: error.message });
+    return res.status(500).json({ error: error.message });
   }
 };
 
