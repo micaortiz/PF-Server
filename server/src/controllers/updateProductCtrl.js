@@ -12,6 +12,7 @@ const updateProduct = async (req, res) => { //*
     tags,
     stock,
     active,
+    CategoryId,
   } = req.body;
 
 
@@ -27,6 +28,7 @@ const updateProduct = async (req, res) => { //*
       tags,
       stock,
       active,
+      CategoryId
     );
   
     console.log("Succesfully Updated");
