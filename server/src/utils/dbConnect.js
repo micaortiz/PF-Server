@@ -34,7 +34,7 @@ const dbConnect = async () => {
         active: e.active,
         tags: e.tags,
         stock: e.stock,
-        CategoryId: e.CategoryId,
+        CategoryId: e.CategoryId
       })
     );
     await Promise.all(productDB).then(() =>
@@ -65,6 +65,7 @@ const dbConnect = async () => {
         city: u.city,
         active: u.active,
         typeUser: u.typeUser,
+        token: u.token,
         CountryId: u.CountryId, 
       })
     )
