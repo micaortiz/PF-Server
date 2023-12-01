@@ -13,11 +13,11 @@ const router = express.Router();
 const {
   getAllCategoriesHandlers,
 } = require("../handlers/getAllCategoriesHandlers");
-const { getAllProductHandler } = require("../handlers/getProductsByIdHandler");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
 const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
+const paymentsRouter = require("./paymentsRouter");
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -37,6 +37,9 @@ router.get("/products/:id", getProductsById);
 
 /* users */
 router.use('/users', userRouter)
+
+/* payments */
+router.use("/payments", paymentsRouter)
 
 /*All country*/
 router.get('/country', getAllCountryHandler)
