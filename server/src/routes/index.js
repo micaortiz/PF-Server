@@ -6,6 +6,7 @@ const { getByName } = require("../controllers/productsName");
 const { updateProduct } = require("../controllers/updateProductCtrl");
 const { deleteProduct } = require("../controllers/deletePrdocutCtrl");
 const { getAllProducts } = require("../controllers/getAll_Products")
+const { getAllCountryHandler } = require('../handlers/getAllCountryHandler')
 
 const router = express.Router();
 // const {Router} = require('express')
@@ -39,6 +40,9 @@ router.use('/users', userRouter)
 
 /* payments */
 router.use("/payments", paymentsRouter)
+
+/*All country*/
+router.get('/country', getAllCountryHandler)
 
 
 /* cart */

@@ -10,7 +10,8 @@ const updateHandler = async (
   image,
   tags,
   stock,
-  active
+  active,
+  CategoryId
 ) => {
   const product = await Product.findByPk(id);
   if (!product) {
@@ -43,6 +44,7 @@ const updateHandler = async (
   if (stock !== undefined) product.stock = stock;
   if (priceOnSale !== undefined) product.priceOnSale = priceOnSale;
   if (active !== undefined) product.active = active;
+  if (CategoryId !== undefined) product.CategoryId = CategoryId;
 
   await product.save();
   return product;

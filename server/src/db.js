@@ -9,6 +9,15 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env; // LOCAL
 const sequelize = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, //LOCAL
   // PG_DATABASE_URL,   // DEPLOY
+// LOCAL
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
+
+// DEPLOY
+//const { PG_DATABASE_URL } = process.env;
+
+const sequelize = new Sequelize(
+  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, //LOCAL
+  //PG_DATABASE_URL, // DEPLOY
 
   {
     logging: false,
@@ -41,7 +50,7 @@ let capsEntries = entries.map((entry) => [
 
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Product, Category, ProductChange, Cart, User, Country, Review } =
+const { Product, Category, ProductChange, Cart, User, Country, Review, Order } =
   sequelize.models;
 
 /* 1:1 */
@@ -61,11 +70,12 @@ Country.hasMany(User);
 Review.belongsTo(User);
 User.hasMany(Review);
 
-/* N:M */
-Product.belongsToMany(Cart, { through: "Product_Cart", timestamps: false });
-Cart.belongsToMany(Product, { through: "Product_Cart", timestamps: false });
+Order.belongsTo(User);
+User.hasMany(Order);
 
-// Falta relacion entre User y Order
+/* N:M */
+Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });
+Cart.belongsToMany(Product, { through: "Product_Carts", timestamps: false });
 
 module.exports = {
   ...sequelize.models,
