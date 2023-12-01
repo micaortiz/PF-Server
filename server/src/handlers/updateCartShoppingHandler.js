@@ -1,10 +1,6 @@
-const { Cart, Product, Category } = require("../db");
+const { Cart, Product, Category, Product_Carts } = require("../db");
 
-const updateCartHandler = async (
-  productId,
-  quantityProU,
-  UserId,
-) => {
+const updateCartHandler = async (productId, quantityProU, UserId) => {
   try {
     console.log("Cantidad de producto a actualizar ", quantityProU);
     const cartShopping = await Cart.findOne({
@@ -52,40 +48,33 @@ const updateCartHandler = async (
     }
 
     // Actualizar la cantidad en la tabla intermedia (Product_Carts)
-    let productTemp = productUpdateCart.Product_Carts.quantityProd;
+    const oldQuantity = productUpdateCart.Product_Carts.quantityProd;
     productUpdateCart.Product_Carts.quantityProd = quantityProU;
+
+    await Product_Carts.update(
+      { quantityProd: quantityProU },
+      {
+        where: {
+          CartId: cartShopping.id,
+          ProductId: productId,
+        },
+      }
+    );
 
     const priceProduct =
       productUpdateCart.priceOnSale !== null
         ? productUpdateCart.priceOnSale
         : productUpdateCart.price;
-
-    const totalPriceProduct =
-      cartShopping.totalPrice -
-      (priceProduct * productUpdateCart.Product_Carts.quantityProd);
-
-    // Calcular el nuevo precio total del producto
-
-    cartShopping.totalPrice = totalPriceProduct;
+    const oldProductTotalPrice = priceProduct * oldQuantity;
+    const newProductTotalPrice = priceProduct * quantityProU;
 
     // Actualizar el precio total del carrito
-
-    /* let priceTemp = cartShopping.totalPrice;
-    let newProductTotalPrice = 0;
-    if (quantityProU > productTemp) {
-      let diference = quantityProU - productTemp;
-      newProductTotalPrice = diference * productPrice;
-      priceTemp += newProductTotalPrice;
-      console.log("Tendria que sumar", priceTemp);
-    } else {
-      console.log("Tendria que restar ", priceTemp);
-      let diference = productTemp - quantityProU;
-      newProductTotalPrice = diference * productPrice;
-      priceTemp -= newProductTotalPrice;
-      console.log("nuevo Precio del producto ", newProductTotalPrice);
-    }
-    cartShopping.totalPrice = priceTemp;
-    console.log("Precio temporal ", priceTemp); */
+    cartShopping.totalPrice =
+      cartShopping.totalPrice - oldProductTotalPrice + newProductTotalPrice;
+    console.log("Antiguo valor ", oldProductTotalPrice);
+    console.log("Nuevo valor ", newProductTotalPrice);
+    console.log("Seria la cantidad antigua ", oldQuantity);
+    console.log("Seria la cantidad nueva ", quantityProU);
 
     console.log(
       "El total de la actualización de los elementos en el carrito ",
@@ -94,7 +83,7 @@ const updateCartHandler = async (
     // Guardar los cambios en la base de datos
     await cartShopping.save();
 
-    console.log("Precio del producto", totalPriceProduct);
+    console.log("Precio del producto", cartShopping.totalPrice);
     const itemsCart = {
       UserId: cartShopping.UserId,
       items: cartShopping.Products.map((product) => ({
@@ -107,7 +96,7 @@ const updateCartHandler = async (
         quantityProd: product.Product_Carts.quantityProd || 0, // Verificar si existe 'quantityProd'
         category: product.Category.nameCat,
       })),
-      totalPrice: cartShopping.totalPrice.toFixed(2),
+      totalPrice: cartShopping.totalPrice,
     };
 
     return itemsCart;
