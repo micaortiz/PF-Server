@@ -38,10 +38,11 @@ router.get("/products/:id", getProductsById);
 /* users */
 router.use('/users', userRouter)
 
-/*All country*/
-router.get('/country', getAllCountryHandler)
 /* payments */
 router.use("/payments", paymentsRouter)
+
+/*All country*/
+router.get('/country', getAllCountryHandler)
 
 
 /* cart */
