@@ -4,7 +4,6 @@ const updateCartHandler = async (
   productId,
   quantityProU,
   UserId,
-  totalPrice
 ) => {
   try {
     console.log("Cantidad de producto a actualizar ", quantityProU);
@@ -56,20 +55,22 @@ const updateCartHandler = async (
     let productTemp = productUpdateCart.Product_Carts.quantityProd;
     productUpdateCart.Product_Carts.quantityProd = quantityProU;
 
+    const priceProduct =
+      productUpdateCart.priceOnSale !== null
+        ? productUpdateCart.priceOnSale
+        : productUpdateCart.price;
+
+    const totalPriceProduct =
+      cartShopping.totalPrice -
+      (priceProduct * productUpdateCart.Product_Carts.quantityProd);
+
     // Calcular el nuevo precio total del producto
-    /* const productPrice =
-      productUpdateCart.priceOnSale || productUpdateCart.price;
-    productPrice.toFixed(3); */
-    let totalPrice = 0;
-    cartShopping.Products.forEach((product) => {
-      const productPrice =
-        product.priceOnSale !== null ? product.priceOnSale : product.price;
-      totalPrice += productPrice * product.Product_Carts.quantityProd;
-    });
+
+    cartShopping.totalPrice = totalPriceProduct;
 
     // Actualizar el precio total del carrito
 
-    let priceTemp = cartShopping.totalPrice;
+    /* let priceTemp = cartShopping.totalPrice;
     let newProductTotalPrice = 0;
     if (quantityProU > productTemp) {
       let diference = quantityProU - productTemp;
@@ -84,7 +85,7 @@ const updateCartHandler = async (
       console.log("nuevo Precio del producto ", newProductTotalPrice);
     }
     cartShopping.totalPrice = priceTemp;
-    console.log("Precio temporal ", priceTemp);
+    console.log("Precio temporal ", priceTemp); */
 
     console.log(
       "El total de la actualización de los elementos en el carrito ",
@@ -93,7 +94,7 @@ const updateCartHandler = async (
     // Guardar los cambios en la base de datos
     await cartShopping.save();
 
-    console.log("Precio del producto", productPrice);
+    console.log("Precio del producto", totalPriceProduct);
     const itemsCart = {
       UserId: cartShopping.UserId,
       items: cartShopping.Products.map((product) => ({
@@ -106,7 +107,7 @@ const updateCartHandler = async (
         quantityProd: product.Product_Carts.quantityProd || 0, // Verificar si existe 'quantityProd'
         category: product.Category.nameCat,
       })),
-      totalPrice: cartShopping.totalPrice.toFixed(3),
+      totalPrice: cartShopping.totalPrice.toFixed(2),
     };
 
     return itemsCart;
