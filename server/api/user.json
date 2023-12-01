@@ -23,7 +23,7 @@
         "postalCode" : "SA41 0AJ",
         "city" : "Brynberian",
         "active": true ,
-        "typeUser" : "AuthUser",
+        "typeUser" : "User",
         "CountryId" : "GBR"
     },
     {
