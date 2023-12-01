@@ -13,7 +13,7 @@ const payment = new Preference(client);
 // funcion de agregar
 const createOrder = async (req, res) => {
   try {
-    // la info se recibe como un objeto individual, hay que ver las variables como vienen y cargar las
+    // la info se recibe como un objeto individual, hay que ver las variables como vienen y cargarlas
     const {items} = req.body;
     console.log(items);
 
