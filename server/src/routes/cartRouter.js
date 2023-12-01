@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const { createCart } = require("../controllers/cartController/createCart");
 // import cristian *ELIMINAR ESTOS COMENTARIOS Y REEMPLAZARLOS POR SUS IMPORT*
-// import bruno
+const { deleteProductsCart } = require("../controllers/cartController/deleteProductsCart");
 // import cristian
 const cartRouter = Router()
 
@@ -10,7 +10,7 @@ cartRouter.post('/', createCart)
 //Update
 
 //Delete
-
+cartRouter.delete('/', deleteProductsCart)
 //Cart by User
 
 
