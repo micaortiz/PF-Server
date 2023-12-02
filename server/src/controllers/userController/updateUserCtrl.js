@@ -1,4 +1,6 @@
-const { updateHandlerUser } = require("../handlers/updateUserHandler");
+const {
+  updateHandlerUser,
+} = require("../../handlers/userHandler/updateUserHandler");
 
 const updateUsers = async (req, res) => {
   const {
@@ -17,7 +19,6 @@ const updateUsers = async (req, res) => {
     CountryId,
   } = req.body;
 
-  
   try {
     const update = await updateHandlerUser(
       id,

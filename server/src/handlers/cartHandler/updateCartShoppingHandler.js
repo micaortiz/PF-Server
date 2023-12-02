@@ -1,4 +1,4 @@
-const { Cart, Product, Category, Product_Carts } = require("../db");
+const { Cart, Product, Category, Product_Carts } = require("../../db");
 
 const updateCartHandler = async (productId, quantityProU, UserId) => {
   try {
