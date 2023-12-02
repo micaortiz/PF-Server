@@ -7,6 +7,7 @@ paymentsRouter.post("/createOrder", createOrder);
 
 //Confirmation
 paymentsRouter.get("/orderFeedback", purchaseResults);
+paymentsRouter.post("/savePurchaseData", purchaseResults);
 
 
 module.exports = paymentsRouter

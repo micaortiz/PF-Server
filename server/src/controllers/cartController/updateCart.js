@@ -1,6 +1,6 @@
 const {
   updateCartHandler,
-} = require("../../handlers/updateCartShoppingHandler");
+} = require("../../handlers/cartHandler/updateCartShoppingHandler");
 
 const updateCart = async (req, res) => {
   const { UserId, productId, quantityProd } = req.body;
