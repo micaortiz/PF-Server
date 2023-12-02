@@ -28,7 +28,6 @@ const updateCartHandler = async (productId, quantityProU, UserId) => {
       return { error: "No shopping cart associated with the User" };
     }
 
-    // Inicializar totalPrice a 0 si es null
     console.log("Esto esta en la base de datos", cartShopping.totalPrice);
 
     if (!cartShopping.Products || cartShopping.Products.length === 0) {
@@ -47,7 +46,7 @@ const updateCartHandler = async (productId, quantityProU, UserId) => {
       return { error: "Not enough units" };
     }
 
-    // Actualizar la cantidad en la tabla intermedia (Product_Carts)
+    //* Actualizar la cantidad en la tabla intermedia (Product_Carts)
     const oldQuantity = productUpdateCart.Product_Carts.quantityProd;
     productUpdateCart.Product_Carts.quantityProd = quantityProU;
 
@@ -68,7 +67,7 @@ const updateCartHandler = async (productId, quantityProU, UserId) => {
     const oldProductTotalPrice = priceProduct * oldQuantity;
     const newProductTotalPrice = priceProduct * quantityProU;
 
-    // Actualizar el precio total del carrito
+    //* Actualizar el precio total del carrito
     cartShopping.totalPrice =
       cartShopping.totalPrice - oldProductTotalPrice + newProductTotalPrice;
     console.log("Antiguo valor ", oldProductTotalPrice);
@@ -80,7 +79,7 @@ const updateCartHandler = async (productId, quantityProU, UserId) => {
       "El total de la actualización de los elementos en el carrito ",
       cartShopping.totalPrice
     );
-    // Guardar los cambios en la base de datos
+    //* Guardar los cambios en la base de datos
     await cartShopping.save();
 
     console.log("Precio del producto", cartShopping.totalPrice);

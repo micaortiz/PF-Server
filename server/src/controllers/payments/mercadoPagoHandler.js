@@ -1,12 +1,12 @@
 require("dotenv").config();
-const {ACCESS_TOKEN, IDEM_POTENCY} = process.env;
+const { ACCESS_TOKEN, IDEM_POTENCY } = process.env;
 
-const {MercadoPagoConfig, Preference} = require("mercadopago");
+const { MercadoPagoConfig, Preference } = require("mercadopago");
 
 // VERSION 2.0
 
 const client = new MercadoPagoConfig({
-  accessToken: ACCESS_TOKEN
+  accessToken: ACCESS_TOKEN,
 });
 
 const payment = new Preference(client);
@@ -14,9 +14,8 @@ const payment = new Preference(client);
 const createOrder = async (req, res) => {
   try {
     // la info se recibe como un objeto individual, hay que ver las variables como vienen y cargarlas
-    const {items} = req.body;
-    console.log(items);
-
+    const { items } = req.body;
+    console.log("Seria los items ", items);
 
     let preference = {
       body: {
@@ -40,9 +39,9 @@ const createOrder = async (req, res) => {
         //   }
         // },
         back_urls: {
-          success: 'http://localhost:3001/payments/orderFeedback',
-          failure: 'http://localhost:3001/payments/orderFeedback',
-          pending: 'http://localhost:3001/payments/orderFeedback'
+          success: "http://localhost:3001/payments/orderFeedback",
+          failure: "http://localhost:3001/payments/orderFeedback",
+          pending: "http://localhost:3001/payments/orderFeedback",
         },
         // auto_return: 'approved',
         // payment_methods: {
@@ -56,30 +55,29 @@ const createOrder = async (req, res) => {
         // expires: false,
         // expiration_date_from: '2016-02-01T12:00:00.000-04:00',
         // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
-      }
-    }
+      },
+    };
 
     const response = await payment.create(preference);
 
     res.status(200).send(response);
   } catch (error) {
-    res.status(400).json({error: error.message});
+    res.status(400).json({ error: error.message });
   }
 };
 
 const purchaseResults = (req, res) => {
   try {
-    const {payment_id, status, merchant_order_id } = req.query;
+    const { payment_id, status, merchant_order_id } = req.query;
     console.log("paso por aca");
     res.json({
-        payment: payment_id,
-        status: status,
-        merchantOrder: merchant_order_id
+      payment: payment_id,
+      status: status,
+      merchantOrder: merchant_order_id,
     });
-
   } catch (error) {
-    res.status(400).json({error: error.message});
+    res.status(400).json({ error: error.message });
   }
 };
 
-module.exports = {createOrder, purchaseResults};
+module.exports = { createOrder, purchaseResults };
