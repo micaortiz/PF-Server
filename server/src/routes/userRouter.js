@@ -4,6 +4,7 @@ const { createUser } = require("../controllers/userController/postUserCtrl");
 const { updateUsers } = require("../controllers/userController/updateUserCtrl");
 const { getAllUsers } = require("../controllers/userController/getAllUsers");
 const { deleteUser } = require("../controllers/userController/deleteUser");
+const { getUserById } = require("../controllers/userController/getUserById");
 
 const userRouter = Router();
 
@@ -14,9 +15,7 @@ userRouter.put("/", updateUsers);
 //All Users
 userRouter.get("/", getAllUsers);
 //User by Id
-
-//All Country
-
+userRouter.get("/:id", getUserById)
 //Delete
 userRouter.delete("/:id", deleteUser);
 
