@@ -63,9 +63,13 @@ User.hasMany(Review);
 Order.belongsTo(User);
 User.hasMany(Order);
 
+
 /* N:M */
 Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });
 Cart.belongsToMany(Product, { through: "Product_Carts", timestamps: false });
+
+Product.belongsToMany(Order, { through: "Product_Order", timestamps: false });
+Order.belongsToMany(Product, { through: "Product_Order", timestamps: false });
 
 module.exports = {
   ...sequelize.models,

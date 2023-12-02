@@ -1,4 +1,4 @@
-const { User } = require("../db");
+const { User } = require("../../db");
 
 const updateHandlerUser = async (
   id,
@@ -13,10 +13,10 @@ const updateHandlerUser = async (
   city,
   active,
   typeUser,
-  CountryId,
+  CountryId
 ) => {
   const user = await User.findByPk(id);
- 
+
   if (!user) {
     throw new Error("user not found");
   }

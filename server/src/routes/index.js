@@ -10,14 +10,14 @@ const { getAllCountryHandler } = require('../handlers/getAllCountryHandler')
 
 const router = express.Router();
 // const {Router} = require('express')
-const {
-  getAllCategoriesHandlers,
-} = require("../handlers/getAllCategoriesHandlers");
+const { getAllCategoriesHandlers } = require("../handlers/getAllCategoriesHandlers");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
 const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
 const paymentsRouter = require("./paymentsRouter");
+const orderRouter = require("./orderRouter");
+
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -44,9 +44,13 @@ router.use("/payments", paymentsRouter)
 /*All country*/
 router.get('/country', getAllCountryHandler)
 
-
 /* cart */
 router.use('/cart', cartRouter)
+
+/* order */
+router.use('/order', orderRouter )
+
+
 module.exports = {
   router,
 };
