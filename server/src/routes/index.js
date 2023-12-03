@@ -17,6 +17,7 @@ const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
 const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
+const {getCountryById} = require("../controllers/country/getCountryById");
 
 //Create
 router.post("/products", newProduct);
@@ -43,6 +44,9 @@ router.use("/payments", paymentsRouter)
 
 /*All country*/
 router.get('/country', getAllCountryHandler)
+
+/* Country by Id */
+router.get('/country/id', getCountryById)
 
 /* cart */
 router.use('/cart', cartRouter)
