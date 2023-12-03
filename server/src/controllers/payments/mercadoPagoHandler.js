@@ -20,6 +20,7 @@ const createOrder = async (req, res) => {
     let preference = {
       body: {
         items: items,
+        payer: payer,
         // payer: {
         //   name: 'João',
         //   surname: 'Silva',
@@ -38,6 +39,7 @@ const createOrder = async (req, res) => {
         //     zip_code: '06233200'
         //   }
         // },
+        
         back_urls: {
           success: "http://localhost:3001/payments/orderFeedback",
           failure: "http://localhost:3001/payments/orderFeedback",
@@ -45,18 +47,19 @@ const createOrder = async (req, res) => {
         },
         // auto_return: 'approved',
         // payment_methods: {
-        //   excluded_payment_methods: [],
-        //   excluded_payment_types: [],
-        //   installments: 1
-        // },
-        // notification_url: 'https://www.your-site.com/ipn',
-        // statement_descriptor: 'TECHNOOK',
-        // external_reference: 'Reference_1234',
-        // expires: false,
-        // expiration_date_from: '2016-02-01T12:00:00.000-04:00',
-        // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
-      },
-    };
+          //   excluded_payment_methods: [],
+          //   excluded_payment_types: [],
+          //   installments: 1
+          // },
+          // notification_url: 'https://www.your-site.com/ipn',
+          // statement_descriptor: 'TECHNOOK',
+          // external_reference: 'Reference_1234',
+          // expires: false,
+          // expiration_date_from: '2016-02-01T12:00:00.000-04:00',
+          // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
+        },
+      };
+      console.log("Seria el retur del payment ", preference);
 
     const response = await payment.create(preference);
 
