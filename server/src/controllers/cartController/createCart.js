@@ -7,6 +7,7 @@ const createCart = async (req, res) => {
     console.log(UserId, productId, quantityProd);
     // Buscar el usuario y su carrito asociado
     let user = await User.findByPk(UserId, {
+      attributes:["id","token"],
       include: {
         model: Cart,
         include: {
@@ -20,6 +21,7 @@ const createCart = async (req, res) => {
             "price",
             "priceOnSale",
             "stock",
+            "active"
           ],
           include: {
             model: Category,
@@ -30,7 +32,11 @@ const createCart = async (req, res) => {
     });
 
     if (!user) {
-      return res.status(404).json({ error: "User not found" });
+      return res.status(404).send("User not found");
+    }
+
+    if(!user.token){
+      return res.status(404).send("Unauthorized. User token not found");
     }
 
     // Verificar si el usuario tiene un carrito
@@ -50,11 +56,19 @@ const createCart = async (req, res) => {
         "price",
         "priceOnSale",
         "stock",
+        "active"
       ],
     });
 
     if (!product) {
-      return res.status(404).json({ error: "Products not found" });
+      return res.status(404).send("Products not found");
+    }
+
+    if (product.active && product.stock > 0) {
+      
+      await cart.addProduct(product, { through: { quantityProd: quantityProd } });
+    } else {
+      return res.status(400).send("Product is not available");
     }
 
     await cart.addProduct(product, { through: { quantityProd: quantityProd } });
@@ -70,6 +84,7 @@ const createCart = async (req, res) => {
           "price",
           "priceOnSale",
           "stock",
+          "active"
         ],
         include: {
           model: Category,
@@ -104,6 +119,7 @@ const createCart = async (req, res) => {
         price: product.price,
         priceOnSale: product.priceOnSale,
         stock: product.stock,
+        active: product.active,
         quantityProd: product.Product_Carts.quantityProd,
         category: product.Category.nameCat,
       })),
@@ -112,7 +128,7 @@ const createCart = async (req, res) => {
 
     await cart.save();
 
-    return res.status(200).json(itemsCart); //toy cansado jefe
+    return res.status(200).json(itemsCart); 
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }

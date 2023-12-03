@@ -17,6 +17,7 @@ const deleteProductsCart = async (req, res) => {
             "price",
             "priceOnSale",
             "stock",
+            "active",
           ],
           include: {
             model: Category,
@@ -25,7 +26,7 @@ const deleteProductsCart = async (req, res) => {
         },
       ],
     });
-    if (!cart) return res.status(404).json({ error: "Cart not found" });
+    if (!cart) return res.status(404).send("Cart not found");
     
 
     // Buscar el producto por id o por name, ver cual es mas conveniente
@@ -35,7 +36,7 @@ const deleteProductsCart = async (req, res) => {
       (product) => product.nameProd === nameProd
     );
 
-    if (!productInCart) return res.status(404).json({ error: "Products not found" });
+    if (!productInCart) return res.status(404).send("Products not found" );
     
     // Obtener el precio del producto antes de eliminarlo
     const productPriceBeforeRemoval =
@@ -54,9 +55,7 @@ const deleteProductsCart = async (req, res) => {
 
     await cart.save();
 
-    return res.status(200).json({
-      message: "Product removed from the cart successfully",
-    });
+    return res.status(200).json("Product removed from the cart successfully");
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
