@@ -1,362 +1,455 @@
-[ 
-    {
-      "nameProd": "Notebook Dell Inspiron",
-      "brand": "Dell",
-      "description": "Screen with great visual impact Its 15.5 LCD screen and 1920x1080 px resolution will give you more vivid and defined colors.",
-      "price": 913.739,
-      "discountPercentage": 5,
-      "priceOnSale": 868.052,
-      "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_696185-MLA54896761378_042023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg"],
-      "active": true,
-      "tags": "Limited Edition",
-      "stock": 6,
-      "CategoryId": 1
-    },
-    {
-      "nameProd": "Notebook gamer HP",
-      "brand": "HP",
-      "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
-      "price": 998.000,
-      "discountPercentage": 0,
-      "image": ["https://http2.mlstatic.com/D_NQ_NP_822561-MLU69824429131_062023-O.jpg"],
-      "active": true,
-      "tags": "Special Offer",
-      "stock": 4,
-      "CategoryId": 1
-    }, 
-    {
-        "nameProd": "Notebook Lenovo V15 15.6",
-        "brand": "Lenovo",
-        "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video.",
-        "price": 479.895,
-        "discountPercentage": 15,
-        "priceOnSale": 407.910,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_659529-MLA71750324986_092023-F.jpg"],
-        "active": true,
-        "tags": "Special Offer",
-        "stock": 9,
-        "CategoryId": 1
-      },
-      {
-        "nameProd": "Notebook Gamer ROG",
-        "brand": "Asus",
-        "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
-        "price": 999.000,
-        "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_998598-MLU72418312312_102023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 12,
-        "CategoryId": 1
-      },
-      {
-        "nameProd": "Notebook Dell Latitude",
-        "brand": "Dell",
-        "description": "This notebook is at a special price, as it has been carefully restored by an official agent of the corresponding",
-        "price": 539.999,
-        "discountPercentage": 25,
-        "priceOnSale": 404.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_692248-MLA72111741327_102023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 4,
-        "CategoryId": 1
-      },      
-      {
-        "nameProd": " Xiaomi Redmi",
-        "brand": "Redmi",
-        "description": "Double camera and more details Its 2 rear cameras of 50 Mpx/2 Mpx will allow you to take images with more details",
-        "price": 126.999,
-        "discountPercentage": 30,
-        "priceOnSale": 88.899,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_968191-MLA49949403456_052022-O.jpg"],
-        "active": true,
-        "tags": "Special Offer",
-        "stock": 2,
-        "CategoryId": 2
-      },      
-      {
-        "nameProd": "Samsung Galaxy S22",
-        "brand": "Samsung",
-        "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
-        "price": 560.176,
-        "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_912991-MLU72561005817_102023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 1,
-        "CategoryId": 2
-      },      
-      {
-        "nameProd": "Samsung Galaxy A54",
-        "brand": "Samsung",
-        "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
-        "price": 398.359,
-        "discountPercentage": 8,
-        "priceOnSale": 366.490,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_675839-MLA70891227215_082023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 13,
-        "CategoryId": 2
-      },     
-       {
-        "nameProd": "Blu Smartphones",
-        "brand": "BLU",
-        "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
-        "price": 112.038,
-        "discountPercentage": 9,
-        "priceOnSale": 101.954,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_658302-MLA69443935185_052023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 1,
-        "CategoryId": 2
-      },      
-      {
-        "nameProd": "Smartphone Samsung Galaxy S23",
-        "brand": "Samsung",
-        "description": "A visual experience that will surprise you Watch your favorite series and movies with unmatched definition thanks to its 6.",
-        "price": 680.000,
-        "discountPercentage": 35,
-        "priceOnSale": 442.000,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_613446-MLA72989686550_112023-O.jpg"],
-        "active": true,
-        "tags": "Special Offer",
-        "stock": 1,
-        "CategoryId": 2
-      },     
-       {
-        "nameProd": "Apple iPad",
-        "brand": "Apple",
-        "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display.",
-        "price": 399.000,
-        "discountPercentage": 10,
-        "priceOnSale": 350.100,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_883063-MLA72121884357_102023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 6,
-        "CategoryId": 3
-      },      
-      {
-        "nameProd": "Tablet Aiwa Tablet",
-        "brand": "Aiwa",
-        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities",
-        "price": 127.775,
-        "discountPercentage": 24,
-        "priceOnSale": 96.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_644299-MLA71583854971_092023-O.jpg"],
-        "active": true,
-        "tags": "Special Offer",
-        "stock": 24,
-        "CategoryId": 3
-      },      
-      {
-        "nameProd": "T-Go Gaming Tablet",
-        "brand": "T-Go",
-        "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution.",
-        "price": 116.699,
-        "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_631524-MLU72511163019_102023-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 9,
-        "CategoryId": 3
-      },      
-      {
-        "nameProd": "Gadnic Android",
-        "brand": "Gadnic",
-        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
-        "price": 184.599,
-        "discountPercentage": 33,
-        "priceOnSale": 123.499,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_773176-MLA48689975208_122021-O.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 4,
-        "CategoryId": 3
-      },      
-      {
-        "nameProd": "Tablet Lenovo",
-        "brand": "Lenovo",
-        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
-        "price": 541.199,
-        "discountPercentage": 7,
-        "priceOnSale": 499.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_644936-MLA47599511158_092021-O.jpg"],
-        "active": true,
-        "tags": "Limited Edition",
-        "stock": 7,
-        "CategoryId": 3
-      },      
-      {
-        "nameProd": "Samsung Galaxy Watch5",
-        "brand": "Samsung",
-        "description": "Samsung is synonymous with quality and technological evolution. Its intuitive navigation system and good.",
-        "price": 299.999,
-        "discountPercentage": 10,
-        "priceOnSale": 269.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_936069-MLA51439791973_092022-F.jpg"],
-        "active": true,
-        "tags": "Limited Edition",
-        "stock": 6,
-        "CategoryId": 4
-      },      
-      {
-        "nameProd": "Apple Watch Series",
-        "brand": "Apple",
-        "description": "The Apple Watch Series 8 comes with advanced health apps and sensors with which you can take an electrocardiogram.",
-        "price": 495.999,
-        "discountPercentage": 33,
-        "priceOnSale": 329.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_914414-MLB51804338989_102022-F.jpg"],
-        "active": true,
-        "tags": "Limited Edition",
-        "stock": 2,
-        "CategoryId": 4
-      },      
-      {
-        "nameProd": "Apple Watch Series 7",
-        "brand": "Apple",
-        "description": "Apple Watch Series 7 has the largest and most advanced always-on Retina display yet.",
-        "price": 399.99,
-        "discountPercentage": 10,
-        "priceOnSale": 359.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_684394-MLA48096714512_112021-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 14,
-        "CategoryId": 4
-      },      
-      {
-        "nameProd": "Huami Amazfit",
-        "brand": "Amazfit",
-        "description": "Meet the Amazfit T-Rex 2 Smartwatch, designed to accompany you in your daily and sports activities.",
-        "price": 166.299,
-        "discountPercentage": 10,
-        "priceOnSale": 149.669,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_956938-MLA51523904334_092022-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 9,
-        "CategoryId": 4
-      },      
-      {
-        "nameProd": "Nictom Nt16 Smartwatch",
-        "brand": "Nictom",
-        "description": "Extra help on your wrist For lovers of technology and healthy living",
-        "price": 39.999,
-        "discountPercentage": 28,
-        "priceOnSale": 28.799,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_747516-MLU72700581783_112023-F.webp"],
-        "active": true,
-        "tags": "Limited Edition",
-        "stock": 9,
-        "CategoryId": 4
-      },      
-      {
-        "nameProd": "Speaker Tower Speaker",
-        "brand": "Samsung",
-        "description": "Samsung MX-ST40B offers natural sound, with great clarity and precision, that is dispersed evenly.",
-        "price": 559.888,
-        "discountPercentage": 10,
-        "priceOnSale": 503.899,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_632385-MLU69939403880_062023-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 2,
-        "CategoryId": 5
-      },      
-      {
-        "nameProd": "Philco Djp10p",
-        "brand": "Philco",
-        "description": "Philco DJP10 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
-        "price": 41.899,
-        "discountPercentage": 22,
-        "priceOnSale": 32.499,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_683487-MLU72748261037_112023-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 5,
-        "CategoryId": 5
-      },      
-      {
-        "nameProd": "Spica Sp-4408 Portable",
-        "brand": "Spica",
-        "description": "Spica SP-4408 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
-        "price": 160.000,
-        "discountPercentage": 67,
-        "priceOnSale": 51.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_816810-MLU72700970573_112023-F.webp"],
-        "active": true,
-        "tags": "New",
-        "stock": 15,
-        "CategoryId": 5
-      },      
-      {
-        "nameProd": "Philips portable speaker",
-        "brand": "Philips",
-        "description": "Philips TAS1505B/00 offers natural sound, with great clarity and precision, that is dispersed evenly.",
-        "price": 23.399,
-        "discountPercentage": 80,
-        "priceOnSale": 4.679,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_955029-MLA52322399493_112022-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 1,
-        "CategoryId": 5
-      },
-      {
-        "nameProd": "Smart TV Tcl",
-        "brand": "Tcl",
-        "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0",
-        "price": 179.999,
-        "discountPercentage": 5,
-        "priceOnSale": 169.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_894550-MLU72074989729_102023-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 9,
-        "CategoryId": 6
-      },
-      {
-        "nameProd": "Tcl Qled",
-        "brand": "TCL",
-        "description": "Immerse yourself in an unmatched viewing experience with the TCL L50C645 4K QLED Smart TV.",
-        "price": 349.999,
-        "discountPercentage": 11,
-        "priceOnSale": 310.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_632850-MLU72972328191_112023-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 4,
-        "CategoryId": 6
-      },
-      {
-        "nameProd": "Smart Tv Philips",
-        "brand": "Philips",
-        "description": "Enjoy an unparalleled viewing experience with the Philips 65PUD7906/77 LED Android TV 4K 65 Smart TV.",
-        "price": 549.999,
-        "discountPercentage": 10,
-        "priceOnSale": 489.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_803275-MLA48707824564_122021-F.jpg"],
-        "active": true,
-        "tags": "New",
-        "stock": 2,
-        "CategoryId": 6
-      },
-      {
-        "nameProd": "Tcl Qle",
-        "brand": "TCL",
-        "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
-        "price": 399.999,
-        "discountPercentage": 10,
-        "priceOnSale": 359.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_926488-MLU71651838912_092023-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_667349-MLU71651838914_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_873565-MLU71651858840_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_944860-MLU71651858834_092023-F.jpg"],
-        "active": true,
-        "tags": "Limited Edition",
-        "stock": 4,
-        "CategoryId": 6
-      }
-    ]
+[
+  {
+    "id": "8c01484a-47c4-4927-9b78-3e9d70df5066",
+    "nameProd": "Notebook Dell Inspiron",
+    "brand": "Dell",
+    "description": "Screen with great visual impact Its 15.5 LCD screen and 1920x1080 px resolution will give you more vivid and defined colors.",
+    "price": 913.73,
+    "stock": 6,
+    "discountPercentage": 5,
+    "priceOnSale": 868.04,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694760/technook/d7qkqmjpum8jo2wm2nl0.jpg",
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694765/technook/ty8ukem1dtfynp5bbfmk.jpg",
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694761/technook/vwzqabgbiow3m0e46otl.jpg"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "Laptops"
+  },
+  {
+    "id": "6117a646-d4af-432f-9370-904103c11c8b",
+    "nameProd": "Notebook Lenovo V15 15.6",
+    "brand": "Lenovo",
+    "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video.",
+    "price": 479.89,
+    "stock": 9,
+    "discountPercentage": 15,
+    "priceOnSale": 407.90,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694709/technook/ocoij42ixhqqfincjg6y.jpg"
+    ],
+    "active": true,
+    "tags": "Special Offer",
+    "category": "Laptops"
+  },
+  {
+    "id": "9d26eaf5-6188-499a-8a26-d22cbc488d49",
+    "nameProd": "Notebook gamer HP",
+    "brand": "HP",
+    "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
+    "price": 998,
+    "stock": 4,
+    "discountPercentage": 0,
+    "priceOnSale": 998,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694747/technook/woidizlumsf2uawde73c.jpg"
+    ],
+    "active": true,
+    "tags": "Special Offer",
+    "category": "Laptops"
+  },
+  {
+    "id": "0d3f9d09-e9b9-43fb-a353-be57f65a7a32",
+    "nameProd": "Notebook Gamer ROG",
+    "brand": "Asus",
+    "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
+    "price": 999,
+    "stock": 12,
+    "discountPercentage": 0,
+    "priceOnSale": 999,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694741/technook/fv5jqkolhyo7smft1gbp.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Laptops"
+  },
+  {
+    "id": "83b40c81-16d5-4666-9d3c-61d1eaa5a06a",
+    "nameProd": "Notebook Dell Latitude",
+    "brand": "Dell",
+    "description": "This notebook is at a special price, as it has been carefully restored by an official agent of the corresponding",
+    "price": 539.99,
+    "stock": 4,
+    "discountPercentage": 25,
+    "priceOnSale": 404.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694734/technook/rszxkrklktgxwdqvc3ta.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Laptops"
+  },
+  {
+    "id": "09f8a02e-3f7c-47c5-bf6e-91258510976d",
+    "nameProd": " Xiaomi Redmi",
+    "brand": "Redmi",
+    "description": "Double camera and more details Its 2 rear cameras of 50 Mpx/2 Mpx will allow you to take images with more details",
+    "price": 126.99,
+    "stock": 2,
+    "discountPercentage": 30,
+    "priceOnSale": 88.89,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694800/technook/mpbbyqe6utqocfqrhtrz.jpg"
+    ],
+    "active": true,
+    "tags": "Special Offer",
+    "category": "Smartphones"
+  },
+  {
+    "id": "5befd927-0441-4eb8-923d-6d0f833204c0",
+    "nameProd": "Samsung Galaxy S22",
+    "brand": "Samsung",
+    "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
+    "price": 560.17,
+    "stock": 1,
+    "discountPercentage": 0,
+    "priceOnSale": 560.17,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694794/technook/ou3sqatl0s5foiavmxlq.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "ed32b2a8-7163-4621-b2ec-1466139d3c13",
+    "nameProd": "Samsung Galaxy A54",
+    "brand": "Samsung",
+    "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
+    "price": 398.35,
+    "stock": 13,
+    "discountPercentage": 8,
+    "priceOnSale": 366.48,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694786/technook/jej3rks5sngltcsi7jea.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "e202c892-dd7a-49be-ab26-b13f77a670ed",
+    "nameProd": "Blu Smartphones",
+    "brand": "BLU",
+    "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
+    "price": 112.03,
+    "stock": 1,
+    "discountPercentage": 9,
+    "priceOnSale": 101.94,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694780/technook/pfjz7ohniksdotah3mj1.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "d14b03db-12b3-411f-a1b9-24a8c0f99f08",
+    "nameProd": "Smartphone Samsung Galaxy S23",
+    "brand": "Samsung",
+    "description": "A visual experience that will surprise you Watch your favorite series and movies with unmatched definition thanks to its 6.",
+    "price": 680,
+    "stock": 1,
+    "discountPercentage": 35,
+    "priceOnSale": 442,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694773/technook/ash8h00r9q9jcracr009.jpg"
+    ],
+    "active": true,
+    "tags": "Special Offer",
+    "category": "Smartphones"
+  },
+  {
+    "id": "3b4678f9-e70a-423f-a15b-4fa7862a3882",
+    "nameProd": "Apple iPad",
+    "brand": "Apple",
+    "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display.",
+    "price": 399,
+    "stock": 6,
+    "discountPercentage": 10,
+    "priceOnSale": 359.1,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694852/technook/qcirdpr3ib0umhyqbe6c.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Tablets"
+  },
+  {
+    "id": "fc0f9b34-a01c-4e62-ad01-c97bd0dd422e",
+    "nameProd": "Tablet Aiwa Tablet",
+    "brand": "Aiwa",
+    "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities",
+    "price": 127.77,
+    "stock": 24,
+    "discountPercentage": 24,
+    "priceOnSale": 97.10,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694842/technook/qocx51so3h6zdktn7ids.jpg"
+    ],
+    "active": true,
+    "tags": "Special Offer",
+    "category": "Tablets"
+  },
+  {
+    "id": "928f5930-8db2-406d-8167-61a855d4910b",
+    "nameProd": "T-Go Gaming Tablet",
+    "brand": "T-Go",
+    "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution.",
+    "price": 116.69,
+    "stock": 9,
+    "discountPercentage": 0,
+    "priceOnSale": 116.69,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694823/technook/iqahjhdssdb8ksjs5cv7.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Tablets"
+  },
+  {
+    "id": "5d13d4aa-c8fa-4520-a22b-8885512106ac",
+    "nameProd": "Gadnic Android",
+    "brand": "Gadnic",
+    "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
+    "price": 184.59,
+    "stock": 4,
+    "discountPercentage": 33,
+    "priceOnSale": 123.67,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694814/technook/fwgvdcb7i7dcuzstjvty.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Tablets"
+  },
+  {
+    "id": "06e89a7a-ef4b-455e-bcf6-8ad34980074e",
+    "nameProd": "Tablet Lenovo",
+    "brand": "Lenovo",
+    "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
+    "price": 541.19,
+    "stock": 7,
+    "discountPercentage": 7,
+    "priceOnSale": 503.30,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694808/technook/ytijvjsx5lr9oblr77uo.jpg"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "Tablets"
+  },
+  {
+    "id": "d0c1a38b-7485-498a-97cc-715e1072846d",
+    "nameProd": "Samsung Galaxy Watch5",
+    "brand": "Samsung",
+    "description": "Samsung is synonymous with quality and technological evolution. Its intuitive navigation system and good.",
+    "price": 299.99,
+    "stock": 6,
+    "discountPercentage": 10,
+    "priceOnSale": 269.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694932/technook/sbobf62zgva3c5ok4vin.jpg"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "Smartwatches"
+  },
+  {
+    "id": "4a5fd1bc-5ab7-41de-868d-c50e46fa9461",
+    "nameProd": "Apple Watch Series",
+    "brand": "Apple",
+    "description": "The Apple Watch Series 8 comes with advanced health apps and sensors with which you can take an electrocardiogram.",
+    "price": 495.99,
+    "stock": 2,
+    "discountPercentage": 33,
+    "priceOnSale": 332.31,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694913/technook/yn4foz0feuqpnr5tatea.jpg"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "Smartwatches"
+  },
+  {
+    "id": "00b0eb38-7514-4170-a6ee-bcc8c0f4334d",
+    "nameProd": "Apple Watch Series 7",
+    "brand": "Apple",
+    "description": "Apple Watch Series 7 has the largest and most advanced always-on Retina display yet.",
+    "price": 399.99,
+    "stock": 14,
+    "discountPercentage": 10,
+    "priceOnSale": 359.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694899/technook/wac3fnsuw6g5tfd43blw.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Smartwatches"
+  },
+  {
+    "id": "5f1404df-d059-4061-85f6-1f5035180b04",
+    "nameProd": "Huami Amazfit",
+    "brand": "Amazfit",
+    "description": "Meet the Amazfit T-Rex 2 Smartwatch, designed to accompany you in your daily and sports activities.",
+    "price": 166.29,
+    "stock": 9,
+    "discountPercentage": 10,
+    "priceOnSale": 149.66,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694874/technook/uamy0jpgoyumilfsa55q.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Smartwatches"
+  },
+  {
+    "id": "578d50da-adfd-42cd-94d2-0e2fcdd1fb64",
+    "nameProd": "Nictom Nt16 Smartwatch",
+    "brand": "Nictom",
+    "description": "Extra help on your wrist For lovers of technology and healthy living",
+    "price": 39.99,
+    "stock": 9,
+    "discountPercentage": 28,
+    "priceOnSale": 28.79,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694863/technook/inhwgywgtitxip18pdhe.webp"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "Smartwatches"
+  },
+  {
+    "id": "35f3f585-d165-46c3-a653-70ef9278ff88",
+    "nameProd": "Speaker Tower Speaker",
+    "brand": "Samsung",
+    "description": "Samsung MX-ST40B offers natural sound, with great clarity and precision, that is dispersed evenly.",
+    "price": 559.88,
+    "stock": 2,
+    "discountPercentage": 10,
+    "priceOnSale": 503.89,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695012/technook/b884iynz2catejvcnllm.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Speakers"
+  },
+  {
+    "id": "166bd0d9-4774-488d-9baa-06b13a779387",
+    "nameProd": "Philco Djp10p",
+    "brand": "Philco",
+    "description": "Philco DJP10 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
+    "price": 41.89,
+    "stock": 5,
+    "discountPercentage": 22,
+    "priceOnSale": 32.67,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694995/technook/rilkh0lu6rk1zdtokkrw.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Speakers"
+  },
+  {
+    "id": "3742fed8-b46d-4888-9e49-b33d26a85af0",
+    "nameProd": "Spica Sp-4408 Portable",
+    "brand": "Spica",
+    "description": "Spica SP-4408 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
+    "price": 160,
+    "stock": 15,
+    "discountPercentage": 50,
+    "priceOnSale": 80,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694968/technook/vxz56hwg6mqspyq7yz6r.webp"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Speakers"
+  },
+  {
+    "id": "f498f821-6faa-4044-83f2-fe6fdb2624d5",
+    "nameProd": "Philips portable speaker",
+    "brand": "Philips",
+    "description": "Philips TAS1505B/00 offers natural sound, with great clarity and precision, that is dispersed evenly.",
+    "price": 23.39,
+    "stock": 1,
+    "discountPercentage": 10,
+    "priceOnSale": 19.25,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694942/technook/wigsv2gjepq7i53p1kmg.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "Speakers"
+  },
+  {
+    "id": "7902b6de-3edf-42e7-9021-31322244b30e",
+    "nameProd": "Smart TV Tcl",
+    "brand": "Tcl",
+    "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0",
+    "price": 179.99,
+    "stock": 9,
+    "discountPercentage": 5,
+    "priceOnSale": 170.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695296/technook/o3oaxahzafhbomskztoh.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "TV"
+  },
+  {
+    "id": "7acd939d-b602-4d0f-acc8-062c4d679f34",
+    "nameProd": "Smart Tv Philips",
+    "brand": "Philips",
+    "description": "Enjoy an unparalleled viewing experience with the Philips 65PUD7906/77 LED Android TV 4K 65 Smart TV.",
+    "price": 549.99,
+    "stock": 2,
+    "discountPercentage": 10,
+    "priceOnSale": 494.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695253/technook/semqvn4hzojnp2z1ctuo.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "TV"
+  },
+  {
+    "id": "e860fe44-87d7-48fb-a359-c2289e04dc0d",
+    "nameProd": "Tcl Qled",
+    "brand": "TCL",
+    "description": "Immerse yourself in an unmatched viewing experience with the TCL L50C645 4K QLED Smart TV.",
+    "price": 349.99,
+    "stock": 4,
+    "discountPercentage": 11,
+    "priceOnSale": 311.49,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695282/technook/cp4dpo9ja0pml7trojz3.jpg"
+    ],
+    "active": true,
+    "tags": "New",
+    "category": "TV"
+  },
+  {
+    "id": "61abb181-5595-48fe-b777-ce140fa3c23f",
+    "nameProd": "Tcl Qle",
+    "brand": "TCL",
+    "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
+    "price": 399.99,
+    "stock": 4,
+    "discountPercentage": 10,
+    "priceOnSale": 359.99,
+    "image": [
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695266/technook/jhf6o1wgffcy6uzk6zyb.jpg",
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695268/technook/v8mpkcb4ohwtzu1cdyja.jpg",
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695270/technook/hleeuiqohb5w8mlaxrjy.jpg",
+      "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695271/technook/mvo5pebnge4hfhmgjomf.jpg"
+    ],
+    "active": true,
+    "tags": "Limited Edition",
+    "category": "TV"
+  }
+]
