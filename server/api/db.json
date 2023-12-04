@@ -6,7 +6,11 @@
       "price": 913.739,
       "discountPercentage": 5,
       "priceOnSale": 868.052,
-      "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_696185-MLA54896761378_042023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_623595-MLU72542376244_112023-F.jpg"],
+      "image": [
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694760/technook/d7qkqmjpum8jo2wm2nl0.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694765/technook/ty8ukem1dtfynp5bbfmk.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694761/technook/vwzqabgbiow3m0e46otl.jpg"
+      ],
       "active": true,
       "tags": "Limited Edition",
       "stock": 6,
@@ -18,7 +22,9 @@
       "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
       "price": 998.000,
       "discountPercentage": 0,
-      "image": ["https://http2.mlstatic.com/D_NQ_NP_822561-MLU69824429131_062023-O.jpg"],
+      "image": [
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694747/technook/woidizlumsf2uawde73c.jpg"
+      ],
       "active": true,
       "tags": "Special Offer",
       "stock": 4,
@@ -31,7 +37,9 @@
         "price": 479.895,
         "discountPercentage": 15,
         "priceOnSale": 407.910,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_659529-MLA71750324986_092023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694709/technook/ocoij42ixhqqfincjg6y.jpg"
+        ],
         "active": true,
         "tags": "Special Offer",
         "stock": 9,
@@ -43,7 +51,9 @@
         "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
         "price": 999.000,
         "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_998598-MLU72418312312_102023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694741/technook/fv5jqkolhyo7smft1gbp.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 12,
@@ -56,7 +66,9 @@
         "price": 539.999,
         "discountPercentage": 25,
         "priceOnSale": 404.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_692248-MLA72111741327_102023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694734/technook/rszxkrklktgxwdqvc3ta.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 4,
@@ -69,7 +81,9 @@
         "price": 126.999,
         "discountPercentage": 30,
         "priceOnSale": 88.899,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_968191-MLA49949403456_052022-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694800/technook/mpbbyqe6utqocfqrhtrz.jpg"
+        ],
         "active": true,
         "tags": "Special Offer",
         "stock": 2,
@@ -81,7 +95,9 @@
         "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
         "price": 560.176,
         "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_912991-MLU72561005817_102023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694794/technook/ou3sqatl0s5foiavmxlq.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 1,
@@ -94,7 +110,9 @@
         "price": 398.359,
         "discountPercentage": 8,
         "priceOnSale": 366.490,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_675839-MLA70891227215_082023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694786/technook/jej3rks5sngltcsi7jea.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 13,
@@ -107,7 +125,9 @@
         "price": 112.038,
         "discountPercentage": 9,
         "priceOnSale": 101.954,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_658302-MLA69443935185_052023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694780/technook/pfjz7ohniksdotah3mj1.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 1,
@@ -120,7 +140,9 @@
         "price": 680.000,
         "discountPercentage": 35,
         "priceOnSale": 442.000,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_613446-MLA72989686550_112023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694773/technook/ash8h00r9q9jcracr009.jpg"
+        ],
         "active": true,
         "tags": "Special Offer",
         "stock": 1,
@@ -133,7 +155,9 @@
         "price": 399.000,
         "discountPercentage": 10,
         "priceOnSale": 350.100,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_883063-MLA72121884357_102023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694852/technook/qcirdpr3ib0umhyqbe6c.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 6,
@@ -146,7 +170,9 @@
         "price": 127.775,
         "discountPercentage": 24,
         "priceOnSale": 96.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_644299-MLA71583854971_092023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694842/technook/qocx51so3h6zdktn7ids.jpg"
+        ],
         "active": true,
         "tags": "Special Offer",
         "stock": 24,
@@ -158,7 +184,9 @@
         "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution.",
         "price": 116.699,
         "discountPercentage": 0,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_631524-MLU72511163019_102023-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694823/technook/iqahjhdssdb8ksjs5cv7.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 9,
@@ -171,7 +199,9 @@
         "price": 184.599,
         "discountPercentage": 33,
         "priceOnSale": 123.499,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_773176-MLA48689975208_122021-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694814/technook/fwgvdcb7i7dcuzstjvty.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 4,
@@ -184,7 +214,9 @@
         "price": 541.199,
         "discountPercentage": 7,
         "priceOnSale": 499.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_644936-MLA47599511158_092021-O.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694808/technook/ytijvjsx5lr9oblr77uo.jpg"
+        ],
         "active": true,
         "tags": "Limited Edition",
         "stock": 7,
@@ -197,7 +229,9 @@
         "price": 299.999,
         "discountPercentage": 10,
         "priceOnSale": 269.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_936069-MLA51439791973_092022-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694932/technook/sbobf62zgva3c5ok4vin.jpg"
+        ],
         "active": true,
         "tags": "Limited Edition",
         "stock": 6,
@@ -210,7 +244,9 @@
         "price": 495.999,
         "discountPercentage": 33,
         "priceOnSale": 329.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_914414-MLB51804338989_102022-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694913/technook/yn4foz0feuqpnr5tatea.jpg"
+        ],
         "active": true,
         "tags": "Limited Edition",
         "stock": 2,
@@ -223,7 +259,9 @@
         "price": 399.99,
         "discountPercentage": 10,
         "priceOnSale": 359.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_684394-MLA48096714512_112021-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694899/technook/wac3fnsuw6g5tfd43blw.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 14,
@@ -236,7 +274,9 @@
         "price": 166.299,
         "discountPercentage": 10,
         "priceOnSale": 149.669,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_956938-MLA51523904334_092022-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694874/technook/uamy0jpgoyumilfsa55q.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 9,
@@ -249,7 +289,9 @@
         "price": 39.999,
         "discountPercentage": 28,
         "priceOnSale": 28.799,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_747516-MLU72700581783_112023-F.webp"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694863/technook/inhwgywgtitxip18pdhe.webp"
+        ],
         "active": true,
         "tags": "Limited Edition",
         "stock": 9,
@@ -262,7 +304,9 @@
         "price": 559.888,
         "discountPercentage": 10,
         "priceOnSale": 503.899,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_632385-MLU69939403880_062023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695012/technook/b884iynz2catejvcnllm.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 2,
@@ -275,7 +319,9 @@
         "price": 41.899,
         "discountPercentage": 22,
         "priceOnSale": 32.499,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_683487-MLU72748261037_112023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694995/technook/rilkh0lu6rk1zdtokkrw.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 5,
@@ -288,7 +334,9 @@
         "price": 160.000,
         "discountPercentage": 67,
         "priceOnSale": 51.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_816810-MLU72700970573_112023-F.webp"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694968/technook/vxz56hwg6mqspyq7yz6r.webp"
+        ],
         "active": true,
         "tags": "New",
         "stock": 15,
@@ -301,7 +349,9 @@
         "price": 23.399,
         "discountPercentage": 80,
         "priceOnSale": 4.679,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_955029-MLA52322399493_112022-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694942/technook/wigsv2gjepq7i53p1kmg.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 1,
@@ -314,7 +364,9 @@
         "price": 179.999,
         "discountPercentage": 5,
         "priceOnSale": 169.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_894550-MLU72074989729_102023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695296/technook/o3oaxahzafhbomskztoh.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 9,
@@ -327,7 +379,9 @@
         "price": 349.999,
         "discountPercentage": 11,
         "priceOnSale": 310.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_632850-MLU72972328191_112023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695282/technook/cp4dpo9ja0pml7trojz3.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 4,
@@ -340,7 +394,9 @@
         "price": 549.999,
         "discountPercentage": 10,
         "priceOnSale": 489.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_803275-MLA48707824564_122021-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695253/technook/semqvn4hzojnp2z1ctuo.jpg"
+        ],
         "active": true,
         "tags": "New",
         "stock": 2,
@@ -353,7 +409,12 @@
         "price": 399.999,
         "discountPercentage": 10,
         "priceOnSale": 359.999,
-        "image": ["https://http2.mlstatic.com/D_NQ_NP_2X_926488-MLU71651838912_092023-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_667349-MLU71651838914_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_873565-MLU71651858840_092023-F.jpg","https://http2.mlstatic.com/D_NQ_NP_2X_944860-MLU71651858834_092023-F.jpg"],
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695266/technook/jhf6o1wgffcy6uzk6zyb.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695268/technook/v8mpkcb4ohwtzu1cdyja.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695270/technook/hleeuiqohb5w8mlaxrjy.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695271/technook/mvo5pebnge4hfhmgjomf.jpg"
+        ],
         "active": true,
         "tags": "Limited Edition",
         "stock": 4,
