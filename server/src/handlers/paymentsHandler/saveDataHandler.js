@@ -1,8 +1,8 @@
 const {
   Product,
   Order,
-  Product_Order,
   Product_Carts,
+  Product_Order,
   Cart,
 } = require("../../db");
 
@@ -17,6 +17,7 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       status.charAt(0).toUpperCase() + status.slice(1),
     UserId: id,
   };
+  const newOrder = await Order.create(saveData); //* Creo la ORDEN
 
   const cartShopping = await Cart.findOne({
     where: { UserId: id },
@@ -79,20 +80,10 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     } else {
       console.error(`No se encontró el producto con ID ${productId}.`);
     }
-    console.log("Id de la Orden ", saveData.mercadopagoTransactionId);
-    const valProduct_Order = {
-      ProductId: productId,
-      OrderId: saveData.mercadopagoTransactionId,
-    };
-    console.log("Productos que serían guardados en la BD en la tabla Product_Order ", valProduct_Order);
 
-    const newProductOrder = Product_Order.build(valProduct_Order);
-    await newProductOrder.save();
+    await newOrder.addProduct(productId, { model: Product_Order });
   }
-  console.log("Product Order actualizada ", Product_Order);
 
-  const newOrder = Order.build(saveData);
-  await newOrder.save();
   return newOrder;
 };
 
