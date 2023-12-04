@@ -40,7 +40,7 @@ const createOrder = async (req, res) => {
         //     zip_code: '06233200'
         //   }
         // },
-        
+
         back_urls: {
           success: "http://localhost:3001/payments/orderFeedback",
           failure: "http://localhost:3001/payments/orderFeedback",
@@ -48,18 +48,18 @@ const createOrder = async (req, res) => {
         },
         // auto_return: 'approved',
         // payment_methods: {
-          //   excluded_payment_methods: [],
-          //   excluded_payment_types: [],
-          //   installments: 1
-          // },
-          // notification_url: 'https://www.your-site.com/ipn',
-          // statement_descriptor: 'TECHNOOK',
-          // external_reference: 'Reference_1234',
-          // expires: false,
-          // expiration_date_from: '2016-02-01T12:00:00.000-04:00',
-          // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
-        },
-      };
+        //   excluded_payment_methods: [],
+        //   excluded_payment_types: [],
+        //   installments: 1
+        // },
+        // notification_url: 'https://www.your-site.com/ipn',
+        // statement_descriptor: 'TECHNOOK',
+        // external_reference: 'Reference_1234',
+        // expires: false,
+        // expiration_date_from: '2016-02-01T12:00:00.000-04:00',
+        // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
+      },
+    };
 
     const response = await payment.create(preference);
 
@@ -72,10 +72,13 @@ const createOrder = async (req, res) => {
 const purchaseResults = (req, res) => {
   try {
     const { payment_id, status, merchant_order_id } = req.query;
+    const { payer } = req.body.payer.id;
+    console.log("Lo que llega por Body ", req.body);
     console.log("paso por aca");
     res.json({
       payment: payment_id,
       status: status,
+      payerId: payer,
       merchantOrder: merchant_order_id,
     });
   } catch (error) {

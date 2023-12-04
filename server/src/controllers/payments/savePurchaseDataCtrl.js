@@ -2,10 +2,12 @@ const {
   savePurchaseDataHandler,
 } = require("../../handlers/paymentsHandler/saveDataHandler");
 
-const savePurchaseData = async (req, res) => {
-  const { status, payment, merchantOrder, UserId } = req.body;
 
-  console.log(status, payment, merchantOrder, UserId);
+
+const savePurchaseData = async (req, res) => {
+  const { status, payment, UserId } = req.body;
+
+  console.log(status, payment, UserId);
 
   try {
     if (status.toLowerCase() !== "approved")
@@ -13,12 +15,7 @@ const savePurchaseData = async (req, res) => {
         .status(400)
         .send({ error: "Purchase status is not approved, try again." });
 
-    const saveData = await savePurchaseDataHandler(
-      status,
-      payment,
-      merchantOrder,
-      UserId
-    );
+    const saveData = await savePurchaseDataHandler(status, payment, UserId);
     if (saveData) {
       return res.status(200).json(saveData);
     }

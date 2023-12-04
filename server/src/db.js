@@ -71,6 +71,7 @@ Cart.belongsToMany(Product, { through: "Product_Carts", timestamps: false });
 Product.belongsToMany(Order, { through: "Product_Order", timestamps: false });
 Order.belongsToMany(Product, { through: "Product_Order", timestamps: false });
 
+
 module.exports = {
   ...sequelize.models,
   conn: sequelize,

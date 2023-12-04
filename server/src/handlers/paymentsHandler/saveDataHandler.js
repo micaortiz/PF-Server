@@ -1,22 +1,20 @@
 const {
   Product,
-  Category,
-  Orders,
+  Order,
   Product_Order,
   Product_Carts,
   Cart,
 } = require("../../db");
 
-const savePurchaseDataHandler = async (
-  status,
-  payment,
-  merchantOrder,
-  UserId
-) => {
+const { v4: uuidv4 } = require("uuid");
+
+const savePurchaseDataHandler = async (status, payment, UserId) => {
+  const paymentUUID = uuidv4({ namespace: payment }); //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
   const saveData = {
     orderDate: new Date(),
-    mercadopagoTransactionId: payment,
-    mercadopagoTransactionStatus: status,
+    mercadopagoTransactionId: paymentUUID,
+    mercadopagoTransactionStatus:
+      status.charAt(0).toUpperCase() + status.slice(1),
     UserId: UserId,
   };
 
@@ -27,52 +25,74 @@ const savePurchaseDataHandler = async (
         model: Product,
         attributes: ["id", "nameProd", "stock"],
       },
-      {
-        model: Product_Carts,
-        attributes: ["quantityProd"],
-      },
     ],
   });
-
-  console.log(
-    "Me traeria los productos en el carrito de compra ",
-    cartShopping.Products
-  );
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
     return { error: "The shopping cart is empty or does not exist." };
   }
 
+  //* Busca en la tabla intermedia y trae los datos segun el id del Carro de compras
+  const quantityProdIn = await Product_Carts.findAll({
+    where: { CartId: cartShopping.id },
+  });
+  //* Me quedo con los datos necesarios de la tabla Intermedia para las cantidades
+  const cartQuantityProd = quantityProdIn.map((productCart) => ({
+    quantity: productCart.quantityProd,
+    ProductId: productCart.ProductId,
+  }));
+
+  //* Nos quedamos con los datos necesarios del carrito de compras
   const productsInCart = cartShopping.Products.map((product) => {
-    const productCart = product.Product_Carts[0];
     return {
       id: product.id,
       nameProd: product.nameProd,
       stock: product.stock,
-      quantityProd: productCart ? productCart.quantityProd : 0,
     };
   });
-
-  /*  const productCartsData = product.Product_Carts.map((productCart) => {
-    return {
-      cartId: productCart.CartId,
-      quantityProd: productCart.quantityProd,
-    };
-  }); */
-
   console.log("Productos en el carrito de compras ", productsInCart);
 
-  const savedOrders = await Orders.bulkCreate(dataItemsInter);
+  // Lógica para restar el stock de cada producto
+  for (const productInfo of cartQuantityProd) {
+    const quantity = productInfo.quantity;
+    const productId = productInfo.ProductId;
+    console.log("Cantidad ", quantity);
+    console.log("Ide del producto ", productId);
 
-  const productOrderData = dataItems.map((order) => ({
-    ProductId: order.ProductId,
-    OrderId: order.id,
-  }));
+    // Buscar el producto por ID en la tabla Product
+    const product = productsInCart.find((product) => product.id === productId);
 
-  await Product_Order.bulkCreate(productOrderData);
-  console.log("Data saved successfully");
-  return savedOrders;
+    if (product) {
+      // Restar la cantidad en stock
+      const updatedStock = product.stock - quantity;
+
+      // Actualizar el stock del producto en la base de datos
+      await Product.update(
+        { stock: updatedStock },
+        { where: { id: productId } }
+      );
+
+      console.log(
+        `Stock actualizado para el producto con ID ${productId}. Nuevo stock: ${updatedStock}`
+      );
+    } else {
+      console.error(`No se encontró el producto con ID ${productId}.`);
+    }
+    console.log("Id de la Orden ", saveData.mercadopagoTransactionId);
+
+/*     await Product_Order.findOrCreate({
+      where: {
+        ProductId: productId,
+        OrderId: saveData.mercadopagoTransactionId,
+      },
+    }); */
+  }
+  console.log("Product Order actualizada ", Product_Order);
+
+  const newOrder = Order.build(saveData);
+  await newOrder.save();
+  return newOrder;
 };
 
 module.exports = {
