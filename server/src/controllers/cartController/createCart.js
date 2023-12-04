@@ -71,7 +71,7 @@ const createCart = async (req, res) => {
       return res.status(400).send("Product is not available");
     }
 
-    await cart.addProduct(product, { through: { quantityProd: quantityProd } });
+    // await cart.addProduct(product, { through: { quantityProd: quantityProd } });
 
     cart = await Cart.findByPk(cart.id, {
       include: {
