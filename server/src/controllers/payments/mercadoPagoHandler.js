@@ -14,8 +14,9 @@ const payment = new Preference(client);
 const createOrder = async (req, res) => {
   try {
     // la info se recibe como un objeto individual, hay que ver las variables como vienen y cargarlas
-    const { items } = req.body;
+    const { items, payer } = req.body;
     console.log("Seria los items ", items);
+    console.log("Seria la info del User ", payer);
 
     let preference = {
       body: {
@@ -59,7 +60,6 @@ const createOrder = async (req, res) => {
           // expiration_date_to: '2016-02-28T12:00:00.000-04:00'
         },
       };
-      console.log("Seria el retur del payment ", preference);
 
     const response = await payment.create(preference);
 

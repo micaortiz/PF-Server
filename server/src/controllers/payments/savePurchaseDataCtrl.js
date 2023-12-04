@@ -3,23 +3,20 @@ const {
 } = require("../../handlers/paymentsHandler/saveDataHandler");
 
 const savePurchaseData = async (req, res) => {
-  const {
-    status,
-    mercadopagoTransactionId,
-    mercadopagoTransactionStatus,
-    UserId,
-  } = req.query;
+  const { status, payment, merchantOrder, UserId } = req.body;
+
+  console.log(status, payment, merchantOrder, UserId);
 
   try {
-    if (mercadopagoTransactionStatus !== "Approved")
+    if (status.toLowerCase() !== "approved")
       return res
         .status(400)
         .send({ error: "Purchase status is not approved, try again." });
 
     const saveData = await savePurchaseDataHandler(
       status,
-      mercadopagoTransactionId,
-      mercadopagoTransactionStatus,
+      payment,
+      merchantOrder,
       UserId
     );
     if (saveData) {
