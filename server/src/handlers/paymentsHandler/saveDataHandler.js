@@ -9,10 +9,10 @@ const {
 const { v4: uuidv4 } = require("uuid");
 
 const savePurchaseDataHandler = async (status, payment_id, id) => {
-  const paymentUUID = uuidv4({ namespace: payment_id }); //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
+  //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
   const saveData = {
     orderDate: new Date(),
-    mercadopagoTransactionId: paymentUUID,
+    mercadopagoTransactionId: payment_id,
     mercadopagoTransactionStatus:
       status.charAt(0).toUpperCase() + status.slice(1),
     UserId: id,
@@ -83,6 +83,13 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
 
     await newOrder.addProduct(productId, { model: Product_Order });
   }
+  await Product_Carts.destroy({
+    where: { CartId: cartShopping.id },
+  });
+
+  await Cart.destroy({
+    where: { UserId: id },
+  });
 
   return newOrder;
 };
