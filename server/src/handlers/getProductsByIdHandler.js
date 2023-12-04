@@ -14,7 +14,7 @@ const getProductsByIdHandler = async(id)=>{
             id: product.id,
             nameProd: product.nameProd,
             brand: product.brand,
-            descripition: product.descripition,
+            description: product.description,
             price: product.price,
             discountPercentage: product.discountPercentage,
             priceOnSale: product.priceOnSale,
