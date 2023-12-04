@@ -8,18 +8,18 @@ const {
 
 const { v4: uuidv4 } = require("uuid");
 
-const savePurchaseDataHandler = async (status, payment, UserId) => {
-  const paymentUUID = uuidv4({ namespace: payment }); //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
+const savePurchaseDataHandler = async (status, payment_id, id) => {
+  const paymentUUID = uuidv4({ namespace: payment_id }); //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
   const saveData = {
     orderDate: new Date(),
     mercadopagoTransactionId: paymentUUID,
     mercadopagoTransactionStatus:
       status.charAt(0).toUpperCase() + status.slice(1),
-    UserId: UserId,
+    UserId: id,
   };
 
   const cartShopping = await Cart.findOne({
-    where: { UserId: UserId },
+    where: { UserId: id },
     include: [
       {
         model: Product,
@@ -80,13 +80,14 @@ const savePurchaseDataHandler = async (status, payment, UserId) => {
       console.error(`No se encontró el producto con ID ${productId}.`);
     }
     console.log("Id de la Orden ", saveData.mercadopagoTransactionId);
+    const valProduct_Order = {
+      ProductId: productId,
+      OrderId: saveData.mercadopagoTransactionId,
+    };
+    console.log("Productos que serían guardados en la BD en la tabla Product_Order ", valProduct_Order);
 
-/*     await Product_Order.findOrCreate({
-      where: {
-        ProductId: productId,
-        OrderId: saveData.mercadopagoTransactionId,
-      },
-    }); */
+    const newProductOrder = Product_Order.build(valProduct_Order);
+    await newProductOrder.save();
   }
   console.log("Product Order actualizada ", Product_Order);
 

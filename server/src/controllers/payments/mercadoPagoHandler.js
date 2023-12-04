@@ -42,9 +42,12 @@ const createOrder = async (req, res) => {
         // },
 
         back_urls: {
-          success: "http://localhost:3001/payments/orderFeedback",
-          failure: "http://localhost:3001/payments/orderFeedback",
-          pending: "http://localhost:3001/payments/orderFeedback",
+          success:
+            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
+          failure:
+            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
+          pending:
+            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
         },
         // auto_return: 'approved',
         // payment_methods: {
@@ -71,14 +74,13 @@ const createOrder = async (req, res) => {
 
 const purchaseResults = (req, res) => {
   try {
-    const { payment_id, status, merchant_order_id } = req.query;
-    const { payer } = req.body.payer.id;
-    console.log("Lo que llega por Body ", req.body);
+    const { payment_id, status, merchant_order_id, id } = req.query;
+    console.log("El id que viene por Query ", id);
     console.log("paso por aca");
     res.json({
       payment: payment_id,
       status: status,
-      payerId: payer,
+      payerId: id,
       merchantOrder: merchant_order_id,
     });
   } catch (error) {
