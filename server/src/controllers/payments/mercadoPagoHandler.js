@@ -22,34 +22,26 @@ const createOrder = async (req, res) => {
       body: {
         items: items,
         payer: payer,
-        // payer: {
-        //   name: 'João',
-        //   surname: 'Silva',
-        //   email: 'user@email.com',
-        //   phone: {
-        //     area_code: '11',
-        //     number: '4444-4444'
-        //   },
-        //   identification: {
-        //     type: 'CPF',
-        //     number: '19119119100'
-        //   },
-        //   address: {
-        //     street_name: 'Street',
-        //     street_number: 123,
-        //     zip_code: '06233200'
-        //   }
-        // },
-
+        //----------- LOCAL ------------------------------------------------------------------
         back_urls: {
           success:
-            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
+            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
           failure:
-            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
+            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
           pending:
-            "http://localhost:3001/payments/orderFeedback?id=" + payer.id,
+            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
         },
-        // auto_return: 'approved',
+        //------------ DEPLOY ----------------------------------------------------------------
+        // back_urls: {
+        //   success:
+        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        //   failure:
+        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        //   pending:
+        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        // },
+        // ------------------------------------------------------------------------------------
+        auto_return: 'approved',
         // payment_methods: {
         //   excluded_payment_methods: [],
         //   excluded_payment_types: [],
