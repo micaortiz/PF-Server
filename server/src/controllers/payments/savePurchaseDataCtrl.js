@@ -3,7 +3,7 @@ const {
 } = require("../../handlers/paymentsHandler/saveDataHandler");
 
 const savePurchaseData = async (req, res) => {
-  const { payment_id, status, id } = req.query;
+  const { payment_id, status, id } = req.body;
 
   console.log(status, payment_id, id);
 

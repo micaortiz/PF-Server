@@ -17,7 +17,7 @@ module.exports = (sequelize) => {
         type: DataTypes.DATE,
         allowNull: false,
       },
-      status: {
+      deliveryStatus: {
         type: DataTypes.ENUM("In Process", "Paid", "Delivered", "Cancelled"),
         allowNull: false,
         defaultValue: "In Process",
