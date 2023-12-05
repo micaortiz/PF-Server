@@ -13,11 +13,12 @@ const router = express.Router();
 const { getAllCategoriesHandlers } = require("../handlers/getAllCategoriesHandlers");
 const { getProductsById } = require("../controllers/getProductsByIdCtrl");
 const { postCategory } = require("../controllers/postCategoryCtrl");
+const {getCountryById} = require("../controllers/country/getCountryById");
 const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
 const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
-const {getCountryById} = require("../controllers/country/getCountryById");
+const reviewRouter = require("./reviewRouter");
 
 //Create
 router.post("/products", newProduct);
@@ -53,6 +54,9 @@ router.use('/cart', cartRouter)
 
 /* order */
 router.use('/order', orderRouter )
+
+/* reviews */
+router.use('/reviews', reviewRouter )
 
 
 module.exports = {
