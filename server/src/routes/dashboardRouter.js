@@ -5,10 +5,10 @@ const dashboardRouter = Router();
 
 
 // Ventas por categoria 
-dashboardRouter.get('/', salesByCategory )
+// dashboardRouter.get('/', salesByCategory ) no esta definido todavia
 
 // Cantidad de productos por Categoria
-dashboardRouter.get('/count-by-category', getProductCountByCategory)
+dashboardRouter.get('/productCount', getProductCountByCategory)
 
 
 

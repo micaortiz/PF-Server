@@ -11,20 +11,17 @@ const getProductCountByCategory = async(req, res)=>{
               },
             ],
             group: ["Category.id"], 
-            // order: [[{
-            //     column: "productCount",
-            //     direction: "ASC",
-            // }]],
-          });
+        });
       
-        // Formatea los resultados según sea necesario
-        const formattedProductCounts = productCounts.map((result) => ({
+  
+        const productCategoryCounts =productCounts.map((result) => ({
             category: result.nameCat,
             productCount: result.get("productCount"),
           }));
       
-        return res.status(200).json({ productCounts: formattedProductCounts });
-
+        // return res.status(200).json({ productCounts: formattedProductCounts });
+        return res.status(200).json(productCategoryCounts);
+        
 
     } catch (error) {
         return res.status(500).json(error.message)
