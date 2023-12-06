@@ -7,7 +7,7 @@ const getAllOrders = async () => {
 
     return ordersDb;
   } catch (error) {
-    return res.status(400).send("No orders in database");
+    throw new Error("No orders in database");
   }
 };
 

@@ -1,4 +1,4 @@
-const { getAllOrders } = require("../../handlers/historyOrderHandler/getAllOrdersHandler")
+const { getAllOrders } = require("../../handlers/OrderHandler/getAllOrdersHandler")
 
 const getAllOrder = async (req, res) => {
   try {
