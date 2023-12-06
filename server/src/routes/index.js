@@ -18,7 +18,7 @@ const userRouter = require("./userRouter");
 const cartRouter = require("./cartRouter");
 const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
-
+const reviewRouter = require("./reviewRouter");
 const dashboardRouter = require("./dashboardRouter");
 
 //Create
@@ -55,6 +55,12 @@ router.use('/cart', cartRouter)
 
 /* order */
 router.use('/order', orderRouter )
+
+/* reviews */
+router.use('/reviews', reviewRouter )
+
+
+
 
 
 
