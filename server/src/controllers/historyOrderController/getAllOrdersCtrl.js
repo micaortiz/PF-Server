@@ -1,9 +1,9 @@
-const { getAllOrders } = require("../../handlers/paymentsHandler/getAllOrdersHandler")
+const { getAllOrders } = require("../../handlers/historyOrderHandler/getAllOrdersHandler")
 
 const getAllOrder = async (req, res) => {
   try {
 
-    const allOrdersData = await getAllOrder();
+    const allOrdersData = await getAllOrders();
 
     return res.status(200).json(allOrdersData)
 

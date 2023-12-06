@@ -20,6 +20,7 @@ const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
 const reviewRouter = require("./reviewRouter");
 
+
 //Create
 router.post("/products", newProduct);
 //Create category
@@ -57,6 +58,9 @@ router.use('/order', orderRouter )
 
 /* reviews */
 router.use('/reviews', reviewRouter )
+
+
+
 
 
 module.exports = {
