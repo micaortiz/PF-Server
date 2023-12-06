@@ -6,8 +6,6 @@ const {
   Cart,
 } = require("../../db");
 
-const { v4: uuidv4 } = require("uuid");
-
 const savePurchaseDataHandler = async (status, payment_id, id) => {
   //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
   const saveData = {
