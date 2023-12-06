@@ -23,7 +23,8 @@
       "price": 998.000,
       "discountPercentage": 0,
       "image": [
-        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694747/technook/woidizlumsf2uawde73c.jpg"
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694747/technook/woidizlumsf2uawde73c.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731920/technook/jvzi9ra6ukec2zmjzuyc.webp"
       ],
       "active": true,
       "tags": "Special Offer",
@@ -38,7 +39,8 @@
         "discountPercentage": 15,
         "priceOnSale": 407.910,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694709/technook/ocoij42ixhqqfincjg6y.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694709/technook/ocoij42ixhqqfincjg6y.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731707/technook/x6djm7fj6hidyqfcrba3.webp"
         ],
         "active": true,
         "tags": "Special Offer",
@@ -52,7 +54,9 @@
         "price": 999.000,
         "discountPercentage": 0,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694741/technook/fv5jqkolhyo7smft1gbp.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694741/technook/fv5jqkolhyo7smft1gbp.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731591/technook/afnz4qytwyptbvqyarqu.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731634/technook/t1l896dhq0ummcmzrvue.webp"
         ],
         "active": true,
         "tags": "New",
@@ -67,7 +71,9 @@
         "discountPercentage": 25,
         "priceOnSale": 404.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694734/technook/rszxkrklktgxwdqvc3ta.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694734/technook/rszxkrklktgxwdqvc3ta.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701730967/technook/nyijqtut3ef40u2sdodh.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731283/technook/snfv1seyq1porwbkhszs.webp"
         ],
         "active": true,
         "tags": "New",
@@ -96,7 +102,8 @@
         "price": 560.176,
         "discountPercentage": 0,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694794/technook/ou3sqatl0s5foiavmxlq.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694794/technook/ou3sqatl0s5foiavmxlq.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732547/technook/xt2gw4trg77eqysq2hcg.webp"
         ],
         "active": true,
         "tags": "New",
@@ -111,7 +118,8 @@
         "discountPercentage": 8,
         "priceOnSale": 366.490,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694786/technook/jej3rks5sngltcsi7jea.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694786/technook/jej3rks5sngltcsi7jea.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732467/technook/qwxixcoumyuazszjy5ov.webp"
         ],
         "active": true,
         "tags": "New",
@@ -141,7 +149,9 @@
         "discountPercentage": 35,
         "priceOnSale": 442.000,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694773/technook/ash8h00r9q9jcracr009.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694773/technook/ash8h00r9q9jcracr009.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732265/technook/ke2fjyvetsvyddvsh4ku.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732317/technook/lnvgdy5ztmn1txemkm8n.webp"
         ],
         "active": true,
         "tags": "Special Offer",
@@ -156,7 +166,8 @@
         "discountPercentage": 10,
         "priceOnSale": 350.100,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694852/technook/qcirdpr3ib0umhyqbe6c.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694852/technook/qcirdpr3ib0umhyqbe6c.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733082/technook/orudjr90j2k0fgwrned7.webp"
         ],
         "active": true,
         "tags": "New",
@@ -171,7 +182,8 @@
         "discountPercentage": 24,
         "priceOnSale": 96.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694842/technook/qocx51so3h6zdktn7ids.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694842/technook/qocx51so3h6zdktn7ids.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732980/technook/bp9ivpbjvsy1uhg44xs9.webp"
         ],
         "active": true,
         "tags": "Special Offer",
@@ -200,7 +212,9 @@
         "discountPercentage": 33,
         "priceOnSale": 123.499,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694814/technook/fwgvdcb7i7dcuzstjvty.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694814/technook/fwgvdcb7i7dcuzstjvty.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732825/technook/pjglatgg8bwtniqek4gq.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732897/technook/oljo38hnpoirrottkeqy.webp"
         ],
         "active": true,
         "tags": "New",
@@ -215,7 +229,9 @@
         "discountPercentage": 7,
         "priceOnSale": 499.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694808/technook/ytijvjsx5lr9oblr77uo.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694808/technook/ytijvjsx5lr9oblr77uo.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732684/technook/lchyuog4p72voew6tiae.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732729/technook/fgujreeixxmrmt4k95kp.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -230,7 +246,9 @@
         "discountPercentage": 10,
         "priceOnSale": 269.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694932/technook/sbobf62zgva3c5ok4vin.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694932/technook/sbobf62zgva3c5ok4vin.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733562/technook/ged8ojb5ev5sz2rdadwb.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733605/technook/ds8onzzfadl4ufnybz1i.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -245,7 +263,8 @@
         "discountPercentage": 33,
         "priceOnSale": 329.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694913/technook/yn4foz0feuqpnr5tatea.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694913/technook/yn4foz0feuqpnr5tatea.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733491/technook/zdevwunvomztwjjdhmuc.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -260,7 +279,8 @@
         "discountPercentage": 10,
         "priceOnSale": 359.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694899/technook/wac3fnsuw6g5tfd43blw.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694899/technook/wac3fnsuw6g5tfd43blw.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733397/technook/qatridkp64nack8bpst8.webp"
         ],
         "active": true,
         "tags": "New",
@@ -275,7 +295,9 @@
         "discountPercentage": 10,
         "priceOnSale": 149.669,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694874/technook/uamy0jpgoyumilfsa55q.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694874/technook/uamy0jpgoyumilfsa55q.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733268/technook/ms6sbybwckd6ibcnrf0e.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733344/technook/mwybzffrt0eyk3ius8gc.webp"
         ],
         "active": true,
         "tags": "New",
@@ -290,7 +312,8 @@
         "discountPercentage": 28,
         "priceOnSale": 28.799,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694863/technook/inhwgywgtitxip18pdhe.webp"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694863/technook/inhwgywgtitxip18pdhe.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733171/technook/vyteujiyu4nwhvm8uda2.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -305,7 +328,8 @@
         "discountPercentage": 10,
         "priceOnSale": 503.899,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695012/technook/b884iynz2catejvcnllm.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736852/technook/pjnbubtlk8opc40zbiqd.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736890/technook/wxjzdwroixneqjzyljsl.webp"
         ],
         "active": true,
         "tags": "New",
@@ -320,7 +344,8 @@
         "discountPercentage": 22,
         "priceOnSale": 32.499,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694995/technook/rilkh0lu6rk1zdtokkrw.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694995/technook/rilkh0lu6rk1zdtokkrw.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736046/technook/dmxmdjgdd2jnrchxjkdz.webp"
         ],
         "active": true,
         "tags": "New",
@@ -332,10 +357,11 @@
         "brand": "Spica",
         "description": "Spica SP-4408 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 160.000,
-        "discountPercentage": 67,
-        "priceOnSale": 51.999,
+        "discountPercentage": 45,
+        "priceOnSale": 88.00,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694968/technook/vxz56hwg6mqspyq7yz6r.webp"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694968/technook/vxz56hwg6mqspyq7yz6r.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701735319/technook/rhs82i1ajdbg1naqradg.webp"
         ],
         "active": true,
         "tags": "New",
@@ -347,10 +373,10 @@
         "brand": "Philips",
         "description": "Philips TAS1505B/00 offers natural sound, with great clarity and precision, that is dispersed evenly.",
         "price": 23.399,
-        "discountPercentage": 80,
-        "priceOnSale": 4.679,
+        "discountPercentage": 0,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694942/technook/wigsv2gjepq7i53p1kmg.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694942/technook/wigsv2gjepq7i53p1kmg.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701735746/technook/jam1alksfifmglscgu2u.webp"
         ],
         "active": true,
         "tags": "New",
@@ -358,14 +384,16 @@
         "CategoryId": 5
       },
       {
-        "nameProd": "Smart TV Tcl",
+        "nameProd": "Smart TV Samsung",
         "brand": "Tcl",
         "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0",
         "price": 179.999,
         "discountPercentage": 5,
         "priceOnSale": 169.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695296/technook/o3oaxahzafhbomskztoh.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736524/technook/hvy8j1cfnv586ak6yvqq.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736465/technook/h7qxz8sittedce560gs6.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736498/technook/urr954lemkedyjr0pakg.webp"
         ],
         "active": true,
         "tags": "New",
@@ -380,7 +408,9 @@
         "discountPercentage": 11,
         "priceOnSale": 310.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695282/technook/cp4dpo9ja0pml7trojz3.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695282/technook/cp4dpo9ja0pml7trojz3.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736719/technook/afwrjwlyngri32wp1cte.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736753/technook/euky0yjmazqawy9viwfq.webp"
         ],
         "active": true,
         "tags": "New",
@@ -395,7 +425,8 @@
         "discountPercentage": 10,
         "priceOnSale": 489.999,
         "image": [
-          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695253/technook/semqvn4hzojnp2z1ctuo.jpg"
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695253/technook/semqvn4hzojnp2z1ctuo.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736232/technook/z42stlbfkdm596xedwwn.webp"
         ],
         "active": true,
         "tags": "New",
@@ -403,7 +434,7 @@
         "CategoryId": 6
       },
       {
-        "nameProd": "Tcl Qle",
+        "nameProd": "Tcl Qled Google Tv-rv",
         "brand": "TCL",
         "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
         "price": 399.999,
