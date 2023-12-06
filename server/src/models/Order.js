@@ -13,6 +13,14 @@ module.exports = (sequelize) => {
         allowNull: false,
         primaryKey: true,
       },
+      userName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      itemsCart: {
+        type: DataTypes.JSON,
+        allowNull: false,
+      },
       orderDate: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -29,6 +37,10 @@ module.exports = (sequelize) => {
       mercadopagoTransactionStatus: {
         type: DataTypes.ENUM("Approved", "Rejected", "Pending"),
         allowNull: true,
+      },
+      totalPrice: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
       },
     },
     { timestamps: false }

@@ -63,6 +63,10 @@ User.hasMany(Review);
 Order.belongsTo(User);
 User.hasMany(Order);
 
+Review.belongsTo(Product, { foreignKey: "productId" });
+Product.hasMany(Review, { foreignKey: "productId" });
+
+
 
 /* N:M */
 Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });

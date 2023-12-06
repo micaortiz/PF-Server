@@ -16,11 +16,12 @@ const postReviewHandler = async(reviewText, rating, UserId, email) =>{
     throw Error('User not found')
     // return {error: 'User not found'}
 
-    const review = await Review.create({
-        UserId: userFound.id,
-        reviewText: reviewText || '',
-        rating: rating
-    })
+  const review = await Review.create({
+    UserId: userFound.id,
+    reviewText: reviewText || "",
+    rating: rating,
+    productId: productId,/*  */
+  });
 
     await userFound.addReview(review);
 
