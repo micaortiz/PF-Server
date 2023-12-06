@@ -2,7 +2,7 @@ const { getUserByIdHandler} = require("../../handlers/userHandler/getUserByIdHan
 
 const getUserById = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
     const userId = await getUserByIdHandler(id);
 
     if (!userId) return res.status(400).send("User not found");
