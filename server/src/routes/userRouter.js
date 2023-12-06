@@ -13,17 +13,17 @@ userRouter.post("/create", createUser);
 //Update
 userRouter.put("/", updateUsers);
 //All Users
-// userRouter.get("/", getAllUsers);
+userRouter.get("/", getAllUsers);
 //User by Id
-// userRouter.get("/", getUserById)
+userRouter.get("/:id", getUserById)
 
-userRouter.get('/:id', (req, res) => {
-      getUserById(req, res);
-  });
+// userRouter.get('/:id', (req, res) => {
+//       getUserById(req, res);
+//   });
 
-userRouter.get('/', (req, res) => {
-      getAllUsers(req, res);
-  })
+// userRouter.get('/', (req, res) => {
+//       getAllUsers(req, res);
+//   })
 
 //Delete
 userRouter.delete("/:id", deleteUser);
