@@ -8,7 +8,7 @@ const dashboardRouter = Router();
 dashboardRouter.get('/', salesByCategory )
 
 // Cantidad de productos por Categoria
-dashboardRouter.get('/countByCategory', getProductCountByCategory)
+dashboardRouter.get('/count-by-category', getProductCountByCategory)
 
 
 

@@ -450,5 +450,76 @@
         "tags": "Limited Edition",
         "stock": 4,
         "CategoryId": 6
+      },
+      {
+        "nameProd": "Tablet Samsung Galaxy Tab A7 Lite",
+        "brand": "Samsung",
+        "description": "8.7' Full HD screen ideal for reading. Its size and light weight is perfect to carry everywhere. Easy gestures for one-handed use.",
+        "price": 191.999,
+        "discountPercentage": 0,
+        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_949825-MLU72561171367_102023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_735978-MLU72491997170_102023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_624654-MLU72491997166_102023-F.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 10,
+        "CategoryId": 3
+      },
+      {
+        "nameProd": "Xiaomi Smart Band",
+        "brand": "Xiaomi",
+        "description": "A smartwatch is ideal for lovers of technology and healthy living, facilitating daily activities with its tools designed to make life easier.",
+        "price": 45.899 ,
+        "discountPercentage": 0,
+        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_747295-MLA69669259886_052023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_980708-MLU72535003996_102023-F.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 15,
+        "CategoryId": 4
+      },
+      {
+        "nameProd": "Smartwach Argomtech S50",
+        "brand": "ArgomTech",
+        "description": "The S50 smartwatch includes excellent features such as heart rate sensor, blood pressure monitoring, body temperature, sleep monitoring, oxygen, pedometer, fitness tracker and much more.",
+        "price": 49.999,
+        "discountPercentage": 0,
+        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_683148-MLA54432687313_032023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_982694-MLA54434782220_032023-F.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 5,
+        "CategoryId": 4
+      },
+      {
+        "nameProd": "Notebook Asus Intel I5",
+        "brand": "Asus",
+        "description": "The ASUS Vivobook 15 F1500 notebook is the entry-level notebook that delivers powerful performance and immersive visuals.",
+        "price": 715.00,
+        "discountPercentage": 0,
+        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_754347-MLU69857982717_062023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_648134-MLU69858864729_062023-F.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 8,
+        "CategoryId": 1
+      },
+      {
+        "nameProd": "Notebook Huawei MateBook D14",
+        "brand": "Huawei",
+        "description": "The Huawei MateBook D14 notebook is as much a solution for work and study as it is for entertainment.",
+        "price": 549.999,
+        "discountPercentage": 0,
+        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_933750-MLA45057868424_032021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_817619-MLA45057868425_032021-F.webp"
+        ],
+        "active": true,
+        "tags": "None",
+        "stock": 3 ,
+        "CategoryId": 1
       }
     ]
