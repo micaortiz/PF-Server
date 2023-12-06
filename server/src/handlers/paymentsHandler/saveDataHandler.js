@@ -94,14 +94,6 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     { where: { id: newOrder.id } }
   );
 
-  const response = await axios({
-    method: "delete",
-    url: `http://localhost:3001/cart`,
-    data: {
-      nameProd: productsInCart.name,
-      CartId: cartShopping.id,
-    },
-  });
   return newOrder;
 };
 
