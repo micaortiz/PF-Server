@@ -1,0 +1,46 @@
+[
+    {
+      "id": "67986fae-74ff-400f-a507-e1407c594ec4",
+      "userName": "Bastian",
+      "itemsCart": "[{\"id\":\"51414a31-efa3-4e8a-a894-bb3cf66b238c\",\"nameProd\":\"Notebook Asus Intel I5\",\"price\":715,\"priceOnSale\":null,\"stock\":8,\"quantityProd\":1,\"category\":\"Laptops\"},{\"id\":\"15dda5f1-12f6-4526-a036-d215c9564518\",\"nameProd\":\"Notebook Huawei MateBook D14\",\"price\":549.999,\"priceOnSale\":null,\"stock\":3,\"quantityProd\":2,\"category\":\"Laptops\"}]",
+      "orderDate": "2023-09-21T12:54:01.082Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "1316140219",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 1814.998,
+      "UserId": 3
+    },
+    {
+      "id": "45a4d7b3-e697-4280-95de-d5f025efa59f",
+      "userName": "Selene",
+      "itemsCart": "[{\"id\":\"abee4a8d-47c8-44dc-a705-b03ab5ff16e3\",\"nameProd\":\"Notebook Gamer ROG\",\"price\":999,\"priceOnSale\":null,\"stock\":12,\"quantityProd\":2},{\"id\":\"db7b81e6-9e8a-406c-991a-c08d794b2b9f\",\"nameProd\":\" Xiaomi Redmi\",\"price\":126.999,\"priceOnSale\":88.899,\"stock\":2,\"quantityProd\":1,\"category\":\"Laptops\"},{\"id\":\"6f649c4e-59e1-4338-9335-ccf24914c4b3\",\"nameProd\":\"Tablet Aiwa Tablet\",\"price\":127.775,\"priceOnSale\":96.999,\"stock\":24,\"quantityProd\":1,\"category\":\"Tablets\"}]",
+      "orderDate": "2023-10-18T12:56:53.671Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "1316140220",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 2183.8979999999997,
+      "UserId": 2
+    },
+    {
+      "id": "2cd66184-ba3c-443f-99c4-4c202bb2448b",
+      "userName": "Dory",
+      "itemsCart": "[{\"id\":\"243c5d89-6dc4-4dd6-8bdf-a4876b7deab5\",\"nameProd\":\"Notebook Lenovo V15 15.6\",\"price\":479.895,\"priceOnSale\":407.91,\"stock\":9,\"quantityProd\":1,\"category\":\"Laptops\"}]",
+      "orderDate": "2023-11-27T13:00:14.802Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "1316140221",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 407.91,
+      "UserId": 1
+    },
+    {
+      "id": "f628f16d-fd33-4340-81be-a5e23dfd64cb",
+      "userName": "Bruno",
+      "itemsCart": "[{\"id\":\"719c97d3-2b89-4aed-9c9c-b604b9667b64\",\"nameProd\":\"Gadnic Android\",\"price\":184.599,\"priceOnSale\":123.499,\"stock\":4,\"quantityProd\":3,\"category\":\"Tablets\"},{\"id\":\"25d0b180-68ad-4cb8-bb7b-1e390d17c8f6\",\"nameProd\":\"T-Go Gaming Tablet\",\"price\":116.699,\"priceOnSale\":null,\"stock\":9,\"quantityProd\":3,\"category\":\"Tablets\"}]",
+      "orderDate": "2023-12-07T13:11:16.961Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "1316140225",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 720.5939999999999,
+      "UserId": 4
+    }
+  ]

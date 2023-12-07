@@ -1,9 +1,10 @@
 const data = require("../../api/db.json");
 const user = require('../../api/user.json')
 const countries = require('../../api/countries.json')
+const order = require('../../api/order.json')
 
 
-const { Product, Category, User, Country } = require("../db.js");
+const { Product, Category, User, Country, Order } = require("../db.js");
 
 const dbConnect = async () => {
   try {
@@ -74,9 +75,22 @@ const dbConnect = async () => {
       console.log('### User successfully charged ###')
     );
 
+    const orderDB = order.map((o) =>
+      Order.create({
+        userName: o.userName,
+        itemsCart: o.itemsCart,
+        orderDate: o.orderDate,
+        deliveryStatus: o.deliveryStatus,
+        mercadopagoTransactionId: o.mercadopagoTransactionId,
+        mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
+        totalPrice: o.totalPrice,
+        UserId: o.UserId
+      })
+    )
 
-
-
+    await Promise.all(orderDB).then(()=>
+    console.log('### Order successfully charged ###')
+  );
     // console.log('### Database loaded successfully ###');
   } catch (error) {
     throw Error(error.message);
