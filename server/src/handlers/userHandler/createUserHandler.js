@@ -13,6 +13,11 @@ const postUserCtrl = async(email, token) => {
       return newUser
     }
 
+    if(user && token) {
+      user.token = token
+      await user.save()
+    }
+
     return user;
   } catch (error) {
     console.error("Error:", error);
