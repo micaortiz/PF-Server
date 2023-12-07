@@ -19,7 +19,7 @@ const cartRouter = require("./cartRouter");
 const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
 const reviewRouter = require("./reviewRouter");
-
+const dashboardRouter = require("./dashboardRouter");
 
 //Create
 router.post("/products", newProduct);
@@ -62,6 +62,12 @@ router.use('/reviews', reviewRouter )
 
 
 
+
+
+
+
+/* admin dashboard */
+router.use('/dashboard', dashboardRouter )
 
 module.exports = {
   router,
