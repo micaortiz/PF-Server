@@ -1,5 +1,6 @@
 const {
   Product,
+  Category,
   Order,
   Product_Carts,
   Product_Order,
@@ -16,9 +17,16 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       {
         model: Product,
         attributes: ["id", "nameProd", "stock", "price", "priceOnSale"],
+        include: [
+          {
+            model: Category,
+            attributes: ["id", "nameCat"],
+          },
+        ],
       },
     ],
   });
+
   const userData = await User.findOne({
     //* Trae la informacion del Usuario
     where: { id: id },
@@ -41,12 +49,18 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
 
   //* Nos quedamos con los productos del carrito de compras
   const productsInCart = cartShopping.Products.map((product) => {
+    const quantityInfo = cartQuantityProd.find(
+      (productCart) => productCart.ProductId === product.id
+    );
+
     return {
       id: product.id,
       nameProd: product.nameProd,
       price: product.price,
       priceOnSale: product.priceOnSale,
       stock: product.stock,
+      quantityProd: quantityInfo ? quantityInfo.quantity : 0,
+      category: product.Category.nameCat,
     };
   });
   console.log("Productos en el carrito de compras ", productsInCart);
