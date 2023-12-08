@@ -21,6 +21,7 @@ const orderRouter = require("./orderRouter");
 const reviewRouter = require("./reviewRouter");
 const dashboardRouter = require("./dashboardRouter");
 const { getDeletedProducts } = require("../controllers/getDeletedProduct");
+const { restauredDeletedProduct } = require("../controllers/restoreDeletedProduct");
 
 //Create
 router.post("/products", newProduct);
@@ -34,6 +35,8 @@ router.put("/products", updateProduct);
 router.delete("/products", deleteProduct);
 //Deleted Products
 router.get("/products/deleted", getDeletedProducts)
+//Restaure deleted products
+router.put("/products/deleted/:id", restauredDeletedProduct)
 //SearchByName
 router.get("/products/name?", getByName);
 //All Product  //* Validar si vienen datos por Query para trabajar sobre la misma ruta del GET.
