@@ -14,6 +14,6 @@ cartRouter.put("/", updateCart)
 //Delete
 cartRouter.delete('/', deleteProductsCart)
 //Cart by User
-cartRouter.get('/:cartId', getCartById )
+cartRouter.get('/:UserId', getCartById )
 
 module.exports = cartRouter
