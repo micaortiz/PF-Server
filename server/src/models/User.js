@@ -59,6 +59,6 @@ module.exports = (sequelize) => {
         type: DataTypes.TEXT,
       }
     },
-    { timestamps: false }
+    { paranoid: true, timestamps: true }
   );
 };
