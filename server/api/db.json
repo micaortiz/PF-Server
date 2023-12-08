@@ -14,7 +14,7 @@
       "active": true,
       "tags": "Limited Edition",
       "stock": 6,
-      "CategoryId": 1
+      "CategoryId": 2
     },
     {
       "nameProd": "Notebook gamer HP",
@@ -29,7 +29,7 @@
       "active": true,
       "tags": "Special Offer",
       "stock": 4,
-      "CategoryId": 1
+      "CategoryId": 2
     }, 
     {
         "nameProd": "Notebook Lenovo V15 15.6",
@@ -45,7 +45,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 9,
-        "CategoryId": 1
+        "CategoryId": 2
       },
       {
         "nameProd": "Notebook Gamer ROG",
@@ -61,7 +61,7 @@
         "active": true,
         "tags": "New",
         "stock": 12,
-        "CategoryId": 1
+        "CategoryId": 2
       },
       {
         "nameProd": "Notebook Dell Latitude",
@@ -78,7 +78,7 @@
         "active": true,
         "tags": "New",
         "stock": 4,
-        "CategoryId": 1
+        "CategoryId": 2
       },      
       {
         "nameProd": " Xiaomi Redmi",
@@ -93,7 +93,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 2,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Samsung Galaxy S22",
@@ -108,7 +108,7 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Samsung Galaxy A54",
@@ -124,7 +124,7 @@
         "active": true,
         "tags": "New",
         "stock": 13,
-        "CategoryId": 2
+        "CategoryId": 1
       },     
        {
         "nameProd": "Blu Smartphones",
@@ -139,7 +139,7 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Smartphone Samsung Galaxy S23",
@@ -156,7 +156,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },     
        {
         "nameProd": "Apple iPad",
