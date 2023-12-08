@@ -3,11 +3,11 @@ const { Order } = require("../../db");
 const getAllOrders = async () => {
   try {
     const ordersDb = await Order.findAll();
-    if (!ordersDb) throw new Error("No orders in database");
+    if (ordersDb.length === 0) return { error: "No orders in database" };
 
     return ordersDb;
   } catch (error) {
-    throw new Error("No orders in database");
+    return error.message;
   }
 };
 
