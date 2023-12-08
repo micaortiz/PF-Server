@@ -1,36 +1,34 @@
 const { User, Review } = require("../../db");
 
-const postReviewHandler = async(reviewText, rating, UserId, email) =>{
-    // const userFound = await User.findByPk(UserId, 
-    //     // {
-    //     // attributes: ['id', 'token', 'email']
-    // // }
-    // )
-    const userFound = await User.findOne({
+const postReviewHandler = async (
+ UserId,
+ reviewText,
+ rating,
+ productId
+) => {
+  const userFound = await User.findByPk(UserId, {
+    attributes: ["id", "token", "email"],
+  });
+  /* const userFound = await User.findOne({
         where: {
             email: email,
         }
-    })
-    console.log(userFound);
-    if(!userFound)
-    throw Error('User not found')
-    // return {error: 'User not found'}
+    }) */
+  console.log(userFound);
+  if (!userFound) throw Error("User not found");
+  // return {error: 'User not found'}
 
   const review = await Review.create({
     UserId: userFound.id,
     reviewText: reviewText || "",
     rating: rating,
-    productId: productId,/*  */
+    productId: productId /*  */,
   });
 
-    await userFound.addReview(review);
+  await userFound.addReview(review);
 
-    return review
-
-
-
-
-}
+  return review;
+};
 module.exports = {
-    postReviewHandler
-}
+  postReviewHandler,
+};
