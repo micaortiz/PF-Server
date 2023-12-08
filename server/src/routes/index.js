@@ -6,7 +6,7 @@ const { getByName } = require("../controllers/productsName");
 const { updateProduct } = require("../controllers/updateProductCtrl");
 const { deleteProduct } = require("../controllers/deletePrdocutCtrl");
 const { getAllProducts } = require("../controllers/getAll_Products")
-const { getAllCountryHandler } = require('../handlers/getAllCountryHandler')
+const { getAllCountryHandler } = require('../handlers/countryHandler/getAllCountryHandler')
 
 const router = express.Router();
 // const {Router} = require('express')
@@ -20,6 +20,8 @@ const paymentsRouter = require("./paymentsRouter");
 const orderRouter = require("./orderRouter");
 const reviewRouter = require("./reviewRouter");
 const dashboardRouter = require("./dashboardRouter");
+const { getDeletedProducts } = require("../controllers/getDeletedProduct");
+const { restauredDeletedProduct } = require("../controllers/restoreDeletedProduct");
 
 //Create
 router.post("/products", newProduct);
@@ -31,6 +33,10 @@ router.get("/categories", getAllCategoriesHandlers);
 router.put("/products", updateProduct);
 //Delete
 router.delete("/products", deleteProduct);
+//Deleted Products
+router.get("/products/deleted", getDeletedProducts)
+//Restaure deleted products
+router.put("/products/deleted/:id", restauredDeletedProduct)
 //SearchByName
 router.get("/products/name?", getByName);
 //All Product  //* Validar si vienen datos por Query para trabajar sobre la misma ruta del GET.
