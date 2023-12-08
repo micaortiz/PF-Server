@@ -5,6 +5,7 @@ const { updateUsers } = require("../controllers/userController/updateUserCtrl");
 const { getAllUsers } = require("../controllers/userController/getAllUsers");
 const { deleteUser } = require("../controllers/userController/deleteUser");
 const { getUserById } = require("../controllers/userController/getUserById");
+const { bringErasedUsers } = require("../handlers/userHandler/getDeletedUsers");
 
 const userRouter = Router();
 
@@ -14,6 +15,8 @@ userRouter.post("/create", createUser);
 userRouter.put("/", updateUsers);
 //All Users
 userRouter.get("/", getAllUsers);
+//Users erased
+userRouter.get("/deleted", bringErasedUsers)
 //User by Id
 userRouter.get("/:id", getUserById)
 
