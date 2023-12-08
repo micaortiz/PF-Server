@@ -4,6 +4,9 @@ const orderRouter = Router();
 const {
   getAllOrder,
 } = require("../controllers/orderController/getAllOrdersCtrl");
+const {
+  getOrderByUserId,
+} = require("../controllers/orderController/getOrderByUserIdCtrl");
 
 const {
   updateOrder,
@@ -12,6 +15,9 @@ const {
 /* Trae el Historial de Compras */
 
 orderRouter.get("/history", getAllOrder);
+// Actualizar una Orden
 orderRouter.put("/update", updateOrder);
+// Order by UserId
+orderRouter.get("/:UserId", getOrderByUserId);
 
 module.exports = orderRouter;

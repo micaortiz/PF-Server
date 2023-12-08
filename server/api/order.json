@@ -7,7 +7,7 @@
       "mercadopagoTransactionId": "1316140219",
       "mercadopagoTransactionStatus": "Approved",
       "totalPrice": 1814.998,
-      "UserId": 3
+      "UserId": 2
     },
     {
       "userName": "Selene",
@@ -17,7 +17,7 @@
       "mercadopagoTransactionId": "1316140220",
       "mercadopagoTransactionStatus": "Approved",
       "totalPrice": 2183.8979999999997,
-      "UserId": 2
+      "UserId": 3
     },
     {
       "userName": "Dory",
@@ -38,5 +38,35 @@
       "mercadopagoTransactionStatus": "Approved",
       "totalPrice": 720.5939999999999,
       "UserId": 4
+    },
+    {
+      "userName": "Selene",
+      "itemsCart": "[{\"id\":\"55ebcb3a-3906-4c22-85ad-85fdff8b3aab\",\"nameProd\":\"Samsung Galaxy A54\",\"price\":398.359,\"priceOnSale\":366.49,\"stock\":13,\"quantityProd\":3,\"category\":\"Smartphones\"}]",
+      "orderDate": "2023-12-08T00:42:34.022Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "1096140295",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 1099.47,
+      "UserId": 3
+    },
+    {
+      "userName": "Bastian",
+      "itemsCart": "[{\"id\":\"6b205655-b82b-43b8-9e44-fe5bbe458cd9\",\"nameProd\":\"Apple Watch Series 7\",\"price\":399.99,\"priceOnSale\":359.999,\"stock\":14,\"quantityProd\":5,\"category\":\"Smartwatches\"}]",
+      "orderDate": "2023-12-08T00:50:59.516Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "2096140206",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 1799.9950000000001,
+      "UserId": 2
+    },
+    {
+      "userName": "Bastian",
+      "itemsCart": "[{\"id\":\"5ed91eee-6c14-48cc-a0d6-9e21f9b47d47\",\"nameProd\":\"Spica Sp-4408 Portable\",\"price\":160,\"priceOnSale\":88,\"stock\":15,\"quantityProd\":3,\"category\":\"Speakers\"}]",
+      "orderDate": "2023-12-08T00:57:02.900Z",
+      "deliveryStatus": "In Process",
+      "mercadopagoTransactionId": "2356170200",
+      "mercadopagoTransactionStatus": "Approved",
+      "totalPrice": 264,
+      "UserId": 2
     }
   ]
