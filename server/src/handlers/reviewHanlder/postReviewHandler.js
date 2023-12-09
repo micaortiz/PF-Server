@@ -1,13 +1,8 @@
 const { User, Review } = require("../../db");
 
-const postReviewHandler = async (
- UserId,
- reviewText,
- rating,
- productId
-) => {
+const postReviewHandler = async (UserId, reviewText, rating, productId) => {
   const userFound = await User.findByPk(UserId, {
-    attributes: ["id", "token", "email"],
+    attributes: ["id", "token", "email", "name"],
   });
   /* const userFound = await User.findOne({
         where: {
@@ -23,6 +18,7 @@ const postReviewHandler = async (
     reviewText: reviewText || "",
     rating: rating,
     productId: productId /*  */,
+    userName: userFound.name /*  */,
   });
 
   await userFound.addReview(review);

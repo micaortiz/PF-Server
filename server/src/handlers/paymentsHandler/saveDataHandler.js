@@ -6,6 +6,7 @@ const {
   Product_Order,
   Cart,
   User,
+  Review,
 } = require("../../db");
 const axios = require("axios");
 
@@ -31,6 +32,20 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     //* Trae la informacion del Usuario
     where: { id: id },
   });
+
+  const reviews = await Review.findAll({
+    where: { UserId: userData.id },
+  });
+
+  /*   const reviewsByProduct = await Promise.all(
+    cartShopping.products.map(async (product) => {
+      return {
+        reviews: await Review.findAll({
+          where: { productId: product.id },
+        }),
+      };
+    })
+  ); */
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
@@ -61,6 +76,10 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       stock: product.stock,
       quantityProd: quantityInfo ? quantityInfo.quantity : 0,
       category: product.Category.nameCat,
+      reviews: reviews.map((review) => ({
+        rating: review.rating,
+        comment: review.reviewText,
+      })),
     };
   });
   console.log("Productos en el carrito de compras ", productsInCart);
