@@ -14,7 +14,7 @@
       "active": true,
       "tags": "Limited Edition",
       "stock": 6,
-      "CategoryId": 1
+      "CategoryId": 2
     },
     {
       "nameProd": "Notebook gamer HP",
@@ -29,7 +29,7 @@
       "active": true,
       "tags": "Special Offer",
       "stock": 4,
-      "CategoryId": 1
+      "CategoryId": 2
     }, 
     {
         "nameProd": "Notebook Lenovo V15 15.6",
@@ -45,7 +45,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 9,
-        "CategoryId": 1
+        "CategoryId": 2
       },
       {
         "nameProd": "Notebook Gamer ROG",
@@ -61,7 +61,7 @@
         "active": true,
         "tags": "New",
         "stock": 12,
-        "CategoryId": 1
+        "CategoryId": 2
       },
       {
         "nameProd": "Notebook Dell Latitude",
@@ -78,7 +78,7 @@
         "active": true,
         "tags": "New",
         "stock": 4,
-        "CategoryId": 1
+        "CategoryId": 2
       },      
       {
         "nameProd": " Xiaomi Redmi",
@@ -93,7 +93,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 2,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Samsung Galaxy S22",
@@ -108,7 +108,7 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Samsung Galaxy A54",
@@ -124,7 +124,7 @@
         "active": true,
         "tags": "New",
         "stock": 13,
-        "CategoryId": 2
+        "CategoryId": 1
       },     
        {
         "nameProd": "Blu Smartphones",
@@ -139,7 +139,7 @@
         "active": true,
         "tags": "New",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },      
       {
         "nameProd": "Smartphone Samsung Galaxy S23",
@@ -156,7 +156,7 @@
         "active": true,
         "tags": "Special Offer",
         "stock": 1,
-        "CategoryId": 2
+        "CategoryId": 1
       },     
        {
         "nameProd": "Apple iPad",
@@ -457,9 +457,9 @@
         "description": "8.7' Full HD screen ideal for reading. Its size and light weight is perfect to carry everywhere. Easy gestures for one-handed use.",
         "price": 191.999,
         "discountPercentage": 0,
-        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_949825-MLU72561171367_102023-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_735978-MLU72491997170_102023-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_624654-MLU72491997166_102023-F.webp"
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702047981/technook/lzizlyvzitb7tkfpu235.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702047995/technook/sunt2fq4c6uurgfrmcq2.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048008/technook/jebafaylt93th1npgnd2.webp"
         ],
         "active": true,
         "tags": "New",
@@ -472,8 +472,8 @@
         "description": "A smartwatch is ideal for lovers of technology and healthy living, facilitating daily activities with its tools designed to make life easier.",
         "price": 45.899 ,
         "discountPercentage": 0,
-        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_747295-MLA69669259886_052023-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_980708-MLU72535003996_102023-F.webp"
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048048/technook/hovvbrpofnujocg0wa4m.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048068/technook/b5tch2mrskzf4njott3r.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -486,8 +486,8 @@
         "description": "The S50 smartwatch includes excellent features such as heart rate sensor, blood pressure monitoring, body temperature, sleep monitoring, oxygen, pedometer, fitness tracker and much more.",
         "price": 49.999,
         "discountPercentage": 0,
-        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_683148-MLA54432687313_032023-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_982694-MLA54434782220_032023-F.webp"
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048111/technook/ehmufawjiytmnlmwxr3p.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048127/technook/z5whcqhcigliuzstnzpu.webp"
         ],
         "active": true,
         "tags": "Limited Edition",
@@ -500,8 +500,8 @@
         "description": "The ASUS Vivobook 15 F1500 notebook is the entry-level notebook that delivers powerful performance and immersive visuals.",
         "price": 715.00,
         "discountPercentage": 0,
-        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_754347-MLU69857982717_062023-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_648134-MLU69858864729_062023-F.webp"
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048183/technook/pancyd2v89wdcbxla5y5.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048197/technook/lgjt5cyivfhlfsnnsd0p.webp"
         ],
         "active": true,
         "tags": "New",
@@ -514,8 +514,8 @@
         "description": "The Huawei MateBook D14 notebook is as much a solution for work and study as it is for entertainment.",
         "price": 549.999,
         "discountPercentage": 0,
-        "image": [ "https://http2.mlstatic.com/D_NQ_NP_2X_933750-MLA45057868424_032021-F.webp",
-        "https://http2.mlstatic.com/D_NQ_NP_2X_817619-MLA45057868425_032021-F.webp"
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048238/technook/ncyvll5w3afstrxtmjrg.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048249/technook/sj0urfhh8vhwzetqrjb7.webp"
         ],
         "active": true,
         "tags": "None",

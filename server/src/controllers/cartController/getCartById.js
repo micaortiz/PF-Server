@@ -1,30 +1,38 @@
-const { Cart, Product, Category } = require("../../db");
+const { Cart, Product, Category, User } = require("../../db");
 const getCartById = async (req, res) => {
   try {
-    const { cartId } = req.params;
-    const cart = await Cart.findByPk(cartId, {
+    const { UserId } = req.params;
+
+    const user = await User.findByPk(UserId, {
       include: [
         {
-          model: Product,
-          through: { attributes: ["quantityProd"] },
-          attributes: [
-            "id",
-            "nameProd",
-            "image",
-            "description",
-            "price",
-            "priceOnSale",
-            "stock",
-            "active",
+          model: Cart,
+          include: [
+            {
+              model: Product,
+              through: { attributes: ["quantityProd"] },
+              attributes: [
+                "id",
+                "nameProd",
+                "image",
+                "description",
+                "price",
+                "priceOnSale",
+                "stock",
+                "active",
+              ],
+              include: {
+                model: Category,
+                attributes: ["nameCat"],
+              },
+            },
           ],
-          include: {
-            model: Category,
-            attributes: ["nameCat"],
-          },
         },
       ],
     });
 
+    if (!user) return res.status(404).send("User not found");
+    const cart = user.Cart;
     if (!cart) return res.status(404).send("Cart not found");
 
     // Calcular el precio total teniendo en cuenta price y priceOnSale en caso de que lo tenga
