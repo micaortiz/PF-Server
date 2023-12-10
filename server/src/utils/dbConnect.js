@@ -41,8 +41,13 @@ const dbConnect = async () => {
     await Promise.all(productDB).then(() =>
       console.log("### Product successfully charged ###")
     );
-    const productId = Product.id;
-    console.log("Id del producto ", productId);
+
+    let idProduct = [];
+
+    for (const product of await Promise.all(productDB)) {
+      const dataValues = await product.dataValues;
+      idProduct.push(dataValues.id);
+    }
 
     const countryDB = countries.map((t) =>
       Country.create({
@@ -55,8 +60,8 @@ const dbConnect = async () => {
       console.log("### Country successfully charged ###")
     );
 
-    const userDB = user.map((u) =>
-      User.create({
+    const userDB = user.map(async (u) => {
+      newUser = await User.create({
         // id: u.id,
         name: u.name,
         lastName: u.lastName,
@@ -70,12 +75,12 @@ const dbConnect = async () => {
         typeUser: u.typeUser,
         token: u.token,
         CountryId: u.CountryId,
-      })
-    );
+      });
+    });
 
-    await Promise.all(userDB).then(() =>
-      console.log("### User successfully charged ###")
-    );
+    Promise.all(userDB).then(() => {
+      console.log("### Users successfully charged ###");
+    });
 
     const orderDB = order.map((o) =>
       Order.create({
@@ -94,12 +99,12 @@ const dbConnect = async () => {
       console.log("### Order successfully charged ###")
     );
 
-    const reviewsDB = reviews.map((r) =>
+    const reviewsDB = reviews.map((r, index) =>
       Review.create({
-        UserId: r.id,
         reviewText: r.reviewText,
         rating: r.rating,
-        productId: r.productId /*  */,
+        UserId: r.UserId,
+        productId: idProduct[index],
         userName: r.userName,
       })
     );

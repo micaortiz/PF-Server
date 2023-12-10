@@ -79,6 +79,7 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       reviews: reviews.map((review) => ({
         rating: review.rating,
         comment: review.reviewText,
+        idUser: review.UserId,
       })),
     };
   });

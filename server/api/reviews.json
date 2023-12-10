@@ -1,38 +1,38 @@
 [
     {
-      "userId": 1,
+      "UserId": 1,
       "reviewText": "Excelente producto, estoy muy satisfecho con mi compra.",
       "rating": 5,
       "productId": "0bd67a4b-d8aa-4dce-99cf-2264ee01e8aa",
       "userName": "Dory"
     },
     {
-      "userId": 2,
+      "UserId": 2,
       "reviewText": "Buen producto, cumple con mis expectativas.",
       "rating": 4,
       "productId": "1191af40-3d50-4af4-857b-c43c154642c8",
       "userName": "Selene"
     },
     {
-      "userId": 3,
+      "UserId": 3,
       "reviewText": "El producto es aceptable, pero esperaba más.",
       "rating": 3,
       "productId": "12322d91-075a-43ec-a30a-091526aa8c60",
       "userName": "Bastian"
     },
     {
-      "userId": 4,
+      "UserId": 4,
       "reviewText": "No recomendaría este producto, me ha decepcionado.",
       "rating": 1,
       "productId": "4c961f61-b340-4ed9-97fe-faa8541111e8",
       "userName": "Bruno"
     },
     {
-      "userId": 5,
+      "UserId": 4,
       "reviewText": "Buena relación calidad-precio. Funciona como se describe.",
       "rating": 4,
       "productId": "62954b75-3077-416b-a95c-718249108b3f",
-      "userName": "Yandel"
+      "userName": "Bruno"
     }
   ]
   
