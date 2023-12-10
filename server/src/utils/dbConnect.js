@@ -2,8 +2,9 @@ const data = require("../../api/db.json");
 const user = require("../../api/user.json");
 const countries = require("../../api/countries.json");
 const order = require("../../api/order.json");
+const reviews = require("../../api/reviews.json");
 
-const { Product, Category, User, Country, Order } = require("../db.js");
+const { Product, Category, User, Country, Order, Review } = require("../db.js");
 
 const dbConnect = async () => {
   try {
@@ -40,6 +41,8 @@ const dbConnect = async () => {
     await Promise.all(productDB).then(() =>
       console.log("### Product successfully charged ###")
     );
+    const productId = Product.id;
+    console.log("Id del producto ", productId);
 
     const countryDB = countries.map((t) =>
       Country.create({
@@ -89,6 +92,20 @@ const dbConnect = async () => {
 
     await Promise.all(orderDB).then(() =>
       console.log("### Order successfully charged ###")
+    );
+
+    const reviewsDB = reviews.map((r) =>
+      Review.create({
+        UserId: r.id,
+        reviewText: r.reviewText,
+        rating: r.rating,
+        productId: r.productId /*  */,
+        userName: r.userName,
+      })
+    );
+
+    await Promise.all(reviewsDB).then(() =>
+      console.log("### reviews successfully charged ###")
     );
 
     // console.log('### Database loaded successfully ###');
