@@ -17,7 +17,7 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     include: [
       {
         model: Product,
-        attributes: ["id", "nameProd", "stock", "price", "priceOnSale"],
+        attributes: ["id", "nameProd", "stock", "price", "priceOnSale", "image"],
         include: [
           {
             model: Category,
@@ -76,6 +76,7 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       stock: product.stock,
       quantityProd: quantityInfo ? quantityInfo.quantity : 0,
       category: product.Category.nameCat,
+      image: product.image,
       reviews: reviews.map((review) => ({
         rating: review.rating,
         comment: review.reviewText,
