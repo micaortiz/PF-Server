@@ -49,6 +49,7 @@ const getCartById = async (req, res) => {
       id: cart.id,
       UserId: cart.UserId,
       items: cart.Products.map((product) => ({
+        idProd: product.id,
         nameProd: product.nameProd,
         image: product.image[0],
         description: product.description,
