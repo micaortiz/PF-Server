@@ -3,7 +3,6 @@ const { Cart, Product, Category, User } = require("../../db");
 const deleteProductsCart = async (req, res) => {
   try {
     const { nameProd, UserId } = req.body;
-
     const user = await User.findByPk(UserId, {
       include: [
         {

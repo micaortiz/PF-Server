@@ -17,7 +17,14 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     include: [
       {
         model: Product,
-        attributes: ["id", "nameProd", "stock", "price", "priceOnSale", "image"],
+        attributes: [
+          "id",
+          "nameProd",
+          "stock",
+          "price",
+          "priceOnSale",
+          "image",
+        ],
         include: [
           {
             model: Category,
@@ -36,16 +43,6 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
   const reviews = await Review.findAll({
     where: { UserId: userData.id },
   });
-
-  /*   const reviewsByProduct = await Promise.all(
-    cartShopping.products.map(async (product) => {
-      return {
-        reviews: await Review.findAll({
-          where: { productId: product.id },
-        }),
-      };
-    })
-  ); */
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
@@ -84,7 +81,6 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       })),
     };
   });
-  console.log("Productos en el carrito de compras ", productsInCart);
 
   const saveData = {
     //* Creo el objeto para despues crear la orden con la informacion almacenada en este objeto
