@@ -12,7 +12,7 @@ const getProductsByIdHandler = async (id) => {
     where: { productId: product.id },
   });
 
-  console.log("Las reviews de los productos ", reviews);
+  console.log("Las reviews de los productos ", reviews.userName);
 
   let productId;
   if (product) {
@@ -32,6 +32,7 @@ const getProductsByIdHandler = async (id) => {
       reviews: reviews.map((review) => ({
         rating: review.rating,
         comment: review.reviewText,
+        name: review.userName
       })),
     };
   }

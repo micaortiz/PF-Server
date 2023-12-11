@@ -12,7 +12,7 @@ cartRouter.post('/', createCart)
 //Update
 cartRouter.put("/", updateCart)
 //Delete
-cartRouter.delete('/', deleteProductsCart)
+cartRouter.delete('/delete', deleteProductsCart)
 //Cart by User
 cartRouter.get('/:UserId', getCartById )
 
