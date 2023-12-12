@@ -175,6 +175,8 @@ const sendEmailController = async (message) => {
     //   res.status(200).json({ message: "Correo electrónico enviado exitosamente" });
     } catch (error) {
       console.error({ error: "Error al enviar el correo electrónico" });
+      console.error(error);
+
     //   res.status(500).json({ error: "Error al enviar el correo electrónico" });
     }
   };
