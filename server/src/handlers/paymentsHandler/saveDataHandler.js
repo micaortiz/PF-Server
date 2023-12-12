@@ -8,7 +8,9 @@ const {
   User,
   Review,
 } = require("../../db");
-const axios = require("axios");
+const {
+  deleteCart,
+} = require("../../controllers/cartController/deleteAllProductsCart");
 
 const savePurchaseDataHandler = async (status, payment_id, id) => {
   const cartShopping = await Cart.findOne({
@@ -125,6 +127,8 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     { where: { id: newOrder.id } }
   );
 
+  //* Llamado de la funcion para eliminar el carrito de compras
+  await deleteCart(saveData.UserId);
   return newOrder;
 };
 
