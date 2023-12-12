@@ -1,30 +1,47 @@
 const {
   Product,
+  Category,
   Order,
   Product_Carts,
   Product_Order,
   Cart,
+  User,
+  Review,
 } = require("../../db");
+const axios = require("axios");
 
 const savePurchaseDataHandler = async (status, payment_id, id) => {
-  //* Convierte el id del payment en un id tipo UUIDV4 para que lo pueda almacenar la base de datos
-  const saveData = {
-    orderDate: new Date(),
-    mercadopagoTransactionId: payment_id,
-    mercadopagoTransactionStatus:
-      status.charAt(0).toUpperCase() + status.slice(1),
-    UserId: id,
-  };
-  const newOrder = await Order.create(saveData); //* Creo la ORDEN
-
   const cartShopping = await Cart.findOne({
+    //* Trae la informacion del carro de compras
     where: { UserId: id },
     include: [
       {
         model: Product,
-        attributes: ["id", "nameProd", "stock"],
+        attributes: [
+          "id",
+          "nameProd",
+          "stock",
+          "price",
+          "priceOnSale",
+          "image",
+        ],
+        include: [
+          {
+            model: Category,
+            attributes: ["id", "nameCat"],
+          },
+        ],
       },
     ],
+  });
+
+  const userData = await User.findOne({
+    //* Trae la informacion del Usuario
+    where: { id: id },
+  });
+
+  const reviews = await Review.findAll({
+    where: { UserId: userData.id },
   });
 
   if (!cartShopping || !cartShopping.Products) {
@@ -42,22 +59,47 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     ProductId: productCart.ProductId,
   }));
 
-  //* Nos quedamos con los datos necesarios del carrito de compras
+  //* Nos quedamos con los productos del carrito de compras
   const productsInCart = cartShopping.Products.map((product) => {
+    const quantityInfo = cartQuantityProd.find(
+      (productCart) => productCart.ProductId === product.id
+    );
+
     return {
       id: product.id,
       nameProd: product.nameProd,
+      price: product.price,
+      priceOnSale: product.priceOnSale,
       stock: product.stock,
+      quantityProd: quantityInfo ? quantityInfo.quantity : 0,
+      category: product.Category.nameCat,
+      image: product.image,
+      reviews: reviews.map((review) => ({
+        rating: review.rating,
+        comment: review.reviewText,
+        idUser: review.UserId,
+      })),
     };
   });
-  console.log("Productos en el carrito de compras ", productsInCart);
+
+  const saveData = {
+    //* Creo el objeto para despues crear la orden con la informacion almacenada en este objeto
+    orderDate: new Date(),
+    mercadopagoTransactionId: payment_id,
+    mercadopagoTransactionStatus:
+      status.charAt(0).toUpperCase() + status.slice(1),
+    UserId: id,
+    userName: userData.name,
+    totalPrice: cartShopping.totalPrice,
+    itemsCart: JSON.stringify(productsInCart),
+  };
+
+  const newOrder = await Order.create(saveData); //* CREO LA ORDEN
 
   // Lógica para restar el stock de cada producto
   for (const productInfo of cartQuantityProd) {
     const quantity = productInfo.quantity;
     const productId = productInfo.ProductId;
-    console.log("Cantidad ", quantity);
-    console.log("Ide del producto ", productId);
 
     // Buscar el producto por ID en la tabla Product
     const product = productsInCart.find((product) => product.id === productId);
@@ -71,23 +113,17 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
         { stock: updatedStock },
         { where: { id: productId } }
       );
-
-      console.log(
-        `Stock actualizado para el producto con ID ${productId}. Nuevo stock: ${updatedStock}`
-      );
     } else {
-      console.error(`No se encontró el producto con ID ${productId}.`);
+      throw new Error(`Product ID not found ${productId}.`);
     }
 
     await newOrder.addProduct(productId, { model: Product_Order });
   }
-  await Product_Carts.destroy({
-    where: { CartId: cartShopping.id },
-  });
 
-  await Cart.destroy({
-    where: { UserId: id },
-  });
+  await Order.update(
+    { itemsCart: JSON.stringify(productsInCart) },
+    { where: { id: newOrder.id } }
+  );
 
   return newOrder;
 };

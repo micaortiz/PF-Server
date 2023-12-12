@@ -75,11 +75,14 @@ User.hasMany(Order);
 Review.belongsTo(Product, { foreignKey: "productId" });
 Product.hasMany(Review, { foreignKey: "productId" });
 
-User.hasMany(PurchaseHistory);
-PurchaseHistory.belongsTo(User);
 
-PurchaseHistory.hasMany(Cart);
-Cart.belongsTo(PurchaseHistory);
+Review.belongsTo(Product, { foreignKey: "productId" });
+Product.hasMany(Review, { foreignKey: "productId" });
+
+
+=======
+
+>>>>>>> develop
 
 /* N:M */
 Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });

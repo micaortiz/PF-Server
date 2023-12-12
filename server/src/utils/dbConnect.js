@@ -1,9 +1,10 @@
 const data = require("../../api/db.json");
-const user = require('../../api/user.json')
-const countries = require('../../api/countries.json')
+const user = require("../../api/user.json");
+const countries = require("../../api/countries.json");
+const order = require("../../api/order.json");
+const reviews = require("../../api/reviews.json");
 
-
-const { Product, Category, User, Country } = require("../db.js");
+const { Product, Category, User, Country, Order, Review } = require("../db.js");
 
 const dbConnect = async () => {
   try {
@@ -34,31 +35,38 @@ const dbConnect = async () => {
         active: e.active,
         tags: e.tags,
         stock: e.stock,
-        CategoryId: e.CategoryId
+        CategoryId: e.CategoryId,
       })
     );
     await Promise.all(productDB).then(() =>
       console.log("### Product successfully charged ###")
     );
 
-    const countryDB = countries.map((t)=>
+    let idProduct = [];
+
+    for (const product of await Promise.all(productDB)) {
+      const dataValues = await product.dataValues;
+      idProduct.push(dataValues.id);
+    }
+
+    const countryDB = countries.map((t) =>
       Country.create({
         id: t.cca3,
-        name: t.name.common
+        name: t.name.common,
       })
     );
 
-    await Promise.all(countryDB).then(()=>
+    await Promise.all(countryDB).then(() =>
       console.log("### Country successfully charged ###")
     );
-  
-    const userDB = user.map((u) =>
-      User.create({
+
+    const userDB = user.map(async (u) => {
+      newUser = await User.create({
         // id: u.id,
         name: u.name,
         lastName: u.lastName,
         email: u.email,
-        address : u.address,
+        address: u.address,
         phone: u.phone,
         identityCard: u.identityCard,
         postalCode: u.postalCode,
@@ -66,16 +74,44 @@ const dbConnect = async () => {
         active: u.active,
         typeUser: u.typeUser,
         token: u.token,
-        CountryId: u.CountryId, 
-      })
-    )
+        CountryId: u.CountryId,
+      });
+    });
 
-    await Promise.all(userDB).then(()=>
-      console.log('### User successfully charged ###')
+    Promise.all(userDB).then(() => {
+      console.log("### Users successfully charged ###");
+    });
+
+    const orderDB = order.map((o) =>
+      Order.create({
+        userName: o.userName,
+        itemsCart: o.itemsCart,
+        orderDate: o.orderDate,
+        deliveryStatus: o.deliveryStatus,
+        mercadopagoTransactionId: o.mercadopagoTransactionId,
+        mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
+        totalPrice: o.totalPrice,
+        UserId: o.UserId,
+      })
     );
 
+    await Promise.all(orderDB).then(() =>
+      console.log("### Order successfully charged ###")
+    );
 
+    const reviewsDB = reviews.map((r, index) =>
+      Review.create({
+        reviewText: r.reviewText,
+        rating: r.rating,
+        UserId: r.UserId,
+        productId: idProduct[index],
+        userName: r.userName,
+      })
+    );
 
+    await Promise.all(reviewsDB).then(() =>
+      console.log("### reviews successfully charged ###")
+    );
 
     // console.log('### Database loaded successfully ###');
   } catch (error) {
