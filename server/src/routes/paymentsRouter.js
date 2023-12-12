@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const {createOrder, purchaseResults} = require("../controllers/payments/mercadoPagoHandler")
-const { savePurchaseData } = require("../controllers/payments/savePurchaseDataCtrl")
+const { savePurchaseData } = require("../controllers/payments/saveMercadoPagoDataCtrl")
 const paymentsRouter = Router()
 
 //Create

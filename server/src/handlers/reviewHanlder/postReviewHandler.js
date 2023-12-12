@@ -1,14 +1,17 @@
 const { User, Review } = require("../../db");
 
-const postReviewHandler = async (UserId, reviewText, rating, productId) => {
-  const userFound = await User.findByPk(UserId, {
-    attributes: ["id", "token", "email", "name"],
+const postReviewHandler = async (UserId, rating, reviewText, productId) => {
+  console.log("Valor del text ", UserId);
+  // const userFound = await User.findByPk(UserId,
+  //     // {
+  //     // attributes: ['id', 'token', 'email']
+  // // }
+  // )
+  const userFound = await User.findOne({
+    where: {
+      id: UserId,
+    },
   });
-  /* const userFound = await User.findOne({
-        where: {
-            email: email,
-        }
-    }) */
   console.log(userFound);
   if (!userFound) throw Error("User not found");
   // return {error: 'User not found'}
@@ -17,8 +20,7 @@ const postReviewHandler = async (UserId, reviewText, rating, productId) => {
     UserId: userFound.id,
     reviewText: reviewText || "",
     rating: rating,
-    productId: productId /*  */,
-    userName: userFound.name /*  */,
+    productId: productId,
   });
 
   await userFound.addReview(review);

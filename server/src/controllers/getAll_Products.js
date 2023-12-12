@@ -1,13 +1,13 @@
-const { Product, Category } = require("../db");
+const { Product, Category, Review } = require("../db");
 
 const getAllProducts = async (req, res) => {
   try {
     const productsDB = await Product.findAll({
-      include: {
+      include: [
         // Traemos todos los productos de la base de datos incluyendo el nombre de la tabla de categorias
-        model: Category,
-        attributes: ["nameCat"],
-      },
+        { model: Category, attributes: ["nameCat"] },
+        { model: Review, attributes: ["rating", "reviewText"] },
+      ],
     });
 
     /* console.log("Serian los productos ",productsDB); */ //* console log para ver que productos trae de la base de datos
@@ -30,6 +30,10 @@ const getAllProducts = async (req, res) => {
           active: product.active,
           tags: product.tags,
           category: product.Category ? product.Category.nameCat : null,
+          review: product.Reviews.map((review) => ({
+            rating: review.rating,
+            reviewText: review.reviewText,
+          })),
         });
       });
 

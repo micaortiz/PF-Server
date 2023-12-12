@@ -1,16 +1,17 @@
 const {
   postReviewHandler,
-} = require("../../handlers/reviewHanlder/postReviewHandler");
+} = require("../../handlers/reviewHandler/postReviewHandler");
+
 
 const postReview = async (req, res) => {
   try {
-    const { UserId, reviewText, rating, productId, email } = req.body;
+    const { UserId, reviewText, rating, productId } = req.body;
+    
     const reviews = await postReviewHandler(
       UserId,
       reviewText,
       rating,
-      productId,
-      email
+      productId
     );
 
     if (!reviews) return res.status(404).send("Reviews not found");
@@ -21,5 +22,5 @@ const postReview = async (req, res) => {
   }
 };
 module.exports = {
-  postReview,
+  postReview
 };
