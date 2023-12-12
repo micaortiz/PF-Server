@@ -4,7 +4,7 @@ const updateStockHandler = async (id, newStock) => {
   const product = await Product.findByPk(id, {
     include: {
       model: Category,
-      attributes: ["nameCat"],
+      attributes: ["id","nameCat"],
     },
   });
   const reviews = await Review.findAll({
