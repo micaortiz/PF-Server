@@ -22,6 +22,7 @@ const reviewRouter = require("./reviewRouter");
 const dashboardRouter = require("./dashboardRouter");
 const { getDeletedProducts } = require("../controllers/getDeletedProduct");
 const { restauredDeletedProduct } = require("../controllers/restoreDeletedProduct");
+const { updateStock } = require("../controllers/updateStockCtrl");
 
 //Create
 router.post("/products", newProduct);
@@ -68,6 +69,8 @@ router.use('/reviews', reviewRouter )
 /* admin dashboard */
 router.use('/dashboard', dashboardRouter )
 
+/* stock */
+router.put('/stock', updateStock )
 
 module.exports = {
   router,

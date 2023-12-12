@@ -82,23 +82,6 @@ const dbConnect = async () => {
       console.log("### Users successfully charged ###");
     });
 
-    const orderDB = order.map((o) =>
-      Order.create({
-        userName: o.userName,
-        itemsCart: o.itemsCart,
-        orderDate: o.orderDate,
-        deliveryStatus: o.deliveryStatus,
-        mercadopagoTransactionId: o.mercadopagoTransactionId,
-        mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
-        totalPrice: o.totalPrice,
-        // UserId: o.UserId,
-      })
-    );
-
-    await Promise.all(orderDB).then(() =>
-      console.log("### Order successfully charged ###")
-    );
-
     const reviewsDB = reviews.map((r, index) =>
       Review.create({
         reviewText: r.reviewText,
@@ -110,9 +93,25 @@ const dbConnect = async () => {
     );
 
     await Promise.all(reviewsDB).then(() =>
-      console.log("### reviews successfully charged ###")
+      console.log("### Reviews successfully charged ###")
     );
 
+    const orderDB = order.map((o) =>
+      Order.create({
+        userName: o.userName,
+        itemsCart: o.itemsCart,
+        orderDate: o.orderDate,
+        deliveryStatus: o.deliveryStatus,
+        mercadopagoTransactionId: o.mercadopagoTransactionId,
+        mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
+        totalPrice: o.totalPrice,
+        UserId: o.UserId,
+      })
+    );
+
+    await Promise.all(orderDB).then(() =>
+      console.log("### Order successfully charged ###")
+    );
     // console.log('### Database loaded successfully ###');
   } catch (error) {
     throw Error(error.message);
