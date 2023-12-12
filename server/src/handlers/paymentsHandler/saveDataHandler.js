@@ -6,6 +6,7 @@ const {
   Product_Order,
   Cart,
   User,
+  Review,
 } = require("../../db");
 const axios = require("axios");
 
@@ -16,7 +17,14 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     include: [
       {
         model: Product,
-        attributes: ["id", "nameProd", "stock", "price", "priceOnSale"],
+        attributes: [
+          "id",
+          "nameProd",
+          "stock",
+          "price",
+          "priceOnSale",
+          "image",
+        ],
         include: [
           {
             model: Category,
@@ -30,6 +38,10 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
   const userData = await User.findOne({
     //* Trae la informacion del Usuario
     where: { id: id },
+  });
+
+  const reviews = await Review.findAll({
+    where: { UserId: userData.id },
   });
 
   if (!cartShopping || !cartShopping.Products) {
@@ -61,9 +73,14 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       stock: product.stock,
       quantityProd: quantityInfo ? quantityInfo.quantity : 0,
       category: product.Category.nameCat,
+      image: product.image,
+      reviews: reviews.map((review) => ({
+        rating: review.rating,
+        comment: review.reviewText,
+        idUser: review.UserId,
+      })),
     };
   });
-  console.log("Productos en el carrito de compras ", productsInCart);
 
   const saveData = {
     //* Creo el objeto para despues crear la orden con la informacion almacenada en este objeto
