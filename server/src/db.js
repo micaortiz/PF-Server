@@ -80,9 +80,9 @@ Review.belongsTo(Product, { foreignKey: "productId" });
 Product.hasMany(Review, { foreignKey: "productId" });
 
 
-=======
+/* =======
 
->>>>>>> develop
+>>>>>>> develop */
 
 /* N:M */
 Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });
@@ -95,3 +95,14 @@ module.exports = {
   ...sequelize.models,
   conn: sequelize,
 };
+
+
+
+
+
+/* <<<<<<< HEAD
+User.hasMany(PurchaseHistory);
+PurchaseHistory.belongsTo(User);
+
+PurchaseHistory.hasMany(Cart);
+Cart.belongsTo(PurchaseHistory); */
