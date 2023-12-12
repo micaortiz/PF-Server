@@ -91,7 +91,7 @@ const dbConnect = async () => {
         mercadopagoTransactionId: o.mercadopagoTransactionId,
         mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
         totalPrice: o.totalPrice,
-        UserId: o.UserId,
+        // UserId: o.UserId,
       })
     );
 
