@@ -65,15 +65,9 @@ router.use('/order', orderRouter )
 /* reviews */
 router.use('/reviews', reviewRouter )
 
-
-
-
-
-
-
-
 /* admin dashboard */
 router.use('/dashboard', dashboardRouter )
+
 
 module.exports = {
   router,
