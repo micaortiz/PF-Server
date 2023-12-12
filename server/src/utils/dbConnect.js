@@ -110,7 +110,7 @@ const dbConnect = async () => {
     );
 
     await Promise.all(reviewsDB).then(() =>
-      console.log("### reviews successfully charged ###")
+      console.log("### Reviews successfully charged ###")
     );
 
     // console.log('### Database loaded successfully ###');
