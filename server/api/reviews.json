@@ -1,137 +1,136 @@
 [
-    {
-      "UserId": 1,
-      "reviewText": "Excelente producto, estoy muy satisfecho con mi compra.",
-      "rating": 5,
-      "productId": "0bd67a4b-d8aa-4dce-99cf-2264ee01e8aa",
-      "userName": "Dory"
-    },
-    {
-      "UserId": 2,
-      "reviewText": "Buen producto, cumple con mis expectativas.",
-      "rating": 4,
-      "productId": "1191af40-3d50-4af4-857b-c43c154642c8",
-      "userName": "Selene"
-    },
-    {
-      "UserId": 3,
-      "reviewText": "El producto es aceptable, pero esperaba más.",
-      "rating": 3,
-      "productId": "12322d91-075a-43ec-a30a-091526aa8c60",
-      "userName": "Bastian"
-    },
-    {
-      "UserId": 4,
-      "reviewText": "No recomendaría este producto, me ha decepcionado.",
-      "rating": 1,
-      "productId": "4c961f61-b340-4ed9-97fe-faa8541111e8",
-      "userName": "Bruno"
-    },
-    {
-      "UserId": 4,
-      "reviewText": "Buena relación calidad-precio. Funciona como se describe.",
-      "rating": 4,
-      "productId": "62954b75-3077-416b-a95c-718249108b3f",
-      "userName": "Bruno"
-    },
+  {
+    "UserId": 1,
+    "reviewText": "Excellent product, I am very satisfied with my purchase.",
+    "rating": 5,
+    "productId": "0bd67a4b-d8aa-4dce-99cf-2264ee01e8aa",
+    "userName": "Dory"
+  },
+  {
+    "UserId": 2,
+    "reviewText": "Good product, meets my expectations.",
+    "rating": 4,
+    "productId": "1191af40-3d50-4af4-857b-c43c154642c8",
+    "userName": "Selene"
+  },
+  {
+    "UserId": 3,
+    "reviewText": "The product is acceptable, but I expected more.",
+    "rating": 3,
+    "productId": "12322d91-075a-43ec-a30a-091526aa8c60",
+    "userName": "Bastian"
+  },
+  {
+    "UserId": 4,
+    "reviewText": "I would not recommend this product, it has disappointed me.",
+    "rating": 1,
+    "productId": "4c961f61-b340-4ed9-97fe-faa8541111e8",
+    "userName": "Bruno"
+  },
+  {
+    "UserId": 4,
+    "reviewText": "Good value for money. Works as described.",
+    "rating": 4,
+    "productId": "62954b75-3077-416b-a95c-718249108b3f",
+    "userName": "Bruno"
+  },
 
-      {
-        "UserId": 1,
-        "reviewText": "Gran compra, superó mis expectativas.",
-        "rating": 5,
-        "productId": "78132b6c-2158-4c8b-9d0d-19e53d620e72",
-        "userName": "Dory"
-      },
-      {
-        "UserId": 2,
-        "reviewText": "Producto de calidad, lo recomendaría a otros.",
-        "rating": 4,
-        "productId": "8a6cc029-2b7f-4ff6-9ed4-0bf98e41363b",
-        "userName": "Selene"
-      },
-      {
-        "UserId": 3,
-        "reviewText": "El envío fue rápido, estoy satisfecho con el servicio.",
-        "rating": 5,
-        "productId": "9916d9bc-83f3-4180-b183-1a06e37ce051",
-        "userName": "Bastian"
-      },
-      {
-        "UserId": 4,
-        "reviewText": "Podría mejorar, algunos problemas con el producto.",
-        "rating": 3,
-        "productId": "a835981b-2d84-4abf-a1b4-4b11bcb0f48d",
-        "userName": "Bruno"
-      },
-      {
-        "UserId": 1,
-        "reviewText": "Excelente atención al cliente, resolvieron mis dudas.",
-        "rating": 5,
-        "productId": "b9b67e87-88d7-46a1-8d82-7b611d02f6d0",
-        "userName": "Usuario5"
-      },
-      {
-        "UserId": 2,
-        "reviewText": "Producto duradero, ha resistido el uso diario.",
-        "rating": 4,
-        "productId": "cbe82252-7d15-4d1b-a9a2-5ba7bdce5eeb",
-        "userName": "Selene"
-      },
-      {
-        "UserId": 3,
-        "reviewText": "Buena relación calidad-precio, lo recomendaría.",
-        "rating": 4,
-        "productId": "d2ed19fe-dbf1-4e66-9a8a-1c26e13e9372",
-        "userName": "Bastian"
-      },
-      {
-        "UserId": 4,
-        "reviewText": "Funciona perfectamente, estoy satisfecho.",
-        "rating": 5,
-        "productId": "e66e0cd2-5052-4d78-bf2a-3cf94c4ab5bb",
-        "userName": "Bruno"
-      },
-      {
-        "UserId": 1,
-        "reviewText": "Cumple con mis expectativas, buena compra.",
-        "rating": 4,
-        "productId": "f34b10a7-11af-4c8b-93f2-1d1a9e28568c",
-        "userName": "Dory"
-      },
-      {
-        "UserId": 2,
-        "reviewText": "Producto de calidad, el diseño es genial.",
-        "rating": 5,
-        "productId": "g780f93c-731b-4e41-ae06-9bd8ef3f1730",
-        "userName": "Selene"
-      },
-      {
-        "UserId": 3,
-        "reviewText": "No cumplió mis expectativas, esperaba más.",
-        "rating": 2,
-        "productId": "h957fa4a-5904-4a29-ba5d-960fbf31e5d2",
-        "userName": "Bastian"
-      },
-      {
-        "UserId": 4,
-        "reviewText": "Buen servicio al cliente, resolvieron mi problema.",
-        "rating": 4,
-        "productId": "i86e370e-1a0f-4714-a3c3-5f6323bf31d4",
-        "userName": "Bruno"
-      },
-      {
-        "UserId": 1,
-        "reviewText": "Entrega rápida, producto en buen estado.",
-        "rating": 5,
-        "productId": "j54794b9-ae74-4707-b9f4-2f5efae8f27b",
-        "userName": "Dory"
-      },
-      {
-        "UserId": 2,
-        "reviewText": "Podría mejorar la calidad del embalaje.",
-        "rating": 3,
-        "productId": "k4f98310-cfe7-4d02-b06e-5e099238748d",
-        "userName": "Selene"
-      }
-  ]
-  
+  {
+    "UserId": 1,
+    "reviewText": "Great purchase, exceeded my expectations.",
+    "rating": 5,
+    "productId": "78132b6c-2158-4c8b-9d0d-19e53d620e72",
+    "userName": "Dory"
+  },
+  {
+    "UserId": 2,
+    "reviewText": "Quality product, I would recommend it to others.",
+    "rating": 4,
+    "productId": "8a6cc029-2b7f-4ff6-9ed4-0bf98e41363b",
+    "userName": "Selene"
+  },
+  {
+    "UserId": 3,
+    "reviewText": "Shipping was fast, I am satisfied with the service.",
+    "rating": 5,
+    "productId": "9916d9bc-83f3-4180-b183-1a06e37ce051",
+    "userName": "Bastian"
+  },
+  {
+    "UserId": 4,
+    "reviewText": "Could be improved, some problems with the product.",
+    "rating": 3,
+    "productId": "a835981b-2d84-4abf-a1b4-4b11bcb0f48d",
+    "userName": "Bruno"
+  },
+  {
+    "UserId": 1,
+    "reviewText": "Excellent customer service, they answered my questions.",
+    "rating": 5,
+    "productId": "b9b67e87-88d7-46a1-8d82-7b611d02f6d0",
+    "userName": "Dory"
+  },
+  {
+    "UserId": 2,
+    "reviewText": "Durable product, has withstood daily use.",
+    "rating": 4,
+    "productId": "cbe82252-7d15-4d1b-a9a2-5ba7bdce5eeb",
+    "userName": "Selene"
+  },
+  {
+    "UserId": 3,
+    "reviewText": "Good value for money, I would recommend it.",
+    "rating": 4,
+    "productId": "d2ed19fe-dbf1-4e66-9a8a-1c26e13e9372",
+    "userName": "Bastian"
+  },
+  {
+    "UserId": 4,
+    "reviewText": "Works perfectly, I am satisfied.",
+    "rating": 5,
+    "productId": "e66e0cd2-5052-4d78-bf2a-3cf94c4ab5bb",
+    "userName": "Bruno"
+  },
+  {
+    "UserId": 1,
+    "reviewText": "Meets my expectations, good purchase.",
+    "rating": 4,
+    "productId": "f34b10a7-11af-4c8b-93f2-1d1a9e28568c",
+    "userName": "Dory"
+  },
+  {
+    "UserId": 2,
+    "reviewText": "Quality product, the design is great.",
+    "rating": 5,
+    "productId": "g780f93c-731b-4e41-ae06-9bd8ef3f1730",
+    "userName": "Selene"
+  },
+  {
+    "UserId": 3,
+    "reviewText": "Did not meet my expectations, I expected more.",
+    "rating": 2,
+    "productId": "h957fa4a-5904-4a29-ba5d-960fbf31e5d2",
+    "userName": "Bastian"
+  },
+  {
+    "UserId": 4,
+    "reviewText": "Good customer service, they resolved my issue.",
+    "rating": 4,
+    "productId": "i86e370e-1a0f-4714-a3c3-5f6323bf31d4",
+    "userName": "Bruno"
+  },
+  {
+    "UserId": 1,
+    "reviewText": "Quick delivery, product in good condition.",
+    "rating": 5,
+    "productId": "j54794b9-ae74-4707-b9f4-2f5efae8f27b",
+    "userName": "Dory"
+  },
+  {
+    "UserId": 2,
+    "reviewText": "Packaging quality could be improved.",
+    "rating": 3,
+    "productId": "k4f98310-cfe7-4d02-b06e-5e099238748d",
+    "userName": "Selene"
+  }
+]
