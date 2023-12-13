@@ -23,23 +23,23 @@ const createOrder = async (req, res) => {
         items: items,
         payer: payer,
         //----------- LOCAL ------------------------------------------------------------------
-        back_urls: {
-          success:
-            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
-          failure:
-            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
-          pending:
-            "http://localhost:5173/paymentGateway/status?id=" + payer.id,
-        },
-        //------------ DEPLOY ----------------------------------------------------------------
         // back_urls: {
         //   success:
-        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        //     "http://localhost:5173/paymentGateway/status?id=" + payer.id,
         //   failure:
-        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        //     "http://localhost:5173/paymentGateway/status?id=" + payer.id,
         //   pending:
-        //     "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        //     "http://localhost:5173/paymentGateway/status?id=" + payer.id,
         // },
+        //------------ DEPLOY ----------------------------------------------------------------
+        back_urls: {
+          success:
+            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+          failure:
+            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+          pending:
+            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+        },
         // ------------------------------------------------------------------------------------
         auto_return: 'approved',
         // payment_methods: {
