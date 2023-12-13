@@ -41,15 +41,12 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     //* Trae la informacion del Usuario
     where: { id: id },
   });
-  const productIDs = cartShopping.Products.map((product) => product.id);
 
   const reviews = await Review.findAll({
     where: {
       UserId: userData.id,
-      productId: productIDs,
     },
   });
-  console.log("creado de las reviews ", reviews);
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
@@ -66,27 +63,57 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     ProductId: productCart.ProductId,
   }));
 
+  const reviewsData = reviews.map((review) => {
+    return {
+      rating: review.rating,
+      comment: review.reviewText,
+      idUser: review.UserId,
+      productId: review.productId,
+    };
+  });
+  console.log("DATO MAPEADOS DE LAS REVIEWS ", reviewsData);
+
   //* Nos quedamos con los productos del carrito de compras
   const productsInCart = cartShopping.Products.map((product) => {
     const quantityInfo = cartQuantityProd.find(
       (productCart) => productCart.ProductId === product.id
     );
 
-    return {
-      id: product.id,
-      nameProd: product.nameProd,
-      price: product.price,
-      priceOnSale: product.priceOnSale,
-      stock: product.stock,
-      quantityProd: quantityInfo ? quantityInfo.quantity : 0,
-      category: product.Category.nameCat,
-      image: product.image,
-      reviews: reviews.map((review) => ({
-        rating: review.rating,
-        comment: review.reviewText,
-        idUser: review.UserId,
-      })),
-    };
+    const matchingReviews = reviewsData.filter(
+      (review) => review.productId === product.id
+    );
+
+    let productWithReviews;
+
+    if (matchingReviews.length > 0) {
+      console.log("Hay una review para este producto:", matchingReviews);
+      productWithReviews = {
+        id: product.id,
+        nameProd: product.nameProd,
+        price: product.price,
+        priceOnSale: product.priceOnSale,
+        stock: product.stock,
+        quantityProd: quantityInfo ? quantityInfo.quantity : 0,
+        category: product.Category.nameCat,
+        image: product.image,
+        reviews: matchingReviews,
+      };
+    } else {
+      console.log("No hay una review para este producto");
+      productWithReviews = {
+        id: product.id,
+        nameProd: product.nameProd,
+        price: product.price,
+        priceOnSale: product.priceOnSale,
+        stock: product.stock,
+        quantityProd: quantityInfo ? quantityInfo.quantity : 0,
+        category: product.Category.nameCat,
+        image: product.image,
+        reviews: [],
+      };
+    }
+
+    return productWithReviews;
   });
 
   const saveData = {
@@ -97,6 +124,7 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       status.charAt(0).toUpperCase() + status.slice(1),
     UserId: id,
     userName: userData.name,
+    emailAddres: userData.email,
     totalPrice: cartShopping.totalPrice,
     itemsCart: JSON.stringify(productsInCart),
   };
