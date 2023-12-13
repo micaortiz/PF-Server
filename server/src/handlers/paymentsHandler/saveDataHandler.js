@@ -72,6 +72,11 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       (productCart) => productCart.ProductId === product.id
     );
 
+    const productReviews = reviews.filter(
+      (review) => review.ProductId === product.id
+    );
+    console.log("");
+
     return {
       id: product.id,
       nameProd: product.nameProd,
@@ -81,11 +86,14 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       quantityProd: quantityInfo ? quantityInfo.quantity : 0,
       category: product.Category.nameCat,
       image: product.image,
-      reviews: reviews.map((review) => ({
-        rating: review.rating,
-        comment: review.reviewText,
-        idUser: review.UserId,
-      })),
+      reviews:
+        productReviews.length > 0
+          ? productReviews.map((review) => ({
+              rating: review.rating,
+              comment: review.reviewText,
+              idUser: review.UserId,
+            }))
+          : [],
     };
   });
 

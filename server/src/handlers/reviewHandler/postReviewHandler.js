@@ -18,48 +18,57 @@ const postReviewHandler = async (UserId, reviewText, rating, productId) => {
   if (!ordersFound || ordersFound.length === 0) {
     throw Error("Order not found");
   }
+  let reviewAdded = false;
+  let review;
+
   for (const orderFound of ordersFound) {
     const itemsCartArray = JSON.parse(orderFound.itemsCart);
 
-    // Encontrar el producto en el carrito
-    const productInOrder = itemsCartArray.find((item) => item.id === productId);
-    console.log("Producto encontrado ", productInOrder);
-    if (productInOrder) {
-      // Verificar si el producto ya tiene una revisión
-      if (!productInOrder.reviews || productInOrder.reviews.length === 0) {
-        // Crear la revisión
-        const review = await Review.create({
-          UserId: userFound.id,
-          reviewText: reviewText || "",
-          rating: rating,
-          productId: productId,
-          userName: userFound.name,
-        });
+    for (const item of itemsCartArray) {
+      if (item.id === productId) {
+        const productInOrder = item;
 
-        const simplifiedReview = {
-          rating: review.rating,
-          comment: review.reviewText,
-          idUser: review.UserId,
-        };
+        console.log("Producto encontrado ", productInOrder);
 
-        // Asociar la revisión con el usuario
-        await userFound.addReview(review);
+        if (!productInOrder.reviews || productInOrder.reviews.length === 0) {
+          review = await Review.create({
+            UserId: userFound.id,
+            reviewText: reviewText || "",
+            rating: rating,
+            productId: productId,
+            userName: userFound.name,
+          });
+          console.log("Encontré un producto con el id de: ", productInOrder.id );
+          console.log("El id a buscar es : ", productId );
 
-        // Agregar la revisión al producto en el carrito
-        productInOrder.reviews = [simplifiedReview];
+          const simplifiedReview = {
+            rating: review.rating,
+            comment: review.reviewText,
+            idUser: review.UserId,
+          };
 
-        // Volver a serializar la estructura de datos a JSON
-        orderFound.itemsCart = JSON.stringify(itemsCartArray);
+          await userFound.addReview(review);
+          productInOrder.reviews = [simplifiedReview];
+          console.log("ITEMS DEL CARRITO ", itemsCartArray);
 
-        // Guardar los cambios en la base de datos
-        await orderFound.save();
+          orderFound.itemsCart = JSON.stringify(itemsCartArray);
+          await orderFound.save();
 
-        return review;
-      } else {
-        throw new Error("Product already has a review");
+          reviewAdded = true;
+          break; // Salir del bucle interno después de agregar la revisión
+        } 
+        else {
+          throw new Error("Product already has a review");
+        }
       }
     }
+
+    if (reviewAdded) {
+      break;
+    }
   }
+
+  return review;
 };
 
 module.exports = {
