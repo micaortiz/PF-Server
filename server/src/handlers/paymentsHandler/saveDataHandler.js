@@ -8,7 +8,9 @@ const {
   User,
   Review,
 } = require("../../db");
-const axios = require("axios");
+const {
+  deleteCart,
+} = require("../../controllers/cartController/deleteAllProductsCart");
 
 const savePurchaseDataHandler = async (status, payment_id, id) => {
   const cartShopping = await Cart.findOne({
@@ -39,10 +41,15 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     //* Trae la informacion del Usuario
     where: { id: id },
   });
+  const productIDs = cartShopping.Products.map((product) => product.id);
 
   const reviews = await Review.findAll({
-    where: { UserId: userData.id },
+    where: {
+      UserId: userData.id,
+      productId: productIDs,
+    },
   });
+  console.log("creado de las reviews ", reviews);
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
@@ -125,6 +132,8 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     { where: { id: newOrder.id } }
   );
 
+  //* Llamado de la funcion para eliminar el carrito de compras
+  await deleteCart(saveData.UserId);
   return newOrder;
 };
 

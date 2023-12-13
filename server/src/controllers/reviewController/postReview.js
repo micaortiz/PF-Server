@@ -1,3 +1,5 @@
+
+
 const {
   postReviewHandler,
 } = require("../../handlers/reviewHandler/postReviewHandler");
@@ -6,7 +8,6 @@ const {
 const postReview = async (req, res) => {
   try {
     const { UserId, reviewText, rating, productId } = req.body;
-    
     const reviews = await postReviewHandler(
       UserId,
       reviewText,
