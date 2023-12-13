@@ -106,6 +106,7 @@ const dbConnect = async () => {
         mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
         totalPrice: o.totalPrice,
         UserId: o.UserId,
+        emailAddres: o.emailAddres
       })
     );
 

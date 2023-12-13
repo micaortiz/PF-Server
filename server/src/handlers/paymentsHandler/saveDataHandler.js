@@ -124,11 +124,10 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
       status.charAt(0).toUpperCase() + status.slice(1),
     UserId: id,
     userName: userData.name,
+    emailAddres: userData.email,
     totalPrice: cartShopping.totalPrice,
     itemsCart: JSON.stringify(productsInCart),
   };
-
-  console.log("DATOS GUARDAROS ", saveData);
 
   const newOrder = await Order.create(saveData); //* CREO LA ORDEN
 
