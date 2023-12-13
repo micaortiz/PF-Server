@@ -34,11 +34,11 @@ const createOrder = async (req, res) => {
         //------------ DEPLOY ----------------------------------------------------------------
         back_urls: {
           success:
-            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+            "https://technookstore.up.railway.app/paymentGateway/status?id=" + payer.id,
           failure:
-            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+            "https://technookstore.up.railway.app/paymentGateway/status?id=" + payer.id,
           pending:
-            "https://technook-server.up.railway.app/paymentGateway/status?id=" + payer.id,
+            "https://technookstore.up.railway.app/paymentGateway/status?id=" + payer.id,
         },
         // ------------------------------------------------------------------------------------
         auto_return: 'approved',
