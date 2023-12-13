@@ -9,53 +9,57 @@ const postReviewHandler = async (UserId, reviewText, rating, productId) => {
     throw Error("User not found");
   }
 
-  const orderFound = await Order.findOne({
+  const ordersFound = await Order.findAll({
     where: {
       UserId: UserId,
     },
   });
 
-  if (!orderFound) {
+  if (!ordersFound || ordersFound.length === 0) {
     throw Error("Order not found");
   }
+  for (const orderFound of ordersFound) {
+    const itemsCartArray = JSON.parse(orderFound.itemsCart);
 
-  const review = await Review.create({
-    UserId: userFound.id,
-    reviewText: reviewText || "",
-    rating: rating,
-    productId: productId,
-    userName: userFound.name,
-  });
+    // Encontrar el producto en el carrito
+    const productInOrder = itemsCartArray.find((item) => item.id === productId);
+    console.log("Producto encontrado ", productInOrder);
+    if (productInOrder) {
+      // Verificar si el producto ya tiene una revisión
+      if (!productInOrder.reviews || productInOrder.reviews.length === 0) {
+        // Crear la revisión
+        const review = await Review.create({
+          UserId: userFound.id,
+          reviewText: reviewText || "",
+          rating: rating,
+          productId: productId,
+          userName: userFound.name,
+        });
 
-  const simplifiedReview = {
-    rating: review.rating,
-    comment: review.reviewText,
-    idUser: review.UserId,
-  };
+        const simplifiedReview = {
+          rating: review.rating,
+          comment: review.reviewText,
+          idUser: review.UserId,
+        };
 
-  await userFound.addReview(review);
+        // Asociar la revisión con el usuario
+        await userFound.addReview(review);
 
-  const itemsCartArray = JSON.parse(orderFound.itemsCart);
+        // Agregar la revisión al producto en el carrito
+        productInOrder.reviews = [simplifiedReview];
 
-  // Buscar el producto específico en el carrito
-  const productToUpdate = itemsCartArray.find(
-    (product) => product.id === productId
-  );
+        // Volver a serializar la estructura de datos a JSON
+        orderFound.itemsCart = JSON.stringify(itemsCartArray);
 
-  if (!productToUpdate) {
-    throw Error("Product not found in the cart");
+        // Guardar los cambios en la base de datos
+        await orderFound.save();
+
+        return review;
+      } else {
+        throw new Error("Product already has a review");
+      }
+    }
   }
-
-  // Actualizar la revisión del producto
-  productToUpdate.reviews.push(simplifiedReview);
-
-  // Volver a serializar la estructura de datos a JSON
-  orderFound.itemsCart = JSON.stringify(itemsCartArray);
-
-  // Guardar los cambios en la base de datos
-  await orderFound.save();
-
-  return review;
 };
 
 module.exports = {

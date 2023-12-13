@@ -41,10 +41,15 @@ const savePurchaseDataHandler = async (status, payment_id, id) => {
     //* Trae la informacion del Usuario
     where: { id: id },
   });
+  const productIDs = cartShopping.Products.map((product) => product.id);
 
   const reviews = await Review.findAll({
-    where: { UserId: userData.id },
+    where: {
+      UserId: userData.id,
+      productId: productIDs,
+    },
   });
+  console.log("creado de las reviews ", reviews);
 
   if (!cartShopping || !cartShopping.Products) {
     console.error("Carrito de compras vacio");
