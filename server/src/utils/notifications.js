@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 const sendEmailController = async (message) => {
     const mailOptions = {
       from: "technookpfinal@gmail.com",
-      to: "cristian200127@gmail.com", // ingresar correo ya que esta harcodeado 
+      to: "diegozallocco@hotmail.com", // ingresar correo ya que esta harcodeado 
       subject: "Information about your purchase 🛒",
       html: `<!DOCTYPE html>
       <html xmlns=http://www.w3.org/1999/xhtml xmlns:v=urn:schemas-microsoft-com:vml xmlns:o=urn:schemas-microsoft-com:office:office lang="en">

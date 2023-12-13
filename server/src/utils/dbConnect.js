@@ -112,9 +112,9 @@ const dbConnect = async () => {
     await Promise.all(orderDB).then(() =>
       console.log("### Order successfully charged ###")
     );
-    // console.log('### Database loaded successfully ###');
+    console.log('### Database loaded successfully ###');
   } catch (error) {
-    throw Error(error.message);
+    console.log(error.message);
   }
 };
 
