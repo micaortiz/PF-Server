@@ -11,7 +11,7 @@ const { dbConnect } = require("./src/utils/dbConnect.js");
 
 // Conexion con la bd
 conn
-  .sync({ force: true })
+  .sync({ force: false })
   // un vez que funcione correctamente cambiar a false
   .then(() => {
     // establecer conexion con la bd
