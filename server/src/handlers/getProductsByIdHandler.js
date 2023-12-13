@@ -4,7 +4,7 @@ const getProductsByIdHandler = async (id) => {
   const product = await Product.findByPk(id, {
     include: {
       model: Category,
-      attributes: ["nameCat"],
+      attributes: ["nameCat", 'id'],
     },
   });
 
@@ -29,6 +29,7 @@ const getProductsByIdHandler = async (id) => {
       tags: product.tags,
       stock: product.stock,
       category: product.Category ? product.Category.nameCat : null,
+      categoryId: product.Category ? product.Category.id : null,
       reviews: reviews.map((review) => ({
         rating: review.rating,
         comment: review.reviewText,
