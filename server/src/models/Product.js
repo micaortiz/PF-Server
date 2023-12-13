@@ -33,13 +33,12 @@ module.exports = (sequelize) => {
       },
       priceOnSale: {
         type: DataTypes.FLOAT,
-        allowNull: false,
+        // allowNull: false,
       },
       image: {
         type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
-
       active: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
@@ -47,14 +46,13 @@ module.exports = (sequelize) => {
       },
       // si se agregan mas tags es necesario crear una nueva tabla y comentar esta
       tags: {
-        type: DataTypes.ENUM("New", "Special Offer", "Limited Edition"),
-        allowNull: false,
+        type: DataTypes.ENUM("None", "New", "Special Offer", "Limited Edition"),
       },
       stock: {
         type: DataTypes.INTEGER,
         allowNull: false,
       }
     },
-    { timestamps: false }
+    { paranoid: true, timestamps: true }
   );
 };

@@ -1,0 +1,525 @@
+[ 
+    {
+      "nameProd": "Notebook Dell Inspiron",
+      "brand": "Dell",
+      "description": "Screen with great visual impact Its 15.5 LCD screen and 1920x1080 px resolution will give you more vivid and defined colors.",
+      "price": 913.739,
+      "discountPercentage": 5,
+      "priceOnSale": 868.052,
+      "image": [
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694760/technook/d7qkqmjpum8jo2wm2nl0.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694765/technook/ty8ukem1dtfynp5bbfmk.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694761/technook/vwzqabgbiow3m0e46otl.jpg"
+      ],
+      "active": true,
+      "tags": "Limited Edition",
+      "stock": 6,
+      "CategoryId": 1
+    },
+    {
+      "nameProd": "Notebook Gamer HP",
+      "brand": "HP",
+      "description": "The HP VICTUS 15 15-fa1093dx notebook is a solution for both working and studying as well as entertaining. Being portable",
+      "price": 998.000,
+      "discountPercentage": 0,
+      "image": [
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694747/technook/woidizlumsf2uawde73c.jpg",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731920/technook/jvzi9ra6ukec2zmjzuyc.webp"
+      ],
+      "active": true,
+      "tags": "Special Offer",
+      "stock": 4,
+      "CategoryId": 1
+    }, 
+    {
+        "nameProd": "Notebook Lenovo V15 15.6",
+        "brand": "Lenovo",
+        "description": "Processor: AMD Ryzen 3 7320U2.4Ghz(Turbo 4.1Ghz) RAM: 8GB DDR5 - 4800Mhz Storage: 256GB SSD Integrated video.",
+        "price": 479.895,
+        "discountPercentage": 15,
+        "priceOnSale": 407.910,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694709/technook/ocoij42ixhqqfincjg6y.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731707/technook/x6djm7fj6hidyqfcrba3.webp"
+        ],
+        "active": true,
+        "tags": "Special Offer",
+        "stock": 9,
+        "CategoryId": 1
+      },
+      {
+        "nameProd": "Notebook Gamer ROG",
+        "brand": "Asus",
+        "description": "Enjoy the perfect combination of performance and design with this Asus Rog Strix G15 G513RM notebook.",
+        "price": 999.000,
+        "discountPercentage": 0,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694741/technook/fv5jqkolhyo7smft1gbp.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731591/technook/afnz4qytwyptbvqyarqu.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731634/technook/t1l896dhq0ummcmzrvue.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 12,
+        "CategoryId": 1
+      },
+      {
+        "nameProd": "Notebook Dell Latitude",
+        "brand": "Dell",
+        "description": "This notebook is at a special price, as it has been carefully restored by an official agent of the corresponding",
+        "price": 539.999,
+        "discountPercentage": 25,
+        "priceOnSale": 404.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694734/technook/rszxkrklktgxwdqvc3ta.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701730967/technook/nyijqtut3ef40u2sdodh.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701731283/technook/snfv1seyq1porwbkhszs.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 4,
+        "CategoryId": 1
+      },      
+      {
+        "nameProd": "Xiaomi Redmi",
+        "brand": "Redmi",
+        "description": "Double camera and more details Its 2 rear cameras of 50 Mpx/2 Mpx will allow you to take images with more details",
+        "price": 126.999,
+        "discountPercentage": 30,
+        "priceOnSale": 88.899,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694800/technook/mpbbyqe6utqocfqrhtrz.jpg"
+        ],
+        "active": true,
+        "tags": "Special Offer",
+        "stock": 2,
+        "CategoryId": 2
+      },      
+      {
+        "nameProd": "Samsung Galaxy S22",
+        "brand": "Samsung",
+        "description": "HIGH RESOLUTION every detail is now yours to capture Photograph non-stop.",
+        "price": 560.176,
+        "discountPercentage": 0,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694794/technook/ou3sqatl0s5foiavmxlq.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732547/technook/xt2gw4trg77eqysq2hcg.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 1,
+        "CategoryId": 2
+      },      
+      {
+        "nameProd": "Samsung Galaxy A54",
+        "brand": "Samsung",
+        "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
+        "price": 398.359,
+        "discountPercentage": 8,
+        "priceOnSale": 366.490,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694786/technook/jej3rks5sngltcsi7jea.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732467/technook/qwxixcoumyuazszjy5ov.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 13,
+        "CategoryId": 2
+      },     
+       {
+        "nameProd": "Blu Smartphones",
+        "brand": "BLU",
+        "description": "Professional photography in your pocket Discover endless possibilities for your photos with the 3 main cameras in your team.",
+        "price": 112.038,
+        "discountPercentage": 9,
+        "priceOnSale": 101.954,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694780/technook/pfjz7ohniksdotah3mj1.jpg"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 1,
+        "CategoryId": 2
+      },      
+      {
+        "nameProd": "Smartphone Samsung Galaxy S23",
+        "brand": "Samsung",
+        "description": "A visual experience that will surprise you Watch your favorite series and movies with unmatched definition thanks to its 6.",
+        "price": 680.000,
+        "discountPercentage": 35,
+        "priceOnSale": 442.000,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694773/technook/ash8h00r9q9jcracr009.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732265/technook/ke2fjyvetsvyddvsh4ku.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732317/technook/lnvgdy5ztmn1txemkm8n.webp"
+        ],
+        "active": true,
+        "tags": "Special Offer",
+        "stock": 1,
+        "CategoryId": 2
+      },     
+       {
+        "nameProd": "Apple iPad",
+        "brand": "Apple",
+        "description": "Full of power, very easy to use and versatile. The new iPad comes with a spectacular 10.2-inch Retina display.",
+        "price": 399.000,
+        "discountPercentage": 10,
+        "priceOnSale": 350.100,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694852/technook/qcirdpr3ib0umhyqbe6c.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733082/technook/orudjr90j2k0fgwrned7.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 6,
+        "CategoryId": 3
+      },      
+      {
+        "nameProd": "Tablet Aiwa Tablet",
+        "brand": "Aiwa",
+        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities",
+        "price": 127.775,
+        "discountPercentage": 24,
+        "priceOnSale": 96.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694842/technook/qocx51so3h6zdktn7ids.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732980/technook/bp9ivpbjvsy1uhg44xs9.webp"
+        ],
+        "active": true,
+        "tags": "Special Offer",
+        "stock": 24,
+        "CategoryId": 3
+      },      
+      {
+        "nameProd": "T-Go Gaming Tablet",
+        "brand": "T-Go",
+        "description": "Enjoy your favorite series and movies anywhere: with its 10.1 screen and 1280 x 800 resolution.",
+        "price": 116.699,
+        "discountPercentage": 0,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694823/technook/iqahjhdssdb8ksjs5cv7.jpg"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 9,
+        "CategoryId": 3
+      },      
+      {
+        "nameProd": "Gadnic Android",
+        "brand": "Gadnic",
+        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
+        "price": 184.599,
+        "discountPercentage": 33,
+        "priceOnSale": 123.499,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694814/technook/fwgvdcb7i7dcuzstjvty.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732825/technook/pjglatgg8bwtniqek4gq.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732897/technook/oljo38hnpoirrottkeqy.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 4,
+        "CategoryId": 3
+      },      
+      {
+        "nameProd": "Tablet Lenovo",
+        "brand": "Lenovo",
+        "description": "This tablet is the perfect combination of performance and versatility, ideal to accompany each of your activities.",
+        "price": 541.199,
+        "discountPercentage": 7,
+        "priceOnSale": 499.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694808/technook/ytijvjsx5lr9oblr77uo.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732684/technook/lchyuog4p72voew6tiae.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701732729/technook/fgujreeixxmrmt4k95kp.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 7,
+        "CategoryId": 3
+      },      
+      {
+        "nameProd": "Samsung Galaxy Watch5",
+        "brand": "Samsung",
+        "description": "Samsung is synonymous with quality and technological evolution. Its intuitive navigation system and good.",
+        "price": 299.999,
+        "discountPercentage": 10,
+        "priceOnSale": 269.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694932/technook/sbobf62zgva3c5ok4vin.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733562/technook/ged8ojb5ev5sz2rdadwb.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733605/technook/ds8onzzfadl4ufnybz1i.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 6,
+        "CategoryId": 4
+      },      
+      {
+        "nameProd": "Apple Watch Series",
+        "brand": "Apple",
+        "description": "The Apple Watch Series 8 comes with advanced health apps and sensors with which you can take an electrocardiogram.",
+        "price": 495.999,
+        "discountPercentage": 33,
+        "priceOnSale": 329.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694913/technook/yn4foz0feuqpnr5tatea.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733491/technook/zdevwunvomztwjjdhmuc.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 2,
+        "CategoryId": 4
+      },      
+      {
+        "nameProd": "Apple Watch Series 7",
+        "brand": "Apple",
+        "description": "Apple Watch Series 7 has the largest and most advanced always-on Retina display yet.",
+        "price": 399.99,
+        "discountPercentage": 10,
+        "priceOnSale": 359.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694899/technook/wac3fnsuw6g5tfd43blw.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733397/technook/qatridkp64nack8bpst8.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 14,
+        "CategoryId": 4
+      },      
+      {
+        "nameProd": "Huami Amazfit",
+        "brand": "Amazfit",
+        "description": "Meet the Amazfit T-Rex 2 Smartwatch, designed to accompany you in your daily and sports activities.",
+        "price": 166.299,
+        "discountPercentage": 10,
+        "priceOnSale": 149.669,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694874/technook/uamy0jpgoyumilfsa55q.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733268/technook/ms6sbybwckd6ibcnrf0e.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733344/technook/mwybzffrt0eyk3ius8gc.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 9,
+        "CategoryId": 4
+      },      
+      {
+        "nameProd": "Nictom Nt16 Smartwatch",
+        "brand": "Nictom",
+        "description": "Extra help on your wrist For lovers of technology and healthy living",
+        "price": 39.999,
+        "discountPercentage": 28,
+        "priceOnSale": 28.799,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694863/technook/inhwgywgtitxip18pdhe.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701733171/technook/vyteujiyu4nwhvm8uda2.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 9,
+        "CategoryId": 4
+      },      
+      {
+        "nameProd": "Speaker Tower Speaker",
+        "brand": "Samsung",
+        "description": "Samsung MX-ST40B offers natural sound, with great clarity and precision, that is dispersed evenly.",
+        "price": 559.888,
+        "discountPercentage": 10,
+        "priceOnSale": 503.899,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736852/technook/pjnbubtlk8opc40zbiqd.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736890/technook/wxjzdwroixneqjzyljsl.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 2,
+        "CategoryId": 5
+      },      
+      {
+        "nameProd": "Philco Djp10p",
+        "brand": "Philco",
+        "description": "Philco DJP10 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
+        "price": 41.899,
+        "discountPercentage": 22,
+        "priceOnSale": 32.499,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694995/technook/rilkh0lu6rk1zdtokkrw.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736046/technook/dmxmdjgdd2jnrchxjkdz.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 5,
+        "CategoryId": 5
+      },      
+      {
+        "nameProd": "Spica Sp-4408 Portable",
+        "brand": "Spica",
+        "description": "Spica SP-4408 offers a natural sound, with great clarity and precision, that is dispersed evenly.",
+        "price": 160.000,
+        "discountPercentage": 45,
+        "priceOnSale": 88.00,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694968/technook/vxz56hwg6mqspyq7yz6r.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701735319/technook/rhs82i1ajdbg1naqradg.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 15,
+        "CategoryId": 5
+      },      
+      {
+        "nameProd": "Philips portable speaker",
+        "brand": "Philips",
+        "description": "Philips TAS1505B/00 offers natural sound, with great clarity and precision, that is dispersed evenly.",
+        "price": 23.399,
+        "discountPercentage": 0,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701694942/technook/wigsv2gjepq7i53p1kmg.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701735746/technook/jam1alksfifmglscgu2u.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 1,
+        "CategoryId": 5
+      },
+      {
+        "nameProd": "Smart TV Samsung",
+        "brand": "Tcl",
+        "description": "Screen 43 FHD (1920x1080) 16:09 HDR and Micro Dimming functions Quad core processor x4 @1.1GHz Wi-Fi 2.4GHz Bluetooth 5.0",
+        "price": 179.999,
+        "discountPercentage": 5,
+        "priceOnSale": 169.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736524/technook/hvy8j1cfnv586ak6yvqq.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736465/technook/h7qxz8sittedce560gs6.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736498/technook/urr954lemkedyjr0pakg.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 9,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Tcl Qled",
+        "brand": "TCL",
+        "description": "Immerse yourself in an unmatched viewing experience with the TCL L50C645 4K QLED Smart TV.",
+        "price": 349.999,
+        "discountPercentage": 11,
+        "priceOnSale": 310.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695282/technook/cp4dpo9ja0pml7trojz3.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736719/technook/afwrjwlyngri32wp1cte.webp",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736753/technook/euky0yjmazqawy9viwfq.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 4,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Smart Tv Philips",
+        "brand": "Philips",
+        "description": "Enjoy an unparalleled viewing experience with the Philips 65PUD7906/77 LED Android TV 4K 65 Smart TV.",
+        "price": 549.999,
+        "discountPercentage": 10,
+        "priceOnSale": 489.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695253/technook/semqvn4hzojnp2z1ctuo.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701736232/technook/z42stlbfkdm596xedwwn.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 2,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Tcl Qled Google Tv-rv",
+        "brand": "TCL",
+        "description": "TCL is one of the leading companies in the global television industry, dedicated to the research and development of electronic products.",
+        "price": 399.999,
+        "discountPercentage": 10,
+        "priceOnSale": 359.999,
+        "image": [
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695266/technook/jhf6o1wgffcy6uzk6zyb.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695268/technook/v8mpkcb4ohwtzu1cdyja.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695270/technook/hleeuiqohb5w8mlaxrjy.jpg",
+          "https://res.cloudinary.com/dy2ekajhi/image/upload/v1701695271/technook/mvo5pebnge4hfhmgjomf.jpg"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 4,
+        "CategoryId": 6
+      },
+      {
+        "nameProd": "Tablet Samsung Galaxy Tab A7 Lite",
+        "brand": "Samsung",
+        "description": "8.7' Full HD screen ideal for reading. Its size and light weight is perfect to carry everywhere. Easy gestures for one-handed use.",
+        "price": 191.999,
+        "discountPercentage": 0,
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702047981/technook/lzizlyvzitb7tkfpu235.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702047995/technook/sunt2fq4c6uurgfrmcq2.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048008/technook/jebafaylt93th1npgnd2.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 10,
+        "CategoryId": 3
+      },
+      {
+        "nameProd": "Xiaomi Smart Band",
+        "brand": "Xiaomi",
+        "description": "A smartwatch is ideal for lovers of technology and healthy living, facilitating daily activities with its tools designed to make life easier.",
+        "price": 45.899 ,
+        "discountPercentage": 0,
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048048/technook/hovvbrpofnujocg0wa4m.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048068/technook/b5tch2mrskzf4njott3r.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 15,
+        "CategoryId": 4
+      },
+      {
+        "nameProd": "Smartwach Argomtech S50",
+        "brand": "ArgomTech",
+        "description": "The S50 smartwatch includes excellent features such as heart rate sensor, blood pressure monitoring, body temperature, sleep monitoring, oxygen, pedometer, fitness tracker and much more.",
+        "price": 49.999,
+        "discountPercentage": 0,
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048111/technook/ehmufawjiytmnlmwxr3p.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048127/technook/z5whcqhcigliuzstnzpu.webp"
+        ],
+        "active": true,
+        "tags": "Limited Edition",
+        "stock": 5,
+        "CategoryId": 4
+      },
+      {
+        "nameProd": "Notebook Asus Intel I5",
+        "brand": "Asus",
+        "description": "The ASUS Vivobook 15 F1500 notebook is the entry-level notebook that delivers powerful performance and immersive visuals.",
+        "price": 715.00,
+        "discountPercentage": 0,
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048183/technook/pancyd2v89wdcbxla5y5.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048197/technook/lgjt5cyivfhlfsnnsd0p.webp"
+        ],
+        "active": true,
+        "tags": "New",
+        "stock": 8,
+        "CategoryId": 1
+      },
+      {
+        "nameProd": "Notebook Huawei MateBook D14",
+        "brand": "Huawei",
+        "description": "The Huawei MateBook D14 notebook is as much a solution for work and study as it is for entertainment.",
+        "price": 549.999,
+        "discountPercentage": 0,
+        "image": [ "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048238/technook/ncyvll5w3afstrxtmjrg.webp",
+        "https://res.cloudinary.com/dy2ekajhi/image/upload/v1702048249/technook/sj0urfhh8vhwzetqrjb7.webp"
+        ],
+        "active": true,
+        "tags": "None",
+        "stock": 3 ,
+        "CategoryId": 1
+      }
+    ]

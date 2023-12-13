@@ -7,16 +7,17 @@ module.exports = (sequelize) => {
     {
       id: {
         type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         allowNull: false,
         primaryKey: true,
       },
-      quantityProd: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+      // quantityProd: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: false,
+      // },
       totalPrice: {
         type: DataTypes.FLOAT,
-        allowNull: false,
+        // allowNull: false,
       },
     },
     { timestamps: false }

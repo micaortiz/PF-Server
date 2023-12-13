@@ -3,10 +3,12 @@ const { Sequelize } = require("sequelize");
 
 const fs = require("fs");
 const path = require("path");
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
+// const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env; // LOCAL
+const { PG_DATABASE_URL } = process.env; // DEPLOY
 
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,
+  // `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, //LOCAL
+  PG_DATABASE_URL,   // DEPLOY
   {
     logging: false,
     native: false,
@@ -38,8 +40,17 @@ let capsEntries = entries.map((entry) => [
 
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Product, Category, ProductChange, Cart, User, Country, Review } =
-  sequelize.models;
+const {
+  Product,
+  Category,
+  ProductChange,
+  Cart,
+  User,
+  Country,
+  Review,
+  Order,
+  PurchaseHistory,
+} = sequelize.models;
 
 /* 1:1 */
 User.hasOne(Cart);
@@ -58,13 +69,40 @@ Country.hasMany(User);
 Review.belongsTo(User);
 User.hasMany(Review);
 
-/* N:M */
-Product.belongsToMany(Cart, { through: "Product_Cart", timestamps: false });
-Cart.belongsToMany(Product, { through: "Product_Cart", timestamps: false });
+Order.belongsTo(User);
+User.hasMany(Order);
 
-// Falta relacion entre User y Order
+Review.belongsTo(Product, { foreignKey: "productId" });
+Product.hasMany(Review, { foreignKey: "productId" });
+
+
+Review.belongsTo(Product, { foreignKey: "productId" });
+Product.hasMany(Review, { foreignKey: "productId" });
+
+
+/* =======
+
+>>>>>>> develop */
+
+/* N:M */
+Product.belongsToMany(Cart, { through: "Product_Carts", timestamps: false });
+Cart.belongsToMany(Product, { through: "Product_Carts", timestamps: false });
+
+Product.belongsToMany(Order, { through: "Product_Order", timestamps: false });
+Order.belongsToMany(Product, { through: "Product_Order", timestamps: false });
 
 module.exports = {
   ...sequelize.models,
   conn: sequelize,
 };
+
+
+
+
+
+/* <<<<<<< HEAD
+User.hasMany(PurchaseHistory);
+PurchaseHistory.belongsTo(User);
+
+PurchaseHistory.hasMany(Cart);
+Cart.belongsTo(PurchaseHistory); */

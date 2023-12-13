@@ -9,17 +9,38 @@ module.exports = (sequelize) => {
     {
       id: {
         type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         allowNull: false,
         primaryKey: true,
+      },
+      userName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      itemsCart: {
+        type: DataTypes.JSON,
+        allowNull: false,
       },
       orderDate: {
         type: DataTypes.DATE,
         allowNull: false,
       },
-      status: {
+      deliveryStatus: {
         type: DataTypes.ENUM("In Process", "Paid", "Delivered", "Cancelled"),
         allowNull: false,
         defaultValue: "In Process",
+      },
+      mercadopagoTransactionId: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      mercadopagoTransactionStatus: {
+        type: DataTypes.ENUM("Approved", "Rejected", "Pending"),
+        allowNull: true,
+      },
+      totalPrice: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
       },
     },
     { timestamps: false }

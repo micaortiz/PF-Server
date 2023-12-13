@@ -7,10 +7,15 @@ module.exports = (sequelize) => {
     {
       id: {
         type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         allowNull: false,
         primaryKey: true,
       },
       reviewText: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      userName: {
         type: DataTypes.TEXT,
         allowNull: false,
       },
