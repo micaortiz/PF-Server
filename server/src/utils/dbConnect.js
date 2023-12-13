@@ -114,7 +114,7 @@ const dbConnect = async () => {
     // );
     // console.log('### Database loaded successfully ###');
   } catch (error) {
-    throw Error(error.message);
+    console.log(error.message);
   }
 };
 
