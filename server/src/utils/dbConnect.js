@@ -82,19 +82,19 @@ const dbConnect = async () => {
       console.log("### Users successfully charged ###");
     });
 
-    const reviewsDB = reviews.map((r, index) =>
-      Review.create({
-        reviewText: r.reviewText,
-        rating: r.rating,
-        UserId: r.UserId,
-        productId: idProduct[index],
-        userName: r.userName,
-      })
-    );
+    // const reviewsDB = reviews.map((r, index) =>
+    //   Review.create({
+    //     reviewText: r.reviewText,
+    //     rating: r.rating,
+    //     UserId: r.UserId,
+    //     productId: idProduct[index],
+    //     userName: r.userName,
+    //   })
+    // );
 
-    await Promise.all(reviewsDB).then(() =>
-      console.log("### Reviews successfully charged ###")
-    );
+    // await Promise.all(reviewsDB).then(() =>
+    //   console.log("### Reviews successfully charged ###")
+    // );
 
     const orderDB = order.map((o) =>
       Order.create({
@@ -110,12 +110,12 @@ const dbConnect = async () => {
       })
     );
 
-    await Promise.all(orderDB).then(() =>
-      console.log("### Order successfully charged ###")
-    );
+    // await Promise.all(orderDB).then(() =>
+    //   console.log("### Order successfully charged ###")
+    // );
     // console.log('### Database loaded successfully ###');
   } catch (error) {
-    throw Error(error.message);
+    console.log(error.message);
   }
 };
 
