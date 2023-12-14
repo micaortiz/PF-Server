@@ -1,4 +1,4 @@
-const { Order } = require("../../db");
+const { Order, User } = require("../../db");
 const sendEmailController = require("../../utils/notifications");
 const message = require("../../utils/messages");
 
@@ -12,14 +12,22 @@ const updateOrders = async (idOrder, statusDelivery) => {
   console.log("Orden a actualizar ", dataOrder);
   if (!dataOrder) return { error: "There is no order record with this id" };
 
+  // Obter el mail asociado con la orden
+  const userId = dataOrder.UserId;
+  const user = await User.findByPk(userId, { attributes: ["email"] });
+
+  if (!user) return { error: "User not found for this order" };
+
+  const userEmail = user.email;
+
   if (statusDelivery === "In Process") {
-    await sendEmailController(message.statusInProcess);
+    await sendEmailController(message.statusInProcess, userEmail);
   } else if (statusDelivery === "Paid") {
-    await sendEmailController(message.statusPaid);
+    await sendEmailController(message.statusPaid, userEmail);
   } else if (statusDelivery === "Delivered") {
-    await sendEmailController(message.statusDelivered);
+    await sendEmailController(message.statusDelivered, userEmail);
   } else if (statusDelivery === "Cancelled") {
-    await sendEmailController(message.statusCancelled);
+    await sendEmailController(message.statusCancelled, userEmail);
   }
 
   await dataOrder.save();

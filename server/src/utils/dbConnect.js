@@ -106,13 +106,13 @@ const dbConnect = async () => {
     //     mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
     //     totalPrice: o.totalPrice,
     //     UserId: o.UserId,
+    //     // emailAddres: o.emailAddres
     //   })
     // );
 
     // await Promise.all(orderDB).then(() =>
     //   console.log("### Order successfully charged ###")
     // );
-    // console.log('### Database loaded successfully ###');
   } catch (error) {
     console.log(error.message);
   }
