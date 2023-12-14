@@ -82,37 +82,37 @@ const dbConnect = async () => {
       console.log("### Users successfully charged ###");
     });
 
-    const reviewsDB = reviews.map((r, index) =>
-      Review.create({
-        reviewText: r.reviewText,
-        rating: r.rating,
-        UserId: r.UserId,
-        productId: idProduct[index],
-        userName: r.userName,
-      })
-    );
+    // const reviewsDB = reviews.map((r, index) =>
+    //   Review.create({
+    //     reviewText: r.reviewText,
+    //     rating: r.rating,
+    //     UserId: r.UserId,
+    //     productId: idProduct[index],
+    //     userName: r.userName,
+    //   })
+    // );
 
-    await Promise.all(reviewsDB).then(() =>
-      console.log("### Reviews successfully charged ###")
-    );
+    // await Promise.all(reviewsDB).then(() =>
+    //   console.log("### Reviews successfully charged ###")
+    // );
 
-    const orderDB = order.map((o) =>
-      Order.create({
-        userName: o.userName,
-        itemsCart: o.itemsCart,
-        orderDate: o.orderDate,
-        deliveryStatus: o.deliveryStatus,
-        mercadopagoTransactionId: o.mercadopagoTransactionId,
-        mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
-        totalPrice: o.totalPrice,
-        UserId: o.UserId,
-        // emailAddres: o.emailAddres
-      })
-    );
+    // const orderDB = order.map((o) =>
+    //   Order.create({
+    //     userName: o.userName,
+    //     itemsCart: o.itemsCart,
+    //     orderDate: o.orderDate,
+    //     deliveryStatus: o.deliveryStatus,
+    //     mercadopagoTransactionId: o.mercadopagoTransactionId,
+    //     mercadopagoTransactionStatus: o.mercadopagoTransactionStatus,
+    //     totalPrice: o.totalPrice,
+    //     UserId: o.UserId,
+    //     // emailAddres: o.emailAddres
+    //   })
+    // );
 
-    await Promise.all(orderDB).then(() =>
-      console.log("### Order successfully charged ###")
-    );
+    // await Promise.all(orderDB).then(() =>
+    //   console.log("### Order successfully charged ###")
+    // );
   } catch (error) {
     console.log(error.message);
   }
