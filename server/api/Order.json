@@ -7,8 +7,7 @@
     "mercadopagoTransactionId": "1316140219",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 1814.998,
-    "UserId": 2,
-    "emailAddres": "Bastian1@example.com"
+    "UserId": 2
   },
   {
     "userName": "Selene",
@@ -18,8 +17,7 @@
     "mercadopagoTransactionId": "1316140220",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 2183.8979999999997,
-    "UserId": 3,
-    "emailAddres": "Selene1@example.com"
+    "UserId": 3
   },
   {
     "userName": "Dory",
@@ -29,8 +27,7 @@
     "mercadopagoTransactionId": "1316140221",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 407.91,
-    "UserId": 1,
-    "emailAddres": "Dory1@example.com"
+    "UserId": 1
   },
   {
     "userName": "Bruno",
@@ -40,8 +37,7 @@
     "mercadopagoTransactionId": "1316140225",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 720.5939999999999,
-    "UserId": 4,
-    "emailAddres": "Bruno1@example.com"
+    "UserId": 4
   },
   {
     "userName": "Selene",
@@ -51,8 +47,7 @@
     "mercadopagoTransactionId": "1096140295",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 1099.47,
-    "UserId": 3,
-    "emailAddres": "Selene1@example.com"
+    "UserId": 3
   },
   {
     "userName": "Bastian",
@@ -62,8 +57,7 @@
     "mercadopagoTransactionId": "2096140206",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 1799.9950000000001,
-    "UserId": 2,
-    "emailAddres": "Bastian1@example.com"
+    "UserId": 2
   },
   {
     "userName": "Bastian",
@@ -73,8 +67,7 @@
     "mercadopagoTransactionId": "2356170200",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 264,
-    "UserId": 2,
-    "emailAddres": "Bastian1@example.com"
+    "UserId": 2
   },
   {
     "userName": "Dory",
@@ -84,7 +77,6 @@
     "mercadopagoTransactionId": "1316140818",
     "mercadopagoTransactionStatus": "Approved",
     "totalPrice": 3472.208,
-    "UserId": 1,
-    "emailAddres": "Dory@example.com"
+    "UserId": 1
   }
 ]

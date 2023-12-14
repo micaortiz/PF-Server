@@ -1,5 +1,5 @@
 require("dotenv").config();
-const {EMAIL_ADMIN, PASSWORD} = process.env;
+const { EMAIL_ADMIN, PASSWORD } = process.env;
 const nodemailer = require("nodemailer");
 // Configuración del servicio de correo electrónico
 const transporter = nodemailer.createTransport({
@@ -11,12 +11,12 @@ const transporter = nodemailer.createTransport({
 });
 
 // const sendEmailController = async (req, res) => {
-const sendEmailController = async (message) => {
-    const mailOptions = {
-      from: "technookpfinal@gmail.com",
-      to: "diegozallocco@hotmail.com", // ingresar correo ya que esta harcodeado 
-      subject: "Information about your purchase 🛒",
-      html: `<!DOCTYPE html>
+const sendEmailController = async (message, userEmail) => {
+  const mailOptions = {
+    from: "technookpfinal@gmail.com",
+    to: `${userEmail}`,
+    subject: "Information about your purchase 🛒",
+    html: `<!DOCTYPE html>
       <html xmlns=http://www.w3.org/1999/xhtml xmlns:v=urn:schemas-microsoft-com:vml xmlns:o=urn:schemas-microsoft-com:office:office lang="en">
       <head>
       <meta name=x-apple-disable-message-reformatting>
@@ -166,17 +166,16 @@ const sendEmailController = async (message) => {
       </td></tr></table></td>
       </tr></table>
       </td></tr></table></td></tr></table></div></body>
-      </html>`
-    };
-  
-    try {
-      const info = await transporter.sendMail(mailOptions);
-      console.log("Correo electrónico enviado: " + info.response);
-    //   res.status(200).json({ message: "Correo electrónico enviado exitosamente" });
-    } catch (error) {
-      console.error({ error: "Error al enviar el correo electrónico" });
-    //   res.status(500).json({ error: "Error al enviar el correo electrónico" });
-    }
+      </html>`,
   };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Correo electrónico enviado: " + info.response);
+  } catch (error) {
+    console.error({ error: "Error al enviar el correo electrónico" });
+    console.log(error);
+  }
+};
 
 module.exports = sendEmailController;

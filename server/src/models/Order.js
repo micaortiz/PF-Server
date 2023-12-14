@@ -17,10 +17,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      emailAddres: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      // emailAddres: {
+      //   type: DataTypes.STRING,
+      //   allowNull: false,
+      // },
       itemsCart: {
         type: DataTypes.JSON,
         allowNull: false,
